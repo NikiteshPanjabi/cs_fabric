@@ -1,0 +1,207 @@
+table case
+	lineageTag: 865c4492-8308-4dce-9fc6-806caa801296
+
+	column case_number
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 0e32af70-c2a8-4dc9-8c9f-449fd470b94c
+		summarizeBy: none
+		sourceColumn: case_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_id
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 35f4b74b-f5fe-4942-a508-11daafd82728
+		summarizeBy: none
+		sourceColumn: account_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_opened
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		sourceProviderType: date
+		lineageTag: bb97bdf2-a291-4fdc-9634-0b25dbe39598
+		summarizeBy: none
+		sourceColumn: date_opened
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column time_opened
+		dataType: dateTime
+		formatString: hh:nn:ss AM/PM
+		sourceProviderType: time
+		lineageTag: 28f3bb93-809d-4c3a-8bb5-369b132ae75e
+		summarizeBy: none
+		sourceColumn: time_opened
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column date_closed
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		sourceProviderType: date
+		lineageTag: b168a9af-7c24-4a37-be02-fef18c90598f
+		summarizeBy: none
+		sourceColumn: date_closed
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column time_closed
+		dataType: dateTime
+		formatString: hh:nn:ss AM/PM
+		sourceProviderType: time
+		lineageTag: 41b75b50-21cb-4b2e-b810-db243924a61d
+		summarizeBy: none
+		sourceColumn: time_closed
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column case_status
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 4efd13ea-9d76-4094-914e-03866bbb7799
+		summarizeBy: none
+		sourceColumn: case_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column case_subject
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: b563b9e1-dcad-41fd-a7fb-b1c58055c825
+		summarizeBy: none
+		sourceColumn: case_subject
+
+		annotation SummarizationSetBy = Automatic
+
+	column case_priority
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 7ce4b5a7-afa4-4779-ba16-07f317f37908
+		summarizeBy: none
+		sourceColumn: case_priority
+
+		annotation SummarizationSetBy = Automatic
+
+	column case_link
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 0d12b358-3ea5-4573-b140-f82e6a7d627c
+		dataCategory: WebUrl
+		summarizeBy: none
+		sourceColumn: case_link
+
+		annotation SummarizationSetBy = Automatic
+
+	column open_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 621dd9fe-4b38-4912-8074-661d938b2186
+		summarizeBy: none
+		sourceColumn: open_flag
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column closed_flag
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: b47af35d-811c-4eb6-9934-f5d28181734d
+		summarizeBy: none
+		sourceColumn: closed_flag
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column case_id
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 58b10254-7a89-4741-89ea-e1987495a0ad
+		summarizeBy: none
+		sourceColumn: case_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column rapid_response_environment
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: ecc72672-e17a-4001-83be-2ebe770502de
+		summarizeBy: none
+		sourceColumn: rapid_response_environment
+
+		annotation SummarizationSetBy = Automatic
+
+	partition case = m
+		mode: directQuery
+		source = ```
+				let
+				    Source = Value.NativeQuery(GoogleBigQuery.Database(){[Name="cs-maestro-insights-poc-cc07"]}[Data], 
+				    "SELECT
+				  case_id,
+				  rapid_response_environment,
+				  case_number,
+				  account_id,
+				 
+				  -- Separate actual_date_opened into date and time
+				  DATE(actual_date_opened) AS date_opened,
+				  TIME(actual_date_opened) AS time_opened,
+				 
+				  -- Separate actual_date_closed into date and time
+				  DATE(actual_date_closed) AS date_closed,
+				  TIME(actual_date_closed) AS time_closed,
+				 
+				  case_status,
+				  case_subject,
+				 
+				  -- Extract part of case_priority before the delimiter '-'
+				  LEFT(case_priority, STRPOS(case_priority, '-') - 1) AS case_priority,
+				 
+				  case_link,
+				 
+				  -- Create open_flag column with 1 when closed date is NULL
+				  CASE
+				    WHEN actual_date_closed IS NULL OR case_status != 'Closed' THEN 1
+				    ELSE 0
+				  END AS open_flag,
+				 
+				  -- Create closed_flag column with 1 when closed date is not NULL
+				  CASE
+				    WHEN actual_date_closed IS NOT NULL OR case_status = 'Closed' THEN 1
+				    ELSE 0
+				  END AS closed_flag
+				 
+				FROM
+				  cs-maestro-insights-poc-cc07.prod_staging.stg_salesforce__case", null, [EnableFolding=true])
+				in
+				    Source
+				```
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

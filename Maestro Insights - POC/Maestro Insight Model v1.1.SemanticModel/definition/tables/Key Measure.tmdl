@@ -5,7 +5,8 @@ table 'Key Measure'
 			
 			COALESCE(CALCULATE(
 			    DISTINCTCOUNT('case'[case_number]),
-			    USERELATIONSHIP('case'[date_opened], 'Calendar'[Date])),0)
+			    USERELATIONSHIP('case'[date_opened], 'Calendar'[Date])
+			),0)
 			
 			```
 		formatString: 0
@@ -15,7 +16,9 @@ table 'Key Measure'
 			
 			COALESCE(CALCULATE(
 			    DISTINCTCOUNT('case'[case_number]),
-			    USERELATIONSHIP('case'[date_closed], 'Calendar'[Date])),0)
+			    FILTER('case', 'case'[date_closed] <> BLANK() || 'case'[case_status] = "Closed"),
+			    USERELATIONSHIP('case'[date_closed], 'Calendar'[Date])
+			),0)
 		formatString: 0
 		lineageTag: fa0b57cd-0f42-425c-88dc-759c067cf727
 
