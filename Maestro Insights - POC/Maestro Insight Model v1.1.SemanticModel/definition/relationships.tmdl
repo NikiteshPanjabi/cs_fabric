@@ -37,6 +37,10 @@ relationship e6b0059f-2a18-9449-9ea5-872e1fb7d1f0
 	fromColumn: rapid_response_environment.customer
 	toColumn: account_active.account_id
 
+relationship aec6a1e6-774f-e392-1a6f-f3815433057a
+	fromColumn: case.account_id
+	toColumn: account_active.account_id
+
 relationship 9404e20a-e7ca-f8f4-6110-88323b88f0f6
 	isActive: false
 	fromColumn: e2e_test.account_id
@@ -86,8 +90,4 @@ relationship 949d29b2-b9f7-083c-9380-02e9d4a6b889
 relationship 73b3949f-81f6-d3e7-d8bc-91e227d55ecb
 	fromColumn: kinaxis_server_feature_tracker.created_date
 	toColumn: Calendar.Date
-
-relationship c7a789d5-68e8-8594-e5b9-5f6ca3663e58
-	fromColumn: case.account_id
-	toColumn: account.account_id
 

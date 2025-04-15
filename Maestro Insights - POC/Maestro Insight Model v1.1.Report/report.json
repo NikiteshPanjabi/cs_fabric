@@ -1,6 +1,6 @@
 {
   "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.61\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"filterPaneHiddenInEditMode\":false},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
-  "filters": "[{\"name\":\"185761b73cba506e6b82\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"account\"}},\"Property\":\"account_id\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"account\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"account_id\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'0017000000eEtLRAA0'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}},{\"name\":\"3e7af4575495b69b5f2a\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"CM & P12M (Yes/No)\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CM & P12M (Yes/No)\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Yes'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+  "filters": "[]",
   "layoutOptimization": 0,
   "resourcePackages": [
     {
@@ -106,18 +106,18 @@
       "config": "{}",
       "displayName": "Page 1",
       "displayOption": 1,
-      "filters": "[]",
+      "filters": "[{\"name\":\"1da667045982670dc3ed\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"Month (yyyy-mm)\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Month (yyyy-mm)\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'2024-08'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}},{\"name\":\"f062b17ab3f65badf1be\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"account\"}},\"Property\":\"company_name\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"account\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"company_name\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Applied Materials, Inc.'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}},{\"name\":\"ccae200eaaf53e130603\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"e2e_test\"}},\"Property\":\"account_id\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"e2e_test\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"account_id\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'0017000000eEtLRAA0'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
       "height": 720.00,
       "name": "4b73ed348ef5df2230ee",
       "ordinal": 1,
       "visualContainers": [
         {
-          "config": "{\"name\":\"63969c5dc32f04497346\",\"layouts\":[{\"id\":0,\"position\":{\"x\":722.5978351373856,\"y\":69.27560366361367,\"z\":2,\"width\":397.5353871773522,\"height\":142.81432139883432}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"account.company_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"account\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"company_name\"},\"Name\":\"account.company_name\",\"NativeReferenceName\":\"company_name\"}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3}}",
-          "filters": "[{\"name\":\"e80e8e58dcd0aa6e674a\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"e2e_test\"}},\"Property\":\"account_id\"}},\"type\":\"Categorical\",\"howCreated\":1,\"isHiddenInViewMode\":false,\"ordinal\":0},{\"name\":\"8dfec62cc01797b4978f\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"account\"}},\"Property\":\"company_name\"}},\"type\":\"Categorical\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":1},{\"name\":\"40184d0e0a162266c3e4\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"account\"}},\"Property\":\"account_id\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"account\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"account_id\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'0017000000eEtLRAA0'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{},\"ordinal\":2},{\"name\":\"eff2d3dc84209bff7ca5\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"CM & P12M (Yes/No)\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CM & P12M (Yes/No)\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Yes'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{},\"ordinal\":3}]",
-          "height": 142.81,
-          "width": 397.54,
-          "x": 722.60,
-          "y": 69.28,
+          "config": "{\"name\":\"63969c5dc32f04497346\",\"layouts\":[{\"id\":0,\"position\":{\"x\":838.7676935886761,\"y\":107.64363030807661,\"width\":300.5495420482931,\"height\":300.5495420482931,\"z\":2}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"e2e_test.account_id\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"e2e_test\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"account_id\"},\"Name\":\"e2e_test.account_id\",\"NativeReferenceName\":\"account_id\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 300.55,
+          "width": 300.55,
+          "x": 838.77,
+          "y": 107.64,
           "z": 2.00
         },
         {
@@ -130,12 +130,12 @@
           "z": 1.00
         },
         {
-          "config": "{\"name\":\"a5cd6cb304f076ca29b4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":144.94587843463782,\"y\":250.45795170691093,\"z\":3,\"width\":1012.4895920066612,\"height\":412.4562864279767}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Calendar.Month (yyyy-mm)\",\"active\":true}],\"Y\":[{\"queryRef\":\"Key Measure.Cases Closed #\"},{\"queryRef\":\"Key Measure.Cases Opened #\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"k\",\"Entity\":\"Key Measure\",\"Type\":0},{\"Name\":\"c1\",\"Entity\":\"Calendar\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"k\"}},\"Property\":\"Cases Opened #\"},\"Name\":\"Key Measure.Cases Opened #\",\"NativeReferenceName\":\"Cases Opened #\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"k\"}},\"Property\":\"Cases Closed #\"},\"Name\":\"Key Measure.Cases Closed #\",\"NativeReferenceName\":\"Cases Closed #\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Month (yyyy-mm)\"},\"Name\":\"Calendar.Month (yyyy-mm)\",\"NativeReferenceName\":\"Month (yyyy-mm)\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c1\"}},\"Property\":\"Month (yyyy-mm)\"}}}]},\"drillFilterOtherVisuals\":true}}",
-          "filters": "[{\"name\":\"4b79c8ccd58ae775b803\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Calendar\"}},\"Property\":\"CM & P12M (Yes/No)\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"Calendar\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"CM & P12M (Yes/No)\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Yes'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
-          "height": 412.46,
-          "width": 1012.49,
-          "x": 144.95,
-          "y": 250.46,
+          "config": "{\"name\":\"a5cd6cb304f076ca29b4\",\"layouts\":[{\"id\":0,\"position\":{\"x\":156.66944213155705,\"y\":289.89175686927564,\"z\":3,\"width\":558.4679433805163,\"height\":371.95670274771027}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"case.case_number\"},{\"queryRef\":\"case.account_id\"},{\"queryRef\":\"account.company_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"case\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"account\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"case_number\"},\"Name\":\"case.case_number\",\"NativeReferenceName\":\"case_number\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"account_id\"},\"Name\":\"case.account_id\",\"NativeReferenceName\":\"account_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"company_name\"},\"Name\":\"account.company_name\",\"NativeReferenceName\":\"company_name\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"case_number\"}}}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 371.96,
+          "width": 558.47,
+          "x": 156.67,
+          "y": 289.89,
           "z": 3.00
         },
         {
@@ -152,23 +152,34 @@
     },
     {
       "config": "{}",
-      "displayName": "Page 4",
+      "displayName": "Page 3",
       "displayOption": 1,
       "filters": "[]",
       "height": 720.00,
-      "name": "8991ea7454f449f7ca68",
-      "ordinal": 2,
+      "name": "709d7a1ce38f04dc2e68",
+      "ordinal": 3,
       "visualContainers": [
         {
-          "config": "{\"name\":\"94949377aa19da7206d7\",\"layouts\":[{\"id\":0,\"position\":{\"x\":216.35303913405497,\"y\":130.02497918401332,\"z\":0,\"width\":893.1223980016654,\"height\":459.35054121565366}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"account.account_id\"},{\"queryRef\":\"account.company_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"account\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"account_id\"},\"Name\":\"account.account_id\",\"NativeReferenceName\":\"account_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"company_name\"},\"Name\":\"account.company_name\",\"NativeReferenceName\":\"company_name\"}]},\"drillFilterOtherVisuals\":true}}",
-          "filters": "[{\"name\":\"e2908f08ef6f034066a3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"account\"}},\"Property\":\"account_id\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"account\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"account_id\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'0017000000eEtLRAA0'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{},\"isHiddenInViewMode\":false}]",
-          "height": 459.35,
-          "width": 893.12,
-          "x": 216.35,
-          "y": 130.02,
+          "config": "{\"name\":\"9b004e57dbe05d9e4669\",\"layouts\":[{\"id\":0,\"position\":{\"x\":385.81182348043296,\"y\":208.89258950874273,\"z\":0,\"width\":526.4945878434638,\"height\":330.39134054954206}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"account.account_id\"},{\"queryRef\":\"account.company_name\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"account\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"account_id\"},\"Name\":\"account.account_id\",\"NativeReferenceName\":\"account_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"company_name\"},\"Name\":\"account.company_name\",\"NativeReferenceName\":\"company_name\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"account\"}},\"Property\":\"account_id\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"a\",\"Entity\":\"account\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"account_id\"}},\"Right\":{\"Literal\":{\"Value\":\"'0017000000YrNNcAAN'\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 330.39,
+          "width": 526.49,
+          "x": 385.81,
+          "y": 208.89,
           "z": 0.00
         }
       ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "c62776fdd95bb511d46f",
+      "ordinal": 2,
+      "visualContainers": [],
       "width": 1280.00
     }
   ]
