@@ -1,0 +1,93 @@
+relationship 87848413-6164-db78-d1c0-a67f52905d2d
+	isActive: false
+	fromColumn: case.date_closed
+	toColumn: Calendar.Date
+
+relationship 32489a4b-37b3-19e1-0a97-4120d063eda6
+	fromColumn: case.date_opened
+	toColumn: Calendar.Date
+
+relationship be55c912-a9a4-1c2d-a81f-da6390f0e673
+	fromColumn: on_demand_downtime_environment.on_demand_downtime_id
+	toColumn: on_demand_downtime.on_demand_downtime_id
+
+relationship e7c7fac3-62d2-abcd-ade3-7d8a17216008
+	fromColumn: on_demand_downtime_environment.start_date
+	toColumn: Calendar.Date
+
+relationship 2b087fc8-ab2e-c358-9f87-88a9dfd9c467
+	fromColumn: rapid_response_environment.end_to_end_test_company_id
+	toColumn: e2e_test.end_to_end_test_company_id
+
+relationship 894cef9c-12b1-99dd-1111-43d3d11ca673
+	fromColumn: case.rapid_response_environment
+	toColumn: rapid_response_environment.rapid_response_environment_id
+
+relationship 6cc53bfd-5651-914c-2de6-82fa66842c2a
+	isActive: false
+	fromColumn: on_demand_downtime_environment.case_number_id
+	toColumn: case.case_id
+
+relationship f55fbaab-4d71-8cb0-02ef-59d8aece42b6
+	fromColumn: on_demand_downtime_environment.rapid_response_environment
+	toColumn: rapid_response_environment.rapid_response_environment_id
+
+relationship e6b0059f-2a18-9449-9ea5-872e1fb7d1f0
+	fromColumn: rapid_response_environment.customer
+	toColumn: account_active.account_id
+
+relationship aec6a1e6-774f-e392-1a6f-f3815433057a
+	isActive: false
+	fromColumn: case.account_id
+	toColumn: account_active.account_id
+
+relationship 9404e20a-e7ca-f8f4-6110-88323b88f0f6
+	isActive: false
+	fromColumn: e2e_test.account_id
+	toColumn: account_active.account_id
+
+relationship ef67321a-a3d8-fc6a-5302-71b0ea780884
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: account_active.account_id
+	toColumn: account.account_id
+
+relationship b2410568-5176-0529-0b5a-cef0dab0570c
+	fromColumn: e2e_test.rapid_response_environment_id
+	toColumn: rapid_response_environment.rapid_response_environment_id
+
+relationship f97b1327-ef73-27c9-e219-b85c2ef1f201
+	toCardinality: many
+	fromColumn: memory_analysis.host_name
+	toColumn: e2e_test.data_server_name
+
+relationship ef4e9b67-724a-1034-0bd3-4bf618bbe2c3
+	toCardinality: many
+	fromColumn: scheduled_task_monitor.host_name
+	toColumn: e2e_test.data_server_name
+
+relationship 314a0f03-cfc9-47ad-8cd1-3f9be3e4b0a2
+	fromColumn: memory_analysis.created_date
+	toColumn: Calendar.Date
+
+relationship 70a571b3-df6f-598c-a125-a8e903c21cc3
+	fromColumn: memory_analysis.created_time
+	toColumn: Time.Time
+
+relationship 2ea14ff1-5dc1-2c49-ee66-859b60914df1
+	fromColumn: scheduled_task_monitor.scheduled_earliest
+	toColumn: Time.Time
+
+relationship 49279313-df7a-bb32-f3c7-17f2538a41ed
+	toCardinality: many
+	fromColumn: kinaxis_server_feature_tracker.host_name
+	toColumn: e2e_test.data_server_name
+
+relationship 949d29b2-b9f7-083c-9380-02e9d4a6b889
+	fromColumn: scheduled_task_monitor.created_date
+	toColumn: Calendar.Date
+
+relationship 73b3949f-81f6-d3e7-d8bc-91e227d55ecb
+	fromColumn: kinaxis_server_feature_tracker.created_date
+	toColumn: Calendar.Date
+

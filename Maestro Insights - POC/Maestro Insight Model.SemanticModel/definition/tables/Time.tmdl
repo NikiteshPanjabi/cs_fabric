@@ -1,0 +1,54 @@
+table Time
+	lineageTag: da119e67-d8f6-4539-8226-62dffa0099ca
+
+	column Time
+		dataType: dateTime
+		formatString: Long Time
+		lineageTag: a072cc73-e196-4de5-9118-d8e392c5c2ae
+		summarizeBy: none
+		sourceColumn: Time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column Label
+		dataType: string
+		lineageTag: 7acd0d30-0251-438f-9a3f-a7fe053b29d1
+		summarizeBy: none
+		sourceColumn: Label
+
+		annotation SummarizationSetBy = Automatic
+
+	column Hour
+		dataType: string
+		lineageTag: acc0c307-e947-4bfa-b78f-531c465f2c10
+		summarizeBy: none
+		sourceColumn: Hour
+
+		annotation SummarizationSetBy = Automatic
+
+	column AM/PM
+		dataType: string
+		lineageTag: 5f9f147d-2c44-4978-b658-1186bd0ff75f
+		summarizeBy: none
+		sourceColumn: AM/PM
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Time = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    ws = Workspaces{[workspaceName = "Data Org"]}[Data],
+				    #"8b25b71b-c7c7-4782-b29f-8cf739fc0392" = ws{[dataflowName = "stg_time"]}[Data],
+				    Time_ = #"8b25b71b-c7c7-4782-b29f-8cf739fc0392"{[entity="Time",version=""]}[Data]
+				in
+				    Time_
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
