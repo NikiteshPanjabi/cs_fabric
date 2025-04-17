@@ -1,0 +1,109 @@
+table rapid_response_environment
+	lineageTag: e4744787-a3d1-46b6-9f78-747f8c657851
+
+	column rapid_response_environment_id
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 61ad125c-2ad5-43b4-9b90-1138b68384fd
+		summarizeBy: none
+		sourceColumn: rapid_response_environment_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column rapid_response_environment_name
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 0630b0f9-37df-4d9d-a4c3-5c1604e1a954
+		summarizeBy: none
+		sourceColumn: rapid_response_environment_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: c2493e0a-50f5-461b-8531-12c8719943ee
+		summarizeBy: none
+		sourceColumn: customer
+
+		annotation SummarizationSetBy = Automatic
+
+	column rapid_response_environment_type
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: d0f7df91-1d91-4b8b-a850-b843d2bda6ef
+		summarizeBy: none
+		sourceColumn: rapid_response_environment_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column end_to_end_test_company_id
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 4ca95047-38d4-486b-b602-215d6b950dba
+		summarizeBy: none
+		sourceColumn: end_to_end_test_company_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column company_id
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: f00e135e-5b6d-4b01-a602-28e3a7790f06
+		summarizeBy: none
+		sourceColumn: company_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_active
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 09b159aa-9578-4d5b-be76-eec1b51b7337
+		summarizeBy: none
+		sourceColumn: is_active
+
+		annotation SummarizationSetBy = Automatic
+
+	partition rapid_response_environment = m
+		mode: directQuery
+		source = ```
+				let
+				    Source = Value.NativeQuery(GoogleBigQuery.Database(){[Name="cs-maestro-insights-poc-cc07"]}[Data], 
+				    "SELECT
+				    rapid_response_environment_id,
+				    CASE 
+				        WHEN is_active = TRUE THEN 'Yes'
+				        WHEN is_active = FALSE THEN 'No'
+				        ELSE 'Unknown'  -- Optional: handles cases where is_active is neither TRUE nor FALSE
+				    END AS is_active,
+				    rapid_response_environment_name,
+				    customer,
+				    rapid_response_environment_type,
+				    end_to_end_test_company_id, 
+				    CASE
+				        WHEN ARRAY_LENGTH(SPLIT(rapid_response_environment_name, '-')) < 3 THEN
+				        -- Get the 2nd element if there are less than 3 items
+				        IFNULL(SPLIT(rapid_response_environment_name, '-')[SAFE_OFFSET(1)], '')
+				        WHEN ARRAY_LENGTH(SPLIT(rapid_response_environment_name, '-')) = 3 THEN
+				        -- Get the 3rd element if there are exactly 3 items
+				        IFNULL(SPLIT(rapid_response_environment_name, '-')[SAFE_OFFSET(2)], '')
+				        WHEN ARRAY_LENGTH(SPLIT(rapid_response_environment_name, '-')) = 4 THEN
+				        -- Get the 4th element if there are exactly 4 items
+				        IFNULL(SPLIT(rapid_response_environment_name, '-')[SAFE_OFFSET(3)], '')
+				        ELSE
+				        -- If there are more than 4 items, return 'NA'
+				        'NA'
+				    END AS company_id
+				
+				
+				FROM
+				  cs-maestro-insights-poc-cc07.prod_staging.stg_salesforce__rapid_response_environment
+				WHERE is_deleted <> TRUE", null, [EnableFolding=true])
+				in
+				    Source
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
