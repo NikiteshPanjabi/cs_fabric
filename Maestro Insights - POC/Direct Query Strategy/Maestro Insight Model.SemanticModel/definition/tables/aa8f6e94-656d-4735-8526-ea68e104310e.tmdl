@@ -1,0 +1,137 @@
+table aa8f6e94-656d-4735-8526-ea68e104310e
+	isHidden
+	systemManaged
+
+	column on_demand_downtime_downtime_type
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: on_demand_downtime.downtime_type
+
+	column on_demand_downtime_impacting_sla_uptime
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: on_demand_downtime.impacting_sla_uptime
+
+	column on_demand_downtime_environment_start_date
+		dataType: dateTime
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: on_demand_downtime_environment.start_date
+
+	column on_demand_downtime_environment_downtime_environment_status
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: on_demand_downtime_environment.downtime_environment_status
+
+	column on_demand_downtime_environment_rr_enviornment
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: on_demand_downtime_environment.rr_enviornment
+
+	column rapid_response_environment_customer
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: rapid_response_environment.customer
+
+	column rapid_response_environment_rapid_response_environment_type
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: rapid_response_environment.rapid_response_environment_type
+
+	column rapid_response_environment_company_id
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: rapid_response_environment.company_id
+
+	column rapid_response_environment_is_active
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: rapid_response_environment.is_active
+
+	column e2e_test_stage
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: e2e_test.stage
+
+	column e2e_test_company_id
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: e2e_test.company_id
+
+	column e2e_test_account_id
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: e2e_test.account_id
+
+	column 12
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseTable: on_demand_downtime_environment
+
+	column 13
+		dataType: double
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: sum
+			baseColumn: on_demand_downtime_environment.downtime_minutes
+
+	column 14
+		dataType: double
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: sum
+			baseColumn: on_demand_downtime_environment.available_hr
+
+	column 15
+		dataType: dateTime
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: min
+			baseColumn: on_demand_downtime_environment.start_date
+
+	partition Partition = inferred
+		mode: import
+
+	annotation activeFrequency = 207
+
+	annotation activeQueries = 11
+
+	annotation relativeGain(%) = 13.68501964868485
+
+	annotation relativeLift(%) = 3.4089902088407946
+
+	annotation relativeSize(%) = 24.91037862096459
+
+	annotation estimatedCardinality(Krows) = 73.907
+
+	annotation avoidQueryHints = false
+

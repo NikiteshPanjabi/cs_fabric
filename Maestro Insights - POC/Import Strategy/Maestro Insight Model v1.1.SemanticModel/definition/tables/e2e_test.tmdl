@@ -1,0 +1,171 @@
+table e2e_test
+	lineageTag: a383d7bf-0fdc-4b7f-9589-06eece3c6c62
+
+	column rapid_response_environment_id
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 912198d5-d2fe-420d-a00f-7922f15b80d1
+		summarizeBy: none
+		sourceColumn: rapid_response_environment_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column stage
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: b02ac204-7afc-4815-989d-6e664238a36a
+		summarizeBy: none
+		sourceColumn: stage
+
+		annotation SummarizationSetBy = Automatic
+
+	column company_id
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 36b0c94b-5010-4f62-9f13-c3e2b6afc8eb
+		summarizeBy: none
+		sourceColumn: company_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column environment
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 3fa899a1-796b-4d4e-a81e-0d79cb93b6dd
+		summarizeBy: none
+		sourceColumn: environment
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_server_active
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: e4e76be8-bbd1-4a52-bd6f-7454f1e1916b
+		summarizeBy: none
+		sourceColumn: is_server_active
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_center
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: ef4fe0e4-8bcf-4a38-9639-73a2776065d5
+		summarizeBy: none
+		sourceColumn: data_center
+
+		annotation SummarizationSetBy = Automatic
+
+	column e2e_test_url
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 2691a0cb-7693-4e4e-bda6-1f49797a22da
+		summarizeBy: none
+		sourceColumn: e2e_test_url
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_sla
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		lineageTag: 81a5caaf-ccf3-45c8-a47e-fb90239fd12a
+		summarizeBy: none
+		sourceColumn: is_sla
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_failover
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		lineageTag: 46611c26-64d7-4298-9669-946fb7dd3cfd
+		summarizeBy: none
+		sourceColumn: is_failover
+
+		annotation SummarizationSetBy = Automatic
+
+	column extracted_domain
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 47aa07c7-2a88-4217-9fce-1321c615c120
+		summarizeBy: none
+		sourceColumn: extracted_domain
+
+		annotation SummarizationSetBy = Automatic
+
+	column end_to_end_test_company_id
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: a9e9ae30-a8e1-45a0-b306-663cc1bfb4ae
+		summarizeBy: none
+		sourceColumn: end_to_end_test_company_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_id
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: f3f2d454-00cb-4eeb-8797-425f6f5231b5
+		summarizeBy: none
+		sourceColumn: account_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_server_name
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 2559ff12-17e3-4533-8fa6-4aa7bbbf1825
+		summarizeBy: none
+		sourceColumn: data_server_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column e2e_test_description
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: a1a3a3fc-5764-417c-a9b2-b701fc76a9fc
+		summarizeBy: none
+		sourceColumn: e2e_test_description
+
+		annotation SummarizationSetBy = Automatic
+
+	partition e2e_test = m
+		mode: import
+		source = ```
+				let
+				    Source = Value.NativeQuery(GoogleBigQuery.Database(){[Name="cs-maestro-insights-poc-cc07"]}[Data], 
+				    "SELECT
+				    end_to_end_test_company_id,
+				    rapid_response_environment_id,
+				    account_id,
+				    stage,
+				    company_id,
+				    environment,
+				    LOWER(data_server_name) as data_server_name,
+				    CASE 
+				        WHEN is_server_active = TRUE THEN 'Yes'
+				        WHEN is_server_active = FALSE THEN 'No'
+				        ELSE 'Unknown'  
+				    END AS is_server_active,
+				    data_center,
+				    e2e_test_url,
+				    is_sla,
+				    case
+				           when count(data_server_name) over (partition by company_id) > 1
+				           and is_server_active then true
+				          else false
+				    end as is_failover,
+				    regexp_extract(e2e_test_url, r'https://([a-zA-Z0-9.-]+)') as extracted_domain,
+				    e2e_test_description
+				
+				FROM
+				  cs-maestro-insights-poc-cc07.prod_staging.stg_salesforce__e2e_test
+				WHERE is_deleted <> TRUE", null, [EnableFolding=true])
+				in
+				    Source
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,36 @@
+table cf7cb1e6-bd5c-4a86-858c-59d741c1b03c
+	isHidden
+	systemManaged
+
+	column case_date_opened
+		dataType: dateTime
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: case.date_opened
+
+	column 1
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseTable: case
+
+	partition Partition = inferred
+		mode: import
+
+	annotation activeFrequency = 107
+
+	annotation activeQueries = 1
+
+	annotation relativeGain(%) = 424.25392045510893
+
+	annotation relativeLift(%) = 55.349177953035188
+
+	annotation relativeSize(%) = 13.046238416291029
+
+	annotation estimatedCardinality(Krows) = 5.691
+
+	annotation avoidQueryHints = false
+

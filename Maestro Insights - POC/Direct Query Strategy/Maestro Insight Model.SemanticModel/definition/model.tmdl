@@ -1,0 +1,38 @@
+model Model
+	culture: en-CA
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-CA
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.141.1558.0 (25.03)+75b5f06a991f8f8a8a4d6b6fcd0f66e1ec2d6fdc
+
+annotation PBI_QueryOrder = ["Calendar","case","on_demand_downtime","on_demand_downtime_environment","rapid_response_environment","account","Key Measure","e2e_test","memory_analysis","scheduled_task_monitor","account_active","Time","kinaxis_server_feature_tracker"]
+
+ref table Calendar
+ref table case
+ref table on_demand_downtime
+ref table on_demand_downtime_environment
+ref table rapid_response_environment
+ref table account
+ref table 'Key Measure'
+ref table e2e_test
+ref table memory_analysis
+ref table scheduled_task_monitor
+ref table account_active
+ref table Time
+ref table kinaxis_server_feature_tracker
+ref table cf7cb1e6-bd5c-4a86-858c-59d741c1b03c
+ref table 741be842-f6ec-45a7-8242-7efc678043a4
+ref table beb8af19-19d4-45f2-80b3-c160521c955b
+ref table b14bb377-51b5-4c95-9da2-2d25ec9e4411
+ref table 106c5270-04ed-4d4e-8c13-8ee0a52e35ed
+ref table 5a5fcce7-61f9-48f8-b8d0-b64119de8cb5
+ref table aa8f6e94-656d-4735-8526-ea68e104310e
+ref table 33c55972-01a9-4ca1-abe4-308b0642c87b
+
+ref cultureInfo en-CA
+

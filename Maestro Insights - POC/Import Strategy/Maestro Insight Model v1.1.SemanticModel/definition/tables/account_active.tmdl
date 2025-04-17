@@ -1,0 +1,37 @@
+table account_active
+	lineageTag: 81071757-5a00-40f5-8570-9c8c86d481bb
+
+	column account_id
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: d4875956-2af7-4ee4-8562-d9b58a78a908
+		summarizeBy: none
+		sourceColumn: account_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_active
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 3c86d4cc-cd6e-48ff-b2f6-01e5b448c516
+		summarizeBy: none
+		sourceColumn: is_active
+
+		annotation SummarizationSetBy = Automatic
+
+	partition account_active = m
+		mode: import
+		source =
+				let
+				    Source = account,
+				    #"Removed Other Columns" = Table.SelectColumns(Source,{"account_id"}),
+				    #"Merged Queries" = Table.NestedJoin(#"Removed Other Columns", {"account_id"}, rapid_response_environment, {"customer"}, "rapid_response_environment", JoinKind.LeftOuter),
+				    #"Expanded rapid_response_environment" = Table.ExpandTableColumn(#"Merged Queries", "rapid_response_environment", {"is_active"}, {"rapid_response_environment.is_active"}),
+				    #"Grouped Rows" = Table.Group(#"Expanded rapid_response_environment", {"account_id"}, {{"is_active", each List.Max([rapid_response_environment.is_active]), type nullable text}})
+				in
+				    #"Grouped Rows"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

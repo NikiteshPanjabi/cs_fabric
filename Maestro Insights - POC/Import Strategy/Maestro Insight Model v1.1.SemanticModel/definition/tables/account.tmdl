@@ -1,0 +1,51 @@
+table account
+	lineageTag: 127989d2-711d-4d9a-9235-10ec93585e7f
+
+	column account_id
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 5c3b8cef-5d77-4d11-9a0e-6a9967b92141
+		summarizeBy: none
+		sourceColumn: account_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column company_name
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 867574a8-dc2b-42fd-abcf-c9a3b78fd2b2
+		summarizeBy: none
+		sourceColumn: company_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_type
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 93d4a422-c37d-419e-b450-0d575e86f093
+		summarizeBy: none
+		sourceColumn: account_type
+
+		annotation SummarizationSetBy = Automatic
+
+	partition account = m
+		mode: import
+		source = ```
+				let
+				    Source = Value.NativeQuery(GoogleBigQuery.Database(){[Name="cs-maestro-insights-poc-cc07"]}[Data], 
+				    "SELECT
+				    account_id,
+				    company_name,
+				    account_type
+				
+				FROM
+				  cs-maestro-insights-poc-cc07.prod_staging.stg_salesforce__account
+				WHERE is_deleted <> TRUE", null, [EnableFolding=true])
+				in
+				    Source
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

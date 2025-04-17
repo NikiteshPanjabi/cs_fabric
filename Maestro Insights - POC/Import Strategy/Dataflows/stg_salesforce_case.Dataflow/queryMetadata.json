@@ -1,0 +1,91 @@
+{
+  "formatVersion": "202409",
+  "lastModified": null,
+  "editingSession": {
+    "computeEngineSettings": {},
+    "editingSessionMashup": {
+      "mashupName": "stg_salesforce_case",
+      "queryGroups": [],
+      "documentLocale": "en-GB",
+      "gatewayObjectId": "86039557-3f29-4104-964c-ab66e9a1fa5a",
+      "queriesMetadata": {
+        "Case": {
+          "queryId": "5552d5bc-6ee8-419c-8a3c-8bd5233e6eb2",
+          "queryName": "Case",
+          "queryGroupId": null,
+          "entityName": null,
+          "lastKnownIsCalculatedEntity": null,
+          "lastKnownIsLinkedEntity": null,
+          "lastKnownIsParameter": null,
+          "isHidden": false,
+          "lastKnownResultTypeName": null,
+          "loadEnabled": true,
+          "fieldsMetadata": {},
+          "deleteExistingDataOnLoad": false,
+          "hostProperties": {},
+          "jsonOutputDestinations": null,
+          "bindToDefaultOutputDestination": null,
+          "jsonIncrementalRefreshSettings": null
+        }
+      },
+      "connectionOverrides": [
+        {
+          "path": "GoogleBigQuery",
+          "kind": "GoogleBigQuery",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"86039557-3f29-4104-964c-ab66e9a1fa5a\",\"DatasourceId\":\"39f36370-51ef-4f26-844e-c920aa764618\"}",
+          "credentialDetails": {},
+          "connectionParameters": {},
+          "privacyGroup": "Organizational"
+        },
+        {
+          "path": "Lakehouse",
+          "kind": "Lakehouse",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"86039557-3f29-4104-964c-ab66e9a1fa5a\",\"DatasourceId\":\"4d0a5a03-b0f7-4e7e-93fb-affd63d08d3d\"}",
+          "credentialDetails": {},
+          "connectionParameters": {},
+          "privacyGroup": "None"
+        },
+        {
+          "path": "Warehouse",
+          "kind": "Warehouse",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"86039557-3f29-4104-964c-ab66e9a1fa5a\",\"DatasourceId\":\"7b9365d2-3ee2-42cc-8c8d-de6b96440529\"}",
+          "credentialDetails": {},
+          "connectionParameters": {},
+          "privacyGroup": "None"
+        }
+      ],
+      "trustedConnections": [
+        {
+          "path": "Lakehouse",
+          "kind": "Lakehouse",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"86039557-3f29-4104-964c-ab66e9a1fa5a\",\"DatasourceId\":\"4d0a5a03-b0f7-4e7e-93fb-affd63d08d3d\"}",
+          "credentialDetails": {},
+          "connectionParameters": {},
+          "privacyGroup": "None"
+        },
+        {
+          "path": "Warehouse",
+          "kind": "Warehouse",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"86039557-3f29-4104-964c-ab66e9a1fa5a\",\"DatasourceId\":\"7b9365d2-3ee2-42cc-8c8d-de6b96440529\"}",
+          "credentialDetails": {},
+          "connectionParameters": {},
+          "privacyGroup": "None"
+        }
+      ],
+      "useHostConnectionProvider": false,
+      "fastCombine": false,
+      "allowNativeQueries": true,
+      "skipAutomaticTypeAndHeaderDetection": false,
+      "hostProperties": {
+        "dataflowRefreshOutputFileFormat": "Parquet",
+        "enableDateTimeFieldsForStaging": "true",
+        "enablePublishWithoutLoadedQueries": "true"
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+table 106c5270-04ed-4d4e-8c13-8ee0a52e35ed
+	isHidden
+	systemManaged
+
+	column scheduled_task_monitor_host_name
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: scheduled_task_monitor.host_name
+
+	column scheduled_task_monitor_scheduled_command
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: scheduled_task_monitor.scheduled_command
+
+	column scheduled_task_monitor_schedule_day
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: scheduled_task_monitor.schedule_day
+
+	column scheduled_task_monitor_scheduled_timezone
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: scheduled_task_monitor.scheduled_timezone
+
+	column scheduled_task_monitor_scheduled_earliest
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: scheduled_task_monitor.scheduled_earliest
+
+	column scheduled_task_monitor_scheduled_status
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: scheduled_task_monitor.scheduled_status
+
+	column 6
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseTable: scheduled_task_monitor
+
+	partition Partition = inferred
+		mode: import
+
+	annotation activeFrequency = 444
+
+	annotation activeQueries = 7
+
+	annotation relativeGain(%) = 20.158278163675753
+
+	annotation relativeLift(%) = 2.534093516328686
+
+	annotation relativeSize(%) = 12.570981984438534
+
+	annotation estimatedCardinality(Krows) = 2.274
+
+	annotation avoidQueryHints = false
+

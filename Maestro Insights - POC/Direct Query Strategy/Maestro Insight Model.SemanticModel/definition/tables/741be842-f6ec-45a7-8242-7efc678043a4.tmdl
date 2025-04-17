@@ -1,0 +1,67 @@
+table 741be842-f6ec-45a7-8242-7efc678043a4
+	isHidden
+	systemManaged
+
+	column memory_analysis_host_name
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: memory_analysis.host_name
+
+	column memory_analysis_namespace
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: memory_analysis.namespace
+
+	column 2
+		dataType: double
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: sum
+			baseColumn: memory_analysis.avg_chains
+
+	column 3
+		dataType: double
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: sum
+			baseColumn: memory_analysis.num_chains
+
+	column 4
+		dataType: double
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: sum
+			baseColumn: memory_analysis.mem_usage_mb
+
+	column 5
+		dataType: double
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: sum
+			baseColumn: memory_analysis.node_count
+
+	partition Partition = inferred
+		mode: import
+
+	annotation activeFrequency = 40
+
+	annotation activeQueries = 3
+
+	annotation relativeGain(%) = 175.51408224170814
+
+	annotation relativeLift(%) = 22.267345137034887
+
+	annotation relativeSize(%) = 12.686927939132289
+
+	annotation estimatedCardinality(Krows) = 3.115
+
+	annotation avoidQueryHints = false
+

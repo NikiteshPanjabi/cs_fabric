@@ -1,0 +1,106 @@
+table on_demand_downtime
+	lineageTag: c09c693c-15bb-43be-bcd2-2f73032ff8b4
+
+	column on_demand_downtime_id
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 58a35472-7cd2-4382-91cd-682bdc57b7b6
+		summarizeBy: none
+		sourceColumn: on_demand_downtime_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column on_demand_downtime_name
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: d267e14b-827f-4329-93d5-b827dfcca9c3
+		summarizeBy: none
+		sourceColumn: on_demand_downtime_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column end_date_time
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: faa57e22-48aa-47ce-bccd-db899b4d8fd8
+		summarizeBy: none
+		sourceColumn: end_date_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column start_date_time
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 7d62aebc-0f68-4928-82ab-b29c7590ef87
+		summarizeBy: none
+		sourceColumn: start_date_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_at
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 6113f26f-82a4-4980-876e-ba4a1ccf8e89
+		summarizeBy: none
+		sourceColumn: created_at
+
+		annotation SummarizationSetBy = Automatic
+
+	column downtime_minutes
+		dataType: double
+		sourceProviderType: double
+		lineageTag: 5b2599d4-3a49-403b-8ad4-13fb8bd46535
+		summarizeBy: none
+		sourceColumn: downtime_minutes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column downtime_type
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 595583d8-88d1-4c4d-9241-a019039ae2e7
+		summarizeBy: none
+		sourceColumn: downtime_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column impacting_sla_uptime
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 6ac81927-a69b-4941-bd7d-753713ff2474
+		summarizeBy: none
+		sourceColumn: impacting_sla_uptime
+
+		annotation SummarizationSetBy = Automatic
+
+	partition on_demand_downtime = m
+		mode: import
+		source = ```
+				let
+				    Source = Value.NativeQuery(GoogleBigQuery.Database(){[Name="cs-maestro-insights-poc-cc07"]}[Data], 
+				    "SELECT
+				    on_demand_downtime_id,
+				    on_demand_downtime_name,
+				    impacting_sla_uptime,
+				    end_date_time,
+				    start_date_time,
+				    created_at,
+				    downtime_minutes,
+				    downtime_type
+				
+				FROM
+				  cs-maestro-insights-poc-cc07.prod_staging.stg_salesforce__on_demand_downtime
+				WHERE is_deleted <> TRUE", null, [EnableFolding=true])
+				in
+				    Source
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

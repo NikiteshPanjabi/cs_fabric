@@ -1,0 +1,128 @@
+table kinaxis_server_feature_tracker
+	lineageTag: 22f663d5-8a47-46aa-a436-5423d7bd9bd1
+
+	column host_name
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 019f6d79-9642-415f-9a6d-ae415413f7c5
+		summarizeBy: none
+		sourceColumn: host_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column service_name
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 54cc1033-29bd-4a28-9abb-f20030e88503
+		summarizeBy: none
+		sourceColumn: service_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column feature_action
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 07774562-5da3-410a-a853-b827470a0845
+		summarizeBy: none
+		sourceColumn: feature_action
+
+		annotation SummarizationSetBy = Automatic
+
+	column feature_name
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: da3955c6-9eee-4727-9899-ae2a24641248
+		summarizeBy: none
+		sourceColumn: feature_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column feature_count
+		dataType: double
+		sourceProviderType: decimal(38, 9)
+		lineageTag: 77982eec-c07b-4f2d-ba51-1a4ef5a79c4e
+		summarizeBy: sum
+		sourceColumn: feature_count
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column feature_detail
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: 079786c8-e5e7-456f-9724-28f9022d0ef8
+		summarizeBy: none
+		sourceColumn: feature_detail
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_date
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		lineageTag: 0e3a384c-2a0e-4c6e-a67f-318e94ed03e4
+		summarizeBy: none
+		sourceColumn: created_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column created_time
+		dataType: dateTime
+		formatString: Long Time
+		sourceProviderType: time
+		lineageTag: 346cb2a6-42a4-4a86-8134-e9c853c14df7
+		summarizeBy: none
+		sourceColumn: created_time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column value
+		dataType: string
+		sourceProviderType: nvarchar(16384)
+		lineageTag: d11c49fa-1d84-4207-a7af-97a84be4c366
+		summarizeBy: none
+		sourceColumn: value
+
+		annotation SummarizationSetBy = Automatic
+
+	partition kinaxis_server_feature_tracker = m
+		mode: import
+		source = ```
+				let
+				    Source = Value.NativeQuery(
+				        GoogleBigQuery.Database(){[Name="cs-maestro-insights-poc-cc07"]}[Data], 
+				        "
+				        SELECT
+				            LOWER(host_name) as host_name,
+				            service_name,
+				            DATE(created_at) AS created_date,
+				            TIME(created_at) AS created_time,
+				            feature_action,
+				            feature_name,
+				            feature_count,
+				            feature_detail,
+				            IF(
+				                ARRAY_LENGTH(SPLIT(SPLIT(feature_detail, ';')[SAFE_OFFSET(0)], '(')) > 1,
+				                SPLIT(SPLIT(feature_detail, ';')[SAFE_OFFSET(0)], '(')[SAFE_OFFSET(1)],
+				                SPLIT(feature_detail, ';')[SAFE_OFFSET(0)]
+				            ) AS value
+				
+				        FROM
+				            cs-maestro-insights-poc-cc07.prod_intermediate.int_kinaxis_server_feature_tracker
+				        ", 
+				        null, 
+				        [EnableFolding=true]
+				    )
+				in
+				    Source
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
