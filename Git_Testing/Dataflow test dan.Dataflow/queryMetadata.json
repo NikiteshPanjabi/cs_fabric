@@ -27,24 +27,6 @@
           "jsonOutputDestinations": null,
           "bindToDefaultOutputDestination": null,
           "jsonIncrementalRefreshSettings": null
-        },
-        "Query (2)": {
-          "queryId": "ca810a88-bcc2-4f4b-8779-09fb52163c49",
-          "queryName": "Query (2)",
-          "queryGroupId": null,
-          "entityName": null,
-          "lastKnownIsCalculatedEntity": null,
-          "lastKnownIsLinkedEntity": null,
-          "lastKnownIsParameter": null,
-          "isHidden": false,
-          "lastKnownResultTypeName": null,
-          "loadEnabled": true,
-          "fieldsMetadata": {},
-          "deleteExistingDataOnLoad": false,
-          "hostProperties": {},
-          "jsonOutputDestinations": null,
-          "bindToDefaultOutputDestination": null,
-          "jsonIncrementalRefreshSettings": null
         }
       },
       "connectionOverrides": [
