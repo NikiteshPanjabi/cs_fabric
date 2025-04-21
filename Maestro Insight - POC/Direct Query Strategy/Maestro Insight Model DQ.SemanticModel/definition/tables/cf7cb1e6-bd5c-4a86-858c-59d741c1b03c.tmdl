@@ -24,11 +24,11 @@ table cf7cb1e6-bd5c-4a86-858c-59d741c1b03c
 
 	annotation activeQueries = 1
 
-	annotation relativeGain(%) = 115.39618824511432
+	annotation relativeGain(%) = 115.41335640380107
 
-	annotation relativeLift(%) = 59.487023695184739
+	annotation relativeLift(%) = 59.495874054673962
 
-	annotation relativeSize(%) = 51.550250142429057
+	annotation relativeSize(%) = 51.550250255710004
 
 	annotation estimatedCardinality(Krows) = 5.691
 
