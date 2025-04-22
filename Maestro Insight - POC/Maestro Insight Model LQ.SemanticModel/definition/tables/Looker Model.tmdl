@@ -1,0 +1,2148 @@
+table 'Looker Model'
+	lineageTag: 25b6e83a-f9e7-451a-b67a-f77859ba72b3
+
+	column 'Date Filter'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 01 - Parameter
+		lineageTag: ccfc4e1e-8bb2-47bc-8e75-d807e3e7acaf
+		summarizeBy: none
+		sourceColumn: Date Filter
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Is Latest (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 01 - Parameter
+		lineageTag: fb218e21-1aeb-4c50-b6ed-0091a76cd173
+		summarizeBy: none
+		sourceColumn: Is Latest (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Scheduled Task Command'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 01 - Parameter
+		lineageTag: 06eae9bd-7157-4f9c-9694-1ea75f438869
+		summarizeBy: none
+		sourceColumn: Scheduled Task Command
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.E2E Test.Account'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 93cb980c-6d9b-4b3a-9f9d-e1fd0d832443
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.E2E Test.Account
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Account.Account Tier'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: ff891f6c-4662-4e9a-bfe4-929313d6d4d2
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Account.Account Tier
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Account.Account Type'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 6766ecf9-93b6-484c-a103-3f8e197791bd
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Account.Account Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.On Demand Downtime.Activity'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 0b564b34-1460-48fc-a07d-8afe47dcb741
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.On Demand Downtime.Activity
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Case.Actual Date Closed Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 02 - Salesforce
+		lineageTag: be605e08-0820-4f28-8aaa-ec2d340f643e
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Case.Actual Date Closed Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '02 - Salesforce.dim.Case.Actual Date Opened Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 02 - Salesforce
+		lineageTag: 0b8fc573-bcd5-49c1-8d31-daad7fd2a6bf
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Case.Actual Date Opened Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '02 - Salesforce.dim.Rapid Response Environment.Build'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 542b1640-0325-4c06-bd7a-c00edec4c93f
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Rapid Response Environment.Build
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Rapid Response Environment.CPU'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 02 - Salesforce
+		lineageTag: df298cc0-d9f2-4ae2-91a7-bb57cbf552d9
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.dim.Rapid Response Environment.CPU
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '02 - Salesforce.dim.Case.Case Link'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: d99c6768-b028-4f46-869b-92d217fccecf
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Case.Case Link
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Case.Case Number'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: a939d5a8-1afe-4918-b4da-b2cdad716d27
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Case.Case Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Case.Case Number with Subject'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 190dbe2f-8b7e-417c-add3-f73643e9cc63
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Case.Case Number with Subject
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Case.Case Reason'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 23380592-2b68-4712-99b0-d7617e26612a
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Case.Case Reason
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Case.Case Status'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: c5e3c1e7-bf58-422d-9b50-16db9524810e
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Case.Case Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Case.Case Subject'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 44ddbff4-cab0-431b-b30a-eec0cdbd7fd8
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Case.Case Subject
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Case.Closed Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 02 - Salesforce
+		lineageTag: 0dd6a85a-ac0b-45cd-82d4-26fe1047d967
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Case.Closed Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '02 - Salesforce.dim.E2E Test.Company ID'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 7b6ecd02-8f6e-46ca-b04c-31df903cd1e3
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.E2E Test.Company ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Rapid Response Environment.Company ID'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: cc685044-ecf3-4bf1-9294-9cab325beaae
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Rapid Response Environment.Company ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Account.Company Name'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: a417d417-095a-424d-89d7-c3bd39ddf3c2
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Account.Company Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Case.Created Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 02 - Salesforce
+		lineageTag: cdb45087-960c-4bd7-84a1-f97082bff63e
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Case.Created Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '02 - Salesforce.dim.E2E Test.Data Center'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 5a568e0d-44b6-45a7-b0b9-c205c8024cf5
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.E2E Test.Data Center
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Account.Data Restricted Type'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 06600438-cb86-4555-9bfa-e1441e0eccf9
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Account.Data Restricted Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.E2E Test.Description'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 3fe64975-9f68-4747-942d-11dba8286eb3
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.E2E Test.Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.On Demand Downtime Environment.Downtime Environment Status'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: e5725b3b-4c64-48e7-87b8-7ec281ffdc49
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.On Demand Downtime Environment.Downtime Environment Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.On Demand Downtime.Downtime Minutes'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 02 - Salesforce
+		lineageTag: a2d998d0-47eb-4be8-8b6a-16da2fc6bae1
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.dim.On Demand Downtime.Downtime Minutes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '02 - Salesforce.dim.On Demand Downtime Environment.Downtime Minutes'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 02 - Salesforce
+		lineageTag: 5d04aecd-9387-479e-8a34-5512cfaa5d2b
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.dim.On Demand Downtime Environment.Downtime Minutes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '02 - Salesforce.dim.On Demand Downtime.Downtime Type'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 04a23929-9d14-4eb2-84a5-637007e061b9
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.On Demand Downtime.Downtime Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.On Demand Downtime Environment.End Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 02 - Salesforce
+		lineageTag: 4bc9e834-c2e3-4bc7-9be6-3f5c75183127
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.On Demand Downtime Environment.End Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '02 - Salesforce.dim.On Demand Downtime Environment.End Time'
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		displayFolder: 02 - Salesforce
+		lineageTag: 60f3e9fd-0a26-4e20-8fc7-340f5526b4f2
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.On Demand Downtime Environment.End Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.E2E Test.Environment'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 5fb7aec6-8851-431f-820c-74c44da392a3
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.E2E Test.Environment
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.E2E Test.Gateway URL'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 553eca02-5df9-47cb-9e47-47d6727625cd
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.E2E Test.Gateway URL
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Case.Internal Status'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 6e78d090-6165-47cd-b5d0-170ff8de474d
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Case.Internal Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.On Demand Downtime.Is Customer Notified (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 02 - Salesforce
+		lineageTag: 85bd0f27-d487-4e1f-a8f0-0d97127bdb87
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.On Demand Downtime.Is Customer Notified (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.On Demand Downtime.Is Deleted (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 02 - Salesforce
+		lineageTag: 7b1f3dd4-b551-4085-a0e9-83b2bb306a83
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.On Demand Downtime.Is Deleted (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Case.Is Deleted (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 02 - Salesforce
+		lineageTag: 437bd5e1-e16b-4865-8fc0-7b11affd496c
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Case.Is Deleted (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.E2E Test.Is Failover (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 02 - Salesforce
+		lineageTag: 3d1c8f67-75ef-42b1-a57f-a1e6fd11f11d
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.E2E Test.Is Failover (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.On Demand Downtime.Is Impacting SLA Uptime'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 6e545aea-b1ed-44bb-bad9-1a26e835ddf2
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.On Demand Downtime.Is Impacting SLA Uptime
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Account.Is Integration Platform (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 02 - Salesforce
+		lineageTag: 3fe2316c-89b0-465b-9866-9b38806b3410
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Account.Is Integration Platform (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.E2E Test.Is Mismatch (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 02 - Salesforce
+		lineageTag: 08e51f9e-5d6b-48d6-b8f6-b8e831744147
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.E2E Test.Is Mismatch (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Rapid Response Environment.Is Rapid Response Environment Failover (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 02 - Salesforce
+		lineageTag: 3b252762-2b6f-469e-ad99-54085dec7bac
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Rapid Response Environment.Is Rapid Response Environment Failover (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.E2E Test.Is Server Active (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 02 - Salesforce
+		lineageTag: c79bc548-78af-492b-88ea-ade88e7bd286
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.E2E Test.Is Server Active (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.E2E Test.Is Sla (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 02 - Salesforce
+		lineageTag: 07493cf3-1f15-4d24-a081-a574b69d7fbd
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.E2E Test.Is Sla (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.RR Release.Month to EOL'
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		displayFolder: 02 - Salesforce
+		lineageTag: 9ddf06da-a2c6-4786-9a34-35004b1c73ab
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.dim.RR Release.Month to EOL
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Case.Priority'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 5da3b453-6233-4937-a81d-4c7b184d8f51
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Case.Priority
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Rapid Response Environment.Production'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: b0da8e77-ad40-480b-ae90-a7bc291bb438
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Rapid Response Environment.Production
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.RR Release.RR Release Name'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: f2b904fc-6aa0-4675-8b03-c30bf1b76543
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.RR Release.RR Release Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Rapid Response Environment.Ram'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 02 - Salesforce
+		lineageTag: 7f4bbdd7-1526-43e2-bb08-fdbe77d729b6
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.dim.Rapid Response Environment.Ram
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '02 - Salesforce.dim.Rapid Response Environment.Rapid Response Environment Name'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 9f947cc8-586f-4b5b-8af5-9f65ec2e2c7e
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Rapid Response Environment.Rapid Response Environment Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Rapid Response Environment.Rapid Response Environment Type'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: ebce43fc-7d69-4e17-83c4-41ab3e537b82
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Rapid Response Environment.Rapid Response Environment Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.RR Release.Release Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 02 - Salesforce
+		lineageTag: f2e99973-e265-42ea-a681-92d1610ef94c
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.RR Release.Release Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '02 - Salesforce.dim.On Demand Downtime Environment.Rr Enviornment'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 2ce4c345-759c-4988-8692-002f4e314403
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.On Demand Downtime Environment.Rr Enviornment
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Rapid Response Environment.SU Level'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 65545ff9-6d7c-49de-af35-65377d4d4219
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Rapid Response Environment.SU Level
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.E2E Test.Server Name'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 67eae956-bf6b-4a89-bf08-75d615bccdb6
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.E2E Test.Server Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Rapid Response Environment.Size'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 85de4851-f929-4c27-a2ab-cff7b3049197
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Rapid Response Environment.Size
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.E2E Test.Stage'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 9f3fa6e5-8e36-41b8-9056-76cc8c02eb1e
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.E2E Test.Stage
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.On Demand Downtime.Start Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 02 - Salesforce
+		lineageTag: d1d46a39-3210-4cba-a95f-87629c75e8f3
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.On Demand Downtime.Start Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '02 - Salesforce.dim.On Demand Downtime Environment.Start Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 02 - Salesforce
+		lineageTag: 5a63b4d0-8d72-4001-a4a4-d4e221fd10c7
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.On Demand Downtime Environment.Start Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '02 - Salesforce.dim.On Demand Downtime Environment.Start Time'
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		displayFolder: 02 - Salesforce
+		lineageTag: 93b708ac-2395-41d0-9a11-e1cec9415321
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.On Demand Downtime Environment.Start Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.RR Release.Status'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: 6c1695a0-eb20-4b49-b93e-bba7ca56cc88
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.RR Release.Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.Case.Support Case Status'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: c55466f0-aee7-4309-9560-64ba717f1738
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Case.Support Case Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.On Demand Downtime Environment.Total Hours in Quarter'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 02 - Salesforce
+		lineageTag: 2a3d48dc-3f8c-49ed-9f14-75aa527d46e6
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.dim.On Demand Downtime Environment.Total Hours in Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '02 - Salesforce.dim.Rapid Response Environment.Upgrade Status'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: a4061e44-5997-420e-a4c8-2afe93a5ee2a
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.Rapid Response Environment.Upgrade Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.dim.E2E Test.View License Key Link'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 02 - Salesforce
+		lineageTag: fa916958-9a57-425e-946a-02f69ff78a27
+		summarizeBy: none
+		sourceColumn: 02 - Salesforce.dim.E2E Test.View License Key Link
+
+		annotation SummarizationSetBy = Automatic
+
+	column '03 - Scheduled Task Monitor.dim.Created Date.Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 03 - Scheduled Task Monitor
+		lineageTag: ad7a45d1-0ef9-47af-8796-cc5fc9dbc9fd
+		summarizeBy: none
+		sourceColumn: 03 - Scheduled Task Monitor.dim.Created Date.Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '03 - Scheduled Task Monitor.dim.Created Date.Time'
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		displayFolder: 03 - Scheduled Task Monitor
+		lineageTag: a838b578-cd6e-4a96-9410-d9cbed58f421
+		summarizeBy: none
+		sourceColumn: 03 - Scheduled Task Monitor.dim.Created Date.Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column '03 - Scheduled Task Monitor.dim.End Time'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 03 - Scheduled Task Monitor
+		lineageTag: c8618a83-e8de-498b-bcc7-570becc407e2
+		summarizeBy: none
+		sourceColumn: 03 - Scheduled Task Monitor.dim.End Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column '03 - Scheduled Task Monitor.dim.Schedule Day'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 03 - Scheduled Task Monitor
+		lineageTag: e646d9b2-1033-4451-a982-3694a15f0448
+		summarizeBy: none
+		sourceColumn: 03 - Scheduled Task Monitor.dim.Schedule Day
+
+		annotation SummarizationSetBy = Automatic
+
+	column '03 - Scheduled Task Monitor.dim.Scheduled Command'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 03 - Scheduled Task Monitor
+		lineageTag: b8e459f2-ddbc-445f-816a-5a7ddca7f4f5
+		summarizeBy: none
+		sourceColumn: 03 - Scheduled Task Monitor.dim.Scheduled Command
+
+		annotation SummarizationSetBy = Automatic
+
+	column '03 - Scheduled Task Monitor.dim.Scheduled Earliest'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 03 - Scheduled Task Monitor
+		lineageTag: f1c605ce-afb7-425c-931a-4eaae3091732
+		summarizeBy: none
+		sourceColumn: 03 - Scheduled Task Monitor.dim.Scheduled Earliest
+
+		annotation SummarizationSetBy = Automatic
+
+	column '03 - Scheduled Task Monitor.dim.Scheduled Latest'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 03 - Scheduled Task Monitor
+		lineageTag: 4b1baafd-a011-4e90-b572-dd9ff8e28571
+		summarizeBy: none
+		sourceColumn: 03 - Scheduled Task Monitor.dim.Scheduled Latest
+
+		annotation SummarizationSetBy = Automatic
+
+	column '03 - Scheduled Task Monitor.dim.Scheduled Status'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 03 - Scheduled Task Monitor
+		lineageTag: ce73c893-c0ac-4afe-a1f2-94faa8a65c2f
+		summarizeBy: none
+		sourceColumn: 03 - Scheduled Task Monitor.dim.Scheduled Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column '03 - Scheduled Task Monitor.dim.Scheduled Timezone'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 03 - Scheduled Task Monitor
+		lineageTag: 26dd206d-5141-41ea-b3f9-ea8da0b800f0
+		summarizeBy: none
+		sourceColumn: 03 - Scheduled Task Monitor.dim.Scheduled Timezone
+
+		annotation SummarizationSetBy = Automatic
+
+	column '03 - Scheduled Task Monitor.dim.Start Time'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 03 - Scheduled Task Monitor
+		lineageTag: 3ab0a5f8-c630-4c01-9b45-abb781c27e1d
+		summarizeBy: none
+		sourceColumn: 03 - Scheduled Task Monitor.dim.Start Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column '03 - Scheduled Task Monitor.dim.Status'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 03 - Scheduled Task Monitor
+		lineageTag: 2bef8679-8265-4caa-88d5-53cba7677077
+		summarizeBy: none
+		sourceColumn: 03 - Scheduled Task Monitor.dim.Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column '03 - Scheduled Task Monitor.dim.System Task Name'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 03 - Scheduled Task Monitor
+		lineageTag: a286bfaf-90c3-4138-9fd4-fc778070ed5c
+		summarizeBy: none
+		sourceColumn: 03 - Scheduled Task Monitor.dim.System Task Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '04 - Operation Internal.dim.Created Date.Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 04 - Operation Internal
+		lineageTag: b7810332-3d8a-4228-bb12-66d36790bcf1
+		summarizeBy: none
+		sourceColumn: 04 - Operation Internal.dim.Created Date.Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '04 - Operation Internal.dim.Created Date.Time'
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		displayFolder: 04 - Operation Internal
+		lineageTag: 0c68c62a-b397-4838-838d-3505e0da0d04
+		summarizeBy: none
+		sourceColumn: 04 - Operation Internal.dim.Created Date.Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column '04 - Operation Internal.dim.Operation Name'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 04 - Operation Internal
+		lineageTag: 5b08d79c-2ae9-4024-b7d1-feecf6ade435
+		summarizeBy: none
+		sourceColumn: 04 - Operation Internal.dim.Operation Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '04 - Operation Internal.dim.Status'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 04 - Operation Internal
+		lineageTag: 8ffa1d5d-691c-44ea-918a-cde459345e58
+		summarizeBy: none
+		sourceColumn: 04 - Operation Internal.dim.Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column '05 - SSO Enabled Plugin.dim.Certificate Source Type'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 05 - SSO Enabled Plugin
+		lineageTag: 400a8d1e-f602-4361-9624-53327571406e
+		summarizeBy: none
+		sourceColumn: 05 - SSO Enabled Plugin.dim.Certificate Source Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column '05 - SSO Enabled Plugin.dim.Created Date.Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 05 - SSO Enabled Plugin
+		lineageTag: d5961eb2-1126-471a-8b4d-8b94ed1c6f58
+		summarizeBy: none
+		sourceColumn: 05 - SSO Enabled Plugin.dim.Created Date.Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '05 - SSO Enabled Plugin.dim.Created Date.Time'
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		displayFolder: 05 - SSO Enabled Plugin
+		lineageTag: 0783db20-467b-4aab-9be3-8c83c567825f
+		summarizeBy: none
+		sourceColumn: 05 - SSO Enabled Plugin.dim.Created Date.Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column '05 - SSO Enabled Plugin.dim.Is Sso Enabled'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 05 - SSO Enabled Plugin
+		lineageTag: 8944262d-d13f-4227-af8c-326235cd7011
+		summarizeBy: none
+		sourceColumn: 05 - SSO Enabled Plugin.dim.Is Sso Enabled
+
+		annotation SummarizationSetBy = Automatic
+
+	column '05 - SSO Enabled Plugin.dim.Sso Service Name'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 05 - SSO Enabled Plugin
+		lineageTag: ab678577-9b21-4c4b-8e6f-1585a0d50032
+		summarizeBy: none
+		sourceColumn: 05 - SSO Enabled Plugin.dim.Sso Service Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '05 - SSO Enabled Plugin.dim.Status'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 05 - SSO Enabled Plugin
+		lineageTag: 22277212-b771-4085-bef0-1e030102da81
+		summarizeBy: none
+		sourceColumn: 05 - SSO Enabled Plugin.dim.Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column '06 - Operation Stats Heartbeat.dim.Created Date.Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 06 - Operation Stats Heartbeat
+		lineageTag: 4db57bb1-e094-4da3-a603-83368fb5c985
+		summarizeBy: none
+		sourceColumn: 06 - Operation Stats Heartbeat.dim.Created Date.Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '06 - Operation Stats Heartbeat.dim.Created Date.Time'
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		displayFolder: 06 - Operation Stats Heartbeat
+		lineageTag: 9e6da31a-0cd7-4303-972e-c477f4cfa771
+		summarizeBy: none
+		sourceColumn: 06 - Operation Stats Heartbeat.dim.Created Date.Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column '06 - Operation Stats Heartbeat.dim.Input Memory'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 06 - Operation Stats Heartbeat
+		lineageTag: f87f0b71-c8b2-4576-a0f1-73a25d091ef3
+		summarizeBy: sum
+		sourceColumn: 06 - Operation Stats Heartbeat.dim.Input Memory
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '06 - Operation Stats Heartbeat.dim.Input Memory Load'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 06 - Operation Stats Heartbeat
+		lineageTag: 66f1a4a5-7e0d-4fd9-8f28-689d2015a4be
+		summarizeBy: sum
+		sourceColumn: 06 - Operation Stats Heartbeat.dim.Input Memory Load
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '06 - Operation Stats Heartbeat.dim.Pagepool Memory Limit Mb'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 06 - Operation Stats Heartbeat
+		lineageTag: eb9ab49a-7d31-4bea-a5e6-d38860c7168a
+		summarizeBy: sum
+		sourceColumn: 06 - Operation Stats Heartbeat.dim.Pagepool Memory Limit Mb
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '07 - License Details.dim.Created Date.Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 07 - License Details
+		lineageTag: 376660ba-5b85-4482-a047-1aee30e26755
+		summarizeBy: none
+		sourceColumn: 07 - License Details.dim.Created Date.Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '07 - License Details.dim.Created Date.Time'
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		displayFolder: 07 - License Details
+		lineageTag: cffe6248-2080-49d7-a821-3f4e4f4cb90a
+		summarizeBy: none
+		sourceColumn: 07 - License Details.dim.Created Date.Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column '07 - License Details.dim.License Comment'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 07 - License Details
+		lineageTag: 8b1c5bd6-3de2-4845-a646-854f4369f85e
+		summarizeBy: none
+		sourceColumn: 07 - License Details.dim.License Comment
+
+		annotation SummarizationSetBy = Automatic
+
+	column '07 - License Details.dim.License Expiry'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 07 - License Details
+		lineageTag: 2de6b417-f44e-4adb-9748-5725eb636a36
+		summarizeBy: none
+		sourceColumn: 07 - License Details.dim.License Expiry
+
+		annotation SummarizationSetBy = Automatic
+
+	column '07 - License Details.dim.License Name'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 07 - License Details
+		lineageTag: b1980d01-2dc3-441e-81c5-87266ef2598e
+		summarizeBy: none
+		sourceColumn: 07 - License Details.dim.License Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '07 - License Details.dim.License Quantity'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 07 - License Details
+		lineageTag: cec05b1f-fb3a-4695-943a-59c8868750cb
+		summarizeBy: none
+		sourceColumn: 07 - License Details.dim.License Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column '07 - License Details.dim.License Value'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 07 - License Details
+		lineageTag: 92453728-4bfb-433d-a1a3-ae473b519c70
+		summarizeBy: none
+		sourceColumn: 07 - License Details.dim.License Value
+
+		annotation SummarizationSetBy = Automatic
+
+	column '08 - Embed Algorithm Summary.dim.Cache Hits Average'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: f62b6494-5659-4a45-bf04-0831c153a81a
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Cache Hits Average
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Cache Hits Max'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 9dc2e4d5-92d0-4050-bdc0-f21b09c75747
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Cache Hits Max
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Cache Hits Min'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 07770b2e-6174-4cdf-952e-15079279bce4
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Cache Hits Min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Count Algorithms'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 06135505-b514-4789-8b2f-0ce11c37b3e1
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Count Algorithms
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Count Calculations'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 67c8ac4d-271b-4cf3-954b-1033dd219dac
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Count Calculations
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Count Requests'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 745afa81-bd74-408f-8845-da90f33a4f73
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Count Requests
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Created Date.Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 321961e1-96aa-4c8c-bd8d-22e26f643611
+		summarizeBy: none
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Created Date.Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '08 - Embed Algorithm Summary.dim.Created Date.Time'
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 8655404a-39e8-4eac-abab-8fee71f3cb09
+		summarizeBy: none
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Created Date.Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column '08 - Embed Algorithm Summary.dim.Dependency Time Average'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: e35625c2-86fe-4449-b515-9cef04fc2b93
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Dependency Time Average
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Dependency Time Max'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 10718b0e-c0c0-4b4b-80ce-9bd41f583671
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Dependency Time Max
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Dependency Time Min'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: c9b44fc3-862d-4840-bf94-62608327910b
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Dependency Time Min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Is EA Active (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 951b149e-04b0-4a68-839a-e0c0d4518346
+		summarizeBy: none
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Is EA Active (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '08 - Embed Algorithm Summary.dim.Is EA Deployed (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: ccb985c9-dce6-4a1d-9c3e-4b878a3b1488
+		summarizeBy: none
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Is EA Deployed (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '08 - Embed Algorithm Summary.dim.Request Size Mb Average'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 22124e3f-0ce9-4dd5-ae78-cdf6651a3d7f
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Request Size Mb Average
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Request Size Mb Max'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 7da4dad4-4b4c-4464-bc74-5af243541d0c
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Request Size Mb Max
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Request Size Mb Min'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: ce7755e3-d993-4349-ab91-3f32fc0f7dd8
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Request Size Mb Min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Request Time S Average'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 866d3331-518f-42d2-b19b-00c717c3366c
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Request Time S Average
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Request Time S Max'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: a95d22c0-d34c-42b9-b995-6a68578a37a2
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Request Time S Max
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Request Time S Min'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 30d509eb-b14a-477a-be37-ca716369afdd
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Request Time S Min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Response Size Mb Average'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 3ec60a85-f3e9-4a78-802b-164a8e82a61b
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Response Size Mb Average
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Response Size Mb Max'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 1d870424-1d5c-48d7-9d1c-e0a1b044acbe
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Response Size Mb Max
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '08 - Embed Algorithm Summary.dim.Response Size Mb Min'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 08 - Embed Algorithm Summary
+		lineageTag: 05abfbd4-f46b-47d3-a8e4-73f1345c80f8
+		summarizeBy: sum
+		sourceColumn: 08 - Embed Algorithm Summary.dim.Response Size Mb Min
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '09 - Configuration Plugin.dim.Created Date.Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 09 - Configuration Plugin
+		lineageTag: ee1636b4-e026-4fbc-9051-ade77239ad24
+		summarizeBy: none
+		sourceColumn: 09 - Configuration Plugin.dim.Created Date.Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '09 - Configuration Plugin.dim.Created Date.Time'
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		displayFolder: 09 - Configuration Plugin
+		lineageTag: 68deb695-f551-49d4-80cc-510d27b9046b
+		summarizeBy: none
+		sourceColumn: 09 - Configuration Plugin.dim.Created Date.Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column '09 - Configuration Plugin.dim.Is Pluggable Debugging Enabled (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 09 - Configuration Plugin
+		lineageTag: d6190f3e-cebf-4cb1-81ba-7a2da2ac0a98
+		summarizeBy: none
+		sourceColumn: 09 - Configuration Plugin.dim.Is Pluggable Debugging Enabled (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '10 - Memory Analysis.dim.Avg Chains'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 10 - Memory Analysis
+		lineageTag: d33f33a9-9c53-4057-b016-6f0f212e6205
+		summarizeBy: sum
+		sourceColumn: 10 - Memory Analysis.dim.Avg Chains
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '10 - Memory Analysis.dim.Created Date.Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 10 - Memory Analysis
+		lineageTag: ec878343-a526-40f6-8b65-68ec08482f2b
+		summarizeBy: none
+		sourceColumn: 10 - Memory Analysis.dim.Created Date.Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '10 - Memory Analysis.dim.Created Date.Time'
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		displayFolder: 10 - Memory Analysis
+		lineageTag: 2912a166-a82e-4bc5-ab68-a618a5793294
+		summarizeBy: none
+		sourceColumn: 10 - Memory Analysis.dim.Created Date.Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column '10 - Memory Analysis.dim.Is Latest (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 10 - Memory Analysis
+		lineageTag: 546dee5a-993c-464a-84aa-8631de6fa966
+		summarizeBy: none
+		sourceColumn: 10 - Memory Analysis.dim.Is Latest (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '10 - Memory Analysis.dim.Max Chain'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 10 - Memory Analysis
+		lineageTag: 194796c6-fe4a-407a-85eb-a6a7162c35e0
+		summarizeBy: sum
+		sourceColumn: 10 - Memory Analysis.dim.Max Chain
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '10 - Memory Analysis.dim.Max ID'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 10 - Memory Analysis
+		lineageTag: d0281260-7c0b-4db7-abfd-49f4360bd42e
+		summarizeBy: count
+		sourceColumn: 10 - Memory Analysis.dim.Max ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '10 - Memory Analysis.dim.Mem Usage Mb'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 10 - Memory Analysis
+		lineageTag: 2d849a85-0c3f-47d3-b7d0-e50cba729715
+		summarizeBy: sum
+		sourceColumn: 10 - Memory Analysis.dim.Mem Usage Mb
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '10 - Memory Analysis.dim.Namespace'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 10 - Memory Analysis
+		lineageTag: ca4f9845-5cdd-4676-82e0-a093ae1ac107
+		summarizeBy: none
+		sourceColumn: 10 - Memory Analysis.dim.Namespace
+
+		annotation SummarizationSetBy = Automatic
+
+	column '10 - Memory Analysis.dim.Node Count'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 10 - Memory Analysis
+		lineageTag: b4f2c5a1-9628-4323-b9b9-b8d619c91345
+		summarizeBy: sum
+		sourceColumn: 10 - Memory Analysis.dim.Node Count
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '10 - Memory Analysis.dim.Num Chains'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 10 - Memory Analysis
+		lineageTag: b2a96dc2-7bbb-4d35-a333-d1e0302aa1b6
+		summarizeBy: sum
+		sourceColumn: 10 - Memory Analysis.dim.Num Chains
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '10 - Memory Analysis.dim.Record Size Bytes'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 10 - Memory Analysis
+		lineageTag: 47b9ade3-b308-4272-8320-89d4e100b063
+		summarizeBy: sum
+		sourceColumn: 10 - Memory Analysis.dim.Record Size Bytes
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '10 - Memory Analysis.dim.Table Name'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 10 - Memory Analysis
+		lineageTag: 8365b2c8-c60b-4e4a-b5ba-54bc1e7501fe
+		summarizeBy: none
+		sourceColumn: 10 - Memory Analysis.dim.Table Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '11 - Feature Tracker.dim.Created Date.Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 11 - Feature Tracker
+		lineageTag: b1bef9ad-7f11-46d5-8298-cee2b411e82b
+		summarizeBy: none
+		sourceColumn: 11 - Feature Tracker.dim.Created Date.Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '11 - Feature Tracker.dim.Created Date.Time'
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		displayFolder: 11 - Feature Tracker
+		lineageTag: 5978df4f-e8d5-4662-b6c8-34a8fbc9275e
+		summarizeBy: none
+		sourceColumn: 11 - Feature Tracker.dim.Created Date.Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column '11 - Feature Tracker.dim.Feature Action'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 11 - Feature Tracker
+		lineageTag: cfe5c37e-b547-440d-910f-c3aeb7db3425
+		summarizeBy: none
+		sourceColumn: 11 - Feature Tracker.dim.Feature Action
+
+		annotation SummarizationSetBy = Automatic
+
+	column '11 - Feature Tracker.dim.Feature Count'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 11 - Feature Tracker
+		lineageTag: 34f199e3-5d34-433a-a717-d20b2d9d991d
+		summarizeBy: sum
+		sourceColumn: 11 - Feature Tracker.dim.Feature Count
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '11 - Feature Tracker.dim.Feature Detail'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 11 - Feature Tracker
+		lineageTag: 4dcab65c-dba3-4962-a3d1-21dff563e2f4
+		summarizeBy: none
+		sourceColumn: 11 - Feature Tracker.dim.Feature Detail
+
+		annotation SummarizationSetBy = Automatic
+
+	column '11 - Feature Tracker.dim.Feature Name'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 11 - Feature Tracker
+		lineageTag: b0795dfc-eabc-42cc-b68b-c8d11549ce24
+		summarizeBy: none
+		sourceColumn: 11 - Feature Tracker.dim.Feature Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '11 - Feature Tracker.dim.Feature Source'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 11 - Feature Tracker
+		lineageTag: 39ad5e8b-74e7-4dbc-8f21-569e05785fcc
+		summarizeBy: none
+		sourceColumn: 11 - Feature Tracker.dim.Feature Source
+
+		annotation SummarizationSetBy = Automatic
+
+	column '11 - Feature Tracker.dim.Is Latest (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 11 - Feature Tracker
+		lineageTag: 0a99ab68-54be-414c-ae18-3c383a1bfbc4
+		summarizeBy: none
+		sourceColumn: 11 - Feature Tracker.dim.Is Latest (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '11 - Feature Tracker.dim.Service Name'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 11 - Feature Tracker
+		lineageTag: a7ba53e7-c61e-4fd4-8af3-e99a9e76c6a3
+		summarizeBy: none
+		sourceColumn: 11 - Feature Tracker.dim.Service Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '11 - Feature Tracker.dim.Status'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 11 - Feature Tracker
+		lineageTag: ebe30c96-921f-4564-a911-03e2dd818209
+		summarizeBy: none
+		sourceColumn: 11 - Feature Tracker.dim.Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.CPU # of Cores'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: f3e06d49-7aa0-4fc9-969d-88c3a7ff0e6f
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.CPU # of Cores
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.CPU # of Processors'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 5ab75e21-e072-4595-8800-e63078e12876
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.CPU # of Processors
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.CPU Family'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 089567b8-8c6d-403d-90da-235af523e750
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.CPU Family
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.CPU Mhz'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 08f8b1d8-1d2c-499c-bf8c-2c297d276b13
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.CPU Mhz
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.CPU Model'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 9ab4fa2a-1461-4476-93cb-8c889eccac5e
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.CPU Model
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.CPU Model Name'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 2010b459-4b4c-4daa-aca2-2386b8257258
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.CPU Model Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.CPU Stepping'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 9ca984e0-b1f1-403c-a425-c67d461bb5f9
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.CPU Stepping
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.CPU Vendor ID'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 8e140788-ecd9-4d01-a22c-fc4ae98ee86d
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.CPU Vendor ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.Deployment Type'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 64f657a6-879b-4045-befe-1f5c0b956817
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.Deployment Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.Hard Drive Memory GB'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 6be9ea30-32f8-4e26-9c0e-8d062e259efb
+		summarizeBy: sum
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.Hard Drive Memory GB
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '12 - Perfom Monitor Hardware Info.dim.Kernel Name'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 0f04a5a5-2aba-4558-bb72-9493505a6f64
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.Kernel Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.Kernel Release'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 56f37b0b-aef3-4d18-9d3c-b87792bbbf79
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.Kernel Release
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.Last Reported Date.Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 10d62071-8add-48ec-b86e-c5cc9ec61715
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.Last Reported Date.Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '12 - Perfom Monitor Hardware Info.dim.Last Reported Date.Time'
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 68228fc9-4272-4cc2-9a5a-2b521603515c
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.Last Reported Date.Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.Machine'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 177d6281-7d0e-4d80-8426-78f3ac223909
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.Machine
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.Operating System'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: bfd16994-7b4f-423d-9c4e-1b74f304b5c1
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.Operating System
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.Reported At Date.Date'
+		dataType: dateTime
+		formatString: Long Date
+		sourceProviderType: date
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 09a0117f-9a38-4ae0-b03d-ac3c3ecd8d15
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.Reported At Date.Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '12 - Perfom Monitor Hardware Info.dim.Reported At Date.Time'
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 8fc74d65-65ae-4b49-8d3c-3b0206e027a6
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.Reported At Date.Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.Server Name'
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 990cf026-324d-44a1-9354-d0236797bd0c
+		summarizeBy: none
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.Server Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column '12 - Perfom Monitor Hardware Info.dim.Total Server GB'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 12 - Perfom Monitor Hardware Info
+		lineageTag: 97956a2c-f2b4-4877-9863-21b0720c1250
+		summarizeBy: sum
+		sourceColumn: 12 - Perfom Monitor Hardware Info.dim.Total Server GB
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '02 - Salesforce.mea.Case.Case Count'
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		displayFolder: 02 - Salesforce
+		lineageTag: 5fa4f690-2098-4ace-b127-5c009fd6c678
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.mea.Case.Case Count
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.mea.Case.Closed Case Count'
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		displayFolder: 02 - Salesforce
+		lineageTag: d2bd4d3a-d58d-46be-adfc-acfdb1e7182e
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.mea.Case.Closed Case Count
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.mea.On Demand Downtime Environment.Downtime Minutes Sum'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 02 - Salesforce
+		lineageTag: adefd87e-1148-45f0-9059-7b1bb8997548
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.mea.On Demand Downtime Environment.Downtime Minutes Sum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '02 - Salesforce.mea.On Demand Downtime Environment.Downtime Percentage'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 02 - Salesforce
+		lineageTag: 746c7195-895d-4e3d-8860-8ab77f7e9774
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.mea.On Demand Downtime Environment.Downtime Percentage
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '02 - Salesforce.mea.Case.Open Case Count'
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		displayFolder: 02 - Salesforce
+		lineageTag: 6c839e92-2858-4b6c-be39-c347f5ffdce3
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.mea.Case.Open Case Count
+
+		annotation SummarizationSetBy = Automatic
+
+	column '02 - Salesforce.mea.On Demand Downtime Environment.Planned Downtime Hour'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 02 - Salesforce
+		lineageTag: 7bb36672-f930-4da7-9fdd-ff6b01afabb8
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.mea.On Demand Downtime Environment.Planned Downtime Hour
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '02 - Salesforce.mea.On Demand Downtime Environment.Quarter Total Hours'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 02 - Salesforce
+		lineageTag: 32af9d44-8a7d-4162-b67e-e2027a69568a
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.mea.On Demand Downtime Environment.Quarter Total Hours
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '02 - Salesforce.mea.On Demand Downtime Environment.Unplanned Downtime Hour'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 02 - Salesforce
+		lineageTag: dd0da506-2424-4c04-b76a-ba5168285403
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.mea.On Demand Downtime Environment.Unplanned Downtime Hour
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '02 - Salesforce.mea.On Demand Downtime Environment.Unplanned Non Sla Impacting'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 02 - Salesforce
+		lineageTag: 5c1863b0-563a-4301-a6bc-55b82f642fa2
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.mea.On Demand Downtime Environment.Unplanned Non Sla Impacting
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '02 - Salesforce.mea.On Demand Downtime Environment.Uptime Percentage'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 02 - Salesforce
+		lineageTag: c0fdcac1-edd8-432c-a471-9c96d220b17f
+		summarizeBy: sum
+		sourceColumn: 02 - Salesforce.mea.On Demand Downtime Environment.Uptime Percentage
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '03 - Scheduled Task Monitor.mea.Estimated Backup Time'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 03 - Scheduled Task Monitor
+		lineageTag: 27ea56de-f9a3-4eed-9ba1-08b844ae0dd7
+		summarizeBy: sum
+		sourceColumn: 03 - Scheduled Task Monitor.mea.Estimated Backup Time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '03 - Scheduled Task Monitor.mea.Total Duration Seconds'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 03 - Scheduled Task Monitor
+		lineageTag: 4f4129fe-6175-4a42-b334-96448dbe35d6
+		summarizeBy: sum
+		sourceColumn: 03 - Scheduled Task Monitor.mea.Total Duration Seconds
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '04 - Operation Internal.mea.Estimated Restart Time'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 04 - Operation Internal
+		lineageTag: 121aee87-8c1b-4050-a827-7284e59bec81
+		summarizeBy: sum
+		sourceColumn: 04 - Operation Internal.mea.Estimated Restart Time
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '04 - Operation Internal.mea.Startup Duration S'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 04 - Operation Internal
+		lineageTag: 84b89d7a-0bcd-473c-bd20-572ad074541e
+		summarizeBy: sum
+		sourceColumn: 04 - Operation Internal.mea.Startup Duration S
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '04 - Operation Internal.mea.Warmup Duration S'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 04 - Operation Internal
+		lineageTag: b317e6c0-1a4f-475b-a79f-58178f256a4a
+		summarizeBy: sum
+		sourceColumn: 04 - Operation Internal.mea.Warmup Duration S
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '06 - Operation Stats Heartbeat.mea.Input %'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 06 - Operation Stats Heartbeat
+		lineageTag: f3557214-6ce9-4794-9c8d-b3d6ab69929d
+		summarizeBy: sum
+		sourceColumn: 06 - Operation Stats Heartbeat.mea.Input %
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '06 - Operation Stats Heartbeat.mea.Input GB'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 06 - Operation Stats Heartbeat
+		lineageTag: 0d2a4c9a-e720-49ef-ab60-686005d71a74
+		summarizeBy: sum
+		sourceColumn: 06 - Operation Stats Heartbeat.mea.Input GB
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '06 - Operation Stats Heartbeat.mea.Limit GB'
+		dataType: double
+		sourceProviderType: double
+		displayFolder: 06 - Operation Stats Heartbeat
+		lineageTag: 0a9e65d3-0320-4b3c-814c-8434d5a11d0d
+		summarizeBy: sum
+		sourceColumn: 06 - Operation Stats Heartbeat.mea.Limit GB
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '07 - License Details.mea.is_CCC (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 07 - License Details
+		lineageTag: cbee3a3c-68e8-4d71-af18-ff7a378c940e
+		summarizeBy: none
+		sourceColumn: 07 - License Details.mea.is_CCC (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '07 - License Details.mea.is_DS (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 07 - License Details
+		lineageTag: 0191e4ed-ec11-4f14-b137-1655addc4707
+		summarizeBy: none
+		sourceColumn: 07 - License Details.mea.is_DS (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '07 - License Details.mea.is_RF (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 07 - License Details
+		lineageTag: 894880d5-3254-4532-954d-f65deb5ce522
+		summarizeBy: none
+		sourceColumn: 07 - License Details.mea.is_RF (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '07 - License Details.mea.is_SHLT (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 07 - License Details
+		lineageTag: 2d1835a6-ae4b-41b9-9c3c-b19a61130bbe
+		summarizeBy: none
+		sourceColumn: 07 - License Details.mea.is_SHLT (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '07 - License Details.mea.is_SHSC (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 07 - License Details
+		lineageTag: abd2693c-5ab0-4eac-8f5f-938cf76d892f
+		summarizeBy: none
+		sourceColumn: 07 - License Details.mea.is_SHSC (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '07 - License Details.mea.is_SPO (Yes / No)'
+		dataType: boolean
+		isNullable: false
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		displayFolder: 07 - License Details
+		lineageTag: ac22eefc-f952-48bc-9ec9-4e6fbef7cb17
+		summarizeBy: none
+		sourceColumn: 07 - License Details.mea.is_SPO (Yes / No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column '10 - Memory Analysis.mea.Count'
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		displayFolder: 10 - Memory Analysis
+		lineageTag: 9adee17a-baee-4495-8ffd-f33738b8b2dd
+		summarizeBy: sum
+		sourceColumn: 10 - Memory Analysis.mea.Count
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Looker Model' = m
+		mode: directQuery
+		source =
+				let
+				    Source = Looker.DataSource("https://c8ce1b7e-fe27-486d-9b14-df2a8bcc838d.looker.app/", [HiddenFieldsVisible=null]),
+				    internal = Source{[Key="internal"]}[Data],
+				    stg_salesforce__on_demand_downtime_environment = internal{[Key="stg_salesforce__on_demand_downtime_environment"]}[Data],
+				    #"Renamed Columns" = Table.RenameColumns(stg_salesforce__on_demand_downtime_environment,{{"01 - Parameter.fil.Date Filter", "Date Filter"}, {"01 - Parameter.fil.Scheduled Task Command", "Scheduled Task Command"}, {"01 - Parameter.fil.Is Latest (Yes / No)", "Is Latest (Yes / No)"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_ResultType = Exception
+

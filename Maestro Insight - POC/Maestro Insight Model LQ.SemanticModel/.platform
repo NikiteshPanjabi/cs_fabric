@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Maestro Insight Model LQ"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f51d851d-cc1a-9af8-4e01-b1671201ff04"
+  }
+}

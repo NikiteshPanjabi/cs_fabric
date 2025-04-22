@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Dataflow",
+    "displayName": "LookML Modeled Data"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "cdac1f58-67c8-b815-4c52-afbdd8716285"
+  }
+}
