@@ -1,0 +1,100 @@
+table 'Dataset Refresh Schedule'
+	lineageTag: 6ba53a71-24c4-476d-85f1-f4c74a361da3
+	sourceLineageTag: ab97efcf-9177-498c-a11e-dc6884f8aec2
+
+	column 'Dataset ID'
+		dataType: string
+		lineageTag: c8ec2068-1c9c-41fd-8eb8-7f81e650b7e0
+		sourceLineageTag: 8e8a133b-da5c-46f4-ba8a-3a10f429ca96
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataset ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataset Name'
+		dataType: string
+		lineageTag: 63f49078-d2bd-4120-b1b8-f4e662bc6a2c
+		sourceLineageTag: d3cb79bd-b25b-4467-988b-454fef9191a2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataset Name
+
+		annotation SummarizationSetBy = User
+
+	column Day
+		dataType: string
+		lineageTag: 3cda9cbc-13a3-4b1c-a761-d9a1fb09ec93
+		sourceLineageTag: 97ca6898-e182-4155-b3d3-d61a298ca49c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Day
+
+		annotation SummarizationSetBy = User
+
+	column Time
+		dataType: string
+		lineageTag: 3f82d02e-eaae-49dd-aea5-a0569f1afded
+		sourceLineageTag: f2964cbe-a45b-4ec3-9009-9a02db199994
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Time
+
+		annotation SummarizationSetBy = User
+
+	column Enabled
+		dataType: string
+		lineageTag: ffaeb78f-8f9d-4c01-9cd1-5faf9e78040a
+		sourceLineageTag: 194dfd9c-17b6-4d69-808c-3d38b70b7144
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Enabled
+
+		annotation SummarizationSetBy = User
+
+	column 'Local Time Zone ID'
+		dataType: string
+		lineageTag: 554692cb-61cd-4a6f-bb90-cefb77bbac90
+		sourceLineageTag: 98ce9c44-be25-4a0e-bf3c-45eacfa2a00a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Local Time Zone ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Notify Option'
+		dataType: string
+		lineageTag: da04c1c6-b149-471a-bc74-a1afec49938a
+		sourceLineageTag: eeb232ec-d812-47c5-baaa-b33a30735889
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Notify Option
+
+		annotation SummarizationSetBy = User
+
+	column 'Workspace ID'
+		dataType: string
+		lineageTag: cefe2ea9-78d3-4791-8ddd-9e63400b3eba
+		sourceLineageTag: b992443b-e2a1-44cf-b90a-3b8027728dd4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Workspace Dataset Key'
+		dataType: string
+		lineageTag: 38b109f4-261d-4208-92de-46ca8c947c94
+		sourceLineageTag: 8a175b0e-beef-4b1e-b3fe-c92c256c5bd0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace Dataset Key
+
+		annotation SummarizationSetBy = User
+
+	partition 'Dataset Refresh Schedule' = entity
+		mode: directQuery
+		source
+			entityName: Dataset Refresh Schedule
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

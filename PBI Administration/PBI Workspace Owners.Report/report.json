@@ -1,0 +1,117 @@
+{
+  "config": "{\"version\":\"5.51\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU02\",\"version\":\"5.53\",\"type\":2},\"customTheme\":{\"name\":\"Theme_2_-_Dark1864346901793732.json\",\"version\":\"5.54\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "publicCustomVisuals": [
+    "ChicletSlicer1448559807354"
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU02",
+            "path": "BaseThemes/CY24SU02.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "Kinaxis_Logo_Single_Red4014345020286292.png",
+            "path": "Kinaxis_Logo_Single_Red4014345020286292.png",
+            "type": 100
+          },
+          {
+            "name": "Theme_2_-_Dark1864346901793732.json",
+            "path": "Theme_2_-_Dark1864346901793732.json",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#3C4859'\"}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"outspace\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#3C4859'\"}}}}}}}]}}",
+      "displayName": "Potential Owners",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 900.00,
+      "name": "ReportSection3d9b2ad45cda2baeed97",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"054d70bde78ff81a75da\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15,\"y\":53.75,\"z\":1000,\"width\":375,\"height\":65,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Workspace Owners.Workspace Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"Workspace Owners\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"Workspace Name\"},\"Name\":\"Workspace Owners.Workspace Name\",\"NativeReferenceName\":\"Workspace\"}]},\"columnProperties\":{\"Workspace Owners.Workspace Name\":{\"displayName\":\"Workspace\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 65.00,
+          "width": 375.00,
+          "x": 15.00,
+          "y": 53.75,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"27c7ef5a48c39949c72b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":871,\"y\":54,\"z\":2000,\"width\":362,\"height\":65,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"ChicletSlicer1448559807354\",\"projections\":{\"Category\":[{\"queryRef\":\"Workspace Owners.User Access Right\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"w\",\"Entity\":\"Workspace Owners\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"w\"}},\"Property\":\"User Access Right\"},\"Name\":\"Workspace Owners.User Access Right\",\"NativeReferenceName\":\"User Access Right\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"6D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 65.00,
+          "width": 362.00,
+          "x": 871.00,
+          "y": 54.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"97cab9a3d1b7bccef3d9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":3000,\"width\":1800,\"height\":45.00000000000001,\"tabOrder\":3000}}],\"singleVisualGroup\":{\"displayName\":\"Nav Bar\",\"groupMode\":0}}",
+          "height": 45.00,
+          "width": 1800.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"9fb5fb5daf708505ec95\",\"layouts\":[{\"id\":0,\"position\":{\"height\":31.764705882352953,\"width\":530.4395195578232,\"x\":140,\"y\":8.470588235294118,\"z\":1000,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'WORKSPACE OWNER REPORT'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'wf_standard-font, helvetica, arial, sans-serif'\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"heading\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}}],\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}]}},\"parentGroupName\":\"97cab9a3d1b7bccef3d9\"}",
+          "filters": "[]",
+          "height": 31.76,
+          "width": 530.44,
+          "x": 140.00,
+          "y": 8.47,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"aa5b844764bf9dde74d8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":15,\"y\":144,\"z\":0,\"width\":1307,\"height\":746,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Testtt.Workspace Name\"},{\"queryRef\":\"Testtt.Potential Owners\"},{\"queryRef\":\"Testtt.User Access Right\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Workspace Owners\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Workspace Name\"},\"Name\":\"Testtt.Workspace Name\",\"NativeReferenceName\":\"Workspace Name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Potential Owners\"},\"Name\":\"Testtt.Potential Owners\",\"NativeReferenceName\":\"Potential Owners\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"User Access Right\"},\"Name\":\"Testtt.User Access Right\",\"NativeReferenceName\":\"User Access Right\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"Potential Owners\"}}}]},\"drillFilterOtherVisuals\":true,\"filterSortOrder\":3,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"502.25000294483766D\"}}}},\"selector\":{\"metadata\":\"Testtt.Potential Owners\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"437.9999936947158D\"}}}},\"selector\":{\"metadata\":\"Testtt.Workspace Name\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"280D\"}}}},\"selector\":{\"metadata\":\"Testtt.User Access Right\"}}],\"columnHeaders\":[{\"properties\":{\"autoSizeColumnWidth\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filterf2997fe139214cf6f638\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Workspace Owners\"}},\"Property\":\"User Access Right\"}},\"type\":\"Categorical\",\"howCreated\":0,\"isHiddenInViewMode\":false,\"ordinal\":0},{\"name\":\"Filter03a70a131638288f1ea8\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Workspace Owners\"}},\"Property\":\"User Name\"}},\"type\":\"Categorical\",\"howCreated\":1,\"isHiddenInViewMode\":false,\"ordinal\":1},{\"name\":\"Filter84ed9cec159c1e08eb48\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Workspace Owners\"}},\"Property\":\"Workspace Name\"}},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{},\"isHiddenInViewMode\":false,\"ordinal\":2}]",
+          "height": 746.00,
+          "width": 1307.00,
+          "x": 15.00,
+          "y": 144.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"aca136d034b5a852b61a\",\"layouts\":[{\"id\":0,\"position\":{\"height\":40,\"width\":90,\"x\":25,\"y\":5,\"z\":8000,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Kinaxis_Logo_Single_Red4014345020286292.png\"}}}}}],\"imageScaling\":[{\"properties\":{\"imageScalingType\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}}]},\"vcObjects\":{\"padding\":[{\"properties\":{\"left\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}},\"top\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"3D\"}}}}}],\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Company Logo'\"}}}}}],\"lockAspect\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}},\"parentGroupName\":\"97cab9a3d1b7bccef3d9\",\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 90.00,
+          "x": 25.00,
+          "y": 5.00,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"d772b230c4bfbd4760e2\",\"layouts\":[{\"id\":0,\"position\":{\"height\":45.00000000000001,\"width\":1800,\"x\":0,\"y\":0,\"z\":0,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"basicShape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"fill\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"line\":[{\"properties\":{\"weight\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"lineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"roundEdge\":{\"expr\":{\"Literal\":{\"Value\":\"2L\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Nav Background'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"16D\"}}}}}],\"padding\":[{\"properties\":{\"top\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"left\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}]}},\"parentGroupName\":\"97cab9a3d1b7bccef3d9\"}",
+          "filters": "[]",
+          "height": 45.00,
+          "width": 1800.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1800.00
+    }
+  ],
+  "theme": "Theme_2_-_Dark1864346901793732.json"
+}

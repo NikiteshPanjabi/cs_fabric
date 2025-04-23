@@ -1,0 +1,520 @@
+table Calendar
+	lineageTag: adeb5f14-f691-4cda-ae88-98144f69d696
+	sourceLineageTag: 9fd3f9fd-8a4c-4381-ace0-14481d310b0a
+
+	column Date
+		dataType: dateTime
+		isNullable: false
+		formatString: yyyy\-mm\-dd
+		displayFolder: 1. Day
+		lineageTag: b0a550dc-9281-413f-a4cf-dc6d97a9f8e6
+		sourceLineageTag: a42e9d9f-51a2-4dd3-a7ae-ab5d4ae8a05e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = User
+
+	column Year
+		dataType: string
+		displayFolder: 5. Year
+		lineageTag: 5ca450f3-2ee9-41a9-89f9-d3f8b825b352
+		sourceLineageTag: d2f3cd03-8575-4c2c-8193-d62aaa35883f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = User
+
+	column 'Year No.'
+		dataType: int64
+		formatString: 0
+		displayFolder: 5. Year
+		lineageTag: cd73a71e-2222-4075-99b4-3f948f72f297
+		sourceLineageTag: 18c5321a-3a1a-4f5a-a21d-bf3d7855178a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Year No.
+
+		annotation SummarizationSetBy = User
+
+	column 'Month No.'
+		dataType: int64
+		formatString: 0
+		displayFolder: 3. Month
+		lineageTag: d5da5c53-5281-482d-829d-b4cdf9009857
+		sourceLineageTag: e9400f14-cfee-457e-a7b6-6ea880f6bc62
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Month No.
+
+		annotation SummarizationSetBy = User
+
+	column 'Month Name'
+		dataType: string
+		displayFolder: 3. Month
+		lineageTag: ee1ae44a-32e2-4148-8911-954e6c558a2f
+		sourceLineageTag: 8b8315c5-b279-4179-9899-cc2dfbbba169
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Month Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Month Name Abrv.'
+		dataType: string
+		displayFolder: 3. Month
+		lineageTag: 8b383d2c-8719-41f5-b59a-4a8655762fd1
+		sourceLineageTag: ee8a8de6-ca44-4961-9366-69a5cf3d4f14
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Month Name Abrv.
+
+		annotation SummarizationSetBy = User
+
+	column 'Month (yyyy-mm)'
+		dataType: string
+		displayFolder: 3. Month
+		lineageTag: 4b01f2d4-d7e5-428c-8585-ac2526901ca9
+		sourceLineageTag: f0d94c12-66a2-4275-89f8-4d2d4281da76
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Month (yyyy-mm)
+
+		annotation SummarizationSetBy = User
+
+	column 'Month (yyyy-mmm)'
+		dataType: string
+		displayFolder: 3. Month
+		lineageTag: 59d83942-8ec4-49f4-bdf9-1823c1ff43bf
+		sourceLineageTag: 3c92df08-0424-4f92-9426-3b168466a25b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Month (yyyy-mmm)
+
+		annotation SummarizationSetBy = User
+
+	column 'Month (yyyymm)'
+		dataType: int64
+		formatString: 0
+		displayFolder: 3. Month
+		lineageTag: 194bf3f1-b8f3-4164-b70b-1fc429be3c05
+		sourceLineageTag: cccee875-6fec-4c45-9a76-cc79e13af5f6
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Month (yyyymm)
+
+		annotation SummarizationSetBy = User
+
+	column 'Month First Day'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: 3. Month
+		lineageTag: 27acddf6-fc2f-4779-8cb7-07eaef9dbf2e
+		sourceLineageTag: 27549530-ff3d-4038-b845-66fc9f9ab11f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Month First Day
+
+		annotation SummarizationSetBy = User
+
+	column 'Month Last Day'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: 3. Month
+		lineageTag: 07778077-86d6-4077-893a-2e33012c9d99
+		sourceLineageTag: 7ae74e48-196e-4625-a394-18630c1f2fe2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Month Last Day
+
+		annotation SummarizationSetBy = User
+
+	column Month
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: 3. Month
+		lineageTag: 52ae3374-a181-491e-be93-dc56eb0a993d
+		sourceLineageTag: 9dfa359d-2f1b-4fe1-9eaf-6507e60d4029
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = User
+
+	column 'Quarter Abrv.'
+		dataType: string
+		displayFolder: 4. Quarter
+		lineageTag: ef2f4471-f669-49f9-b887-a206d9b67c78
+		sourceLineageTag: 7d008d84-0758-4c41-b30d-b3a3ab1eb0b4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Quarter Abrv.
+
+		annotation SummarizationSetBy = User
+
+	column Quarter
+		dataType: string
+		displayFolder: 4. Quarter
+		lineageTag: 142660f7-d37f-4e5f-a103-a80350e0da76
+		sourceLineageTag: f30c3e85-0064-40f4-8f6d-391ea8d321d7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = User
+
+	column 'Day Number in Month'
+		dataType: int64
+		formatString: 0
+		displayFolder: 3. Month
+		lineageTag: 6a50fbfa-2f71-41cc-9712-1394a314a488
+		sourceLineageTag: 434a198e-9add-413c-a17c-96f756528e9d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Day Number in Month
+
+		annotation SummarizationSetBy = User
+
+	column 'CM & Last 12M (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: 94c341d6-38a4-4f56-9d5f-5a926c883f53
+		sourceLineageTag: f878994a-f63c-43d2-994a-ce2cbadb11c8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CM & Last 12M (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'Current & Previous Month'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: 680382a2-9816-4dea-b64a-f1691b810684
+		sourceLineageTag: 9d0daa68-8b6d-4b73-b3b1-f0f7dcd1e835
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Current & Previous Month
+
+		annotation SummarizationSetBy = User
+
+	column 'CM (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: f23000c9-2e83-479d-a2cf-b70337ab0c49
+		sourceLineageTag: 9699a7a1-1301-4524-8c52-b5bd8ecf7b70
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CM (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'PM (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: 72b5ae91-713a-41b2-9d2b-deee7e32214e
+		sourceLineageTag: 362dcf7a-0b22-42da-8654-fde2bd565005
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: PM (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'Current Month'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: 8f220899-2eaf-4d2d-8d34-9cbea9ccfce7
+		sourceLineageTag: f6463dbd-052d-45e5-82ef-2ced088cca01
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Current Month
+
+		annotation SummarizationSetBy = User
+
+	column 'CQ (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: a98bfbe5-b771-414c-aa39-465773ed60bc
+		sourceLineageTag: 7660d9ef-1708-4020-9233-eb2f958126c7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CQ (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'CY (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: 08b4f4c5-1079-4f04-b3db-fce437a636fb
+		sourceLineageTag: ab4be28a-33e8-49cf-93a0-1328677db695
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CY (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'Quarter Start Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: 4. Quarter
+		lineageTag: d38b51b4-ea3a-4941-9554-a6e17d9b2e65
+		sourceLineageTag: fa2d8a4f-5899-4bf8-a39e-954bd09ef7f5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Quarter Start Date
+
+		annotation SummarizationSetBy = User
+
+	column 'Quarted End Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: 4. Quarter
+		lineageTag: da2b6382-31fe-413b-bfae-6622cb3ca530
+		sourceLineageTag: 14eab989-a9ba-44e7-9e09-9a07ee1f0f7f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Quarted End Date
+
+		annotation SummarizationSetBy = User
+
+	column 'Week Number in Year'
+		dataType: int64
+		formatString: 0
+		displayFolder: 2. Week
+		lineageTag: 90e48b9d-6f3f-4ee6-8843-e6dcd7038c3c
+		sourceLineageTag: 6b5e147f-7b87-40ae-bff9-61cbc410286c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Week Number in Year
+
+		annotation SummarizationSetBy = User
+
+	column 'Day Number in Week'
+		dataType: int64
+		formatString: 0
+		displayFolder: 2. Week
+		lineageTag: ded29be0-d6a7-40bd-8171-10590d2f8710
+		sourceLineageTag: c89ece20-5ea2-4d6e-91ce-444cf8107d6c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Day Number in Week
+
+		annotation SummarizationSetBy = User
+
+	column 'Day Name'
+		dataType: string
+		displayFolder: 1. Day
+		lineageTag: 28ce1668-f795-4a92-85e9-17cb952cce62
+		sourceLineageTag: be42fa1b-c70b-4a4a-9c98-72dff01a9c91
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Day Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Week Start Date'
+		dataType: dateTime
+		formatString: yyyy\-mm\-dd
+		displayFolder: 2. Week
+		lineageTag: 68925fb4-b804-4e66-ab8b-48dfab98a898
+		sourceLineageTag: 80a5dfff-5339-47ea-ac45-e304b5a85dd0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Week Start Date
+
+		annotation SummarizationSetBy = User
+
+	column 'Week Start Date (mmm-dd)'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: 2. Week
+		lineageTag: e19220f6-f068-4d0f-b4de-01f2fd33086c
+		sourceLineageTag: 5c849e99-a7eb-4708-82c1-524417dfda61
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Week Start Date (mmm-dd)
+
+		annotation SummarizationSetBy = User
+
+	column 'Current Week Start Date'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: d3499b7d-93dc-4dfc-8356-314101628e3e
+		sourceLineageTag: 70d7db07-0ed5-4f93-ad44-d46fc5e43140
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Current Week Start Date
+
+		annotation SummarizationSetBy = User
+
+	column 'CM & Last 24M (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: 2c153437-94aa-4d0c-9b34-0562124d4f33
+		sourceLineageTag: 6b47af93-e015-41e8-8c23-5bafc37d06b9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CM & Last 24M (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'Next 18M (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: d9b5225d-9ae0-4a69-a955-504a12dffaa6
+		sourceLineageTag: 10323bb9-9a32-47cd-9655-383fa4fcf39d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Next 18M (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'Last 18M (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: dcb4fdf0-480b-45a4-a357-1aab6e0eb2da
+		sourceLineageTag: 6ba577d5-7ac9-4ab1-b769-c0f100809c41
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last 18M (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'Next 4Q (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: 79c559ee-eeab-43c0-9248-4ed2faf8c834
+		sourceLineageTag: 75d8bd3b-d922-488e-91da-549f145bee37
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Next 4Q (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'Next Q (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: 4dc7c5e1-2fd3-4345-af30-a3b13387b260
+		sourceLineageTag: 55a69931-ab23-4dc7-bf38-af2f65f8ea77
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Next Q (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'Rolling 4Q (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: ea991cb5-1bd7-4466-8292-fdb93655f63c
+		sourceLineageTag: 15f6d2c2-e91b-434f-88c3-27b8a2fad600
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Rolling 4Q (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'Last 5Q (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: ef97ec13-94cd-4c97-829c-867490ddf024
+		sourceLineageTag: 9f340f9e-35ee-48f1-a049-c0d5c51cc52c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last 5Q (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'CQ & Last 5Q (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: a8796f0d-cf78-4852-9f5d-7787a9659f9a
+		sourceLineageTag: ae929fc7-0b83-485e-a451-a02105ba72c1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CQ & Last 5Q (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'Last 6Q (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: 99a85a69-3e96-4d6b-a4a4-03553b5d50cb
+		sourceLineageTag: c4b00744-7425-46fd-b179-65e7a91b9d46
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last 6Q (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'CW (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: 8427bc0f-767b-4d5b-be5b-1ddc9af2b2c1
+		sourceLineageTag: c31bbde9-6b01-4cd3-8271-34770ad67ab0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CW (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'CQ+2 (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: 19911f74-d767-4403-ad36-c466daabc46b
+		sourceLineageTag: 53347524-e130-4fe7-bbed-d6bcf3f26684
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CQ+2 (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'CQ+3 (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: 029ce210-b285-4c33-b0c7-0199500ddd14
+		sourceLineageTag: 9e6d611b-8f35-452d-b9ea-c628b5b03801
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CQ+3 (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'CQ+4 (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: 6aad1caf-a6fa-437d-8deb-2757e2478feb
+		sourceLineageTag: 4aabe224-570d-46f9-b0e1-5f0565e53b4b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CQ+4 (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	column 'Month First Letter'
+		dataType: string
+		displayFolder: 3. Month
+		lineageTag: 5f9d3d5a-f043-4038-8abb-41ca67b828ca
+		sourceLineageTag: 27b44562-a5bd-4260-8362-f0a6968860ce
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Month First Letter
+
+		annotation SummarizationSetBy = User
+
+	column 'CQ & Last 6Q (Yes/No)'
+		dataType: string
+		displayFolder: 6. Relative Time
+		lineageTag: 4b426662-b62e-4eee-9f7a-15178d99be6e
+		sourceLineageTag: 901fffcc-cd69-4d13-a6b6-62c4c88bbac5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CQ & Last 6Q (Yes/No)
+
+		annotation SummarizationSetBy = User
+
+	partition Calendar = entity
+		mode: directQuery
+		source
+			entityName: Calendar
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

@@ -1,0 +1,60 @@
+table 'Dataset to Dataflow Link'
+	lineageTag: 219dee2c-7675-4ef4-92e7-c49ad93bc14b
+	sourceLineageTag: a1c7a1df-c652-45b9-9747-9b1a4669b747
+
+	column 'Workspace ID'
+		dataType: string
+		lineageTag: 5b095a49-3099-457e-ac73-adf4014ade56
+		sourceLineageTag: f9a0304f-c1d4-4775-9d25-21f7895e3079
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataset ID'
+		dataType: string
+		lineageTag: a6076bfc-8066-4765-96c3-58b997dab122
+		sourceLineageTag: 53148e92-8b9f-4f28-9779-c66ea1ee7004
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataset ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataflow ID'
+		dataType: string
+		lineageTag: 3f9ae403-4004-48b0-834d-d6813cae8e97
+		sourceLineageTag: 4a11ed4f-b45a-4ba7-8031-757de8347cba
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataflow ID
+
+		annotation SummarizationSetBy = User
+
+	column workspace_dataset_key
+		dataType: string
+		lineageTag: dda8e592-0498-464d-b0c8-1837920bcd01
+		sourceLineageTag: c1c341e1-5a8c-4a68-b507-4e92f5a8698e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: workspace_dataset_key
+
+		annotation SummarizationSetBy = User
+
+	column workspace_dataflow_key
+		dataType: string
+		lineageTag: d7896d92-480d-46d5-aae6-eaffaa8aaeb9
+		sourceLineageTag: 2e522833-3639-4af2-9ffa-be3764d6fe3e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: workspace_dataflow_key
+
+		annotation SummarizationSetBy = User
+
+	partition 'Dataset to Dataflow Link' = entity
+		mode: directQuery
+		source
+			entityName: Dataset to Dataflow Link
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

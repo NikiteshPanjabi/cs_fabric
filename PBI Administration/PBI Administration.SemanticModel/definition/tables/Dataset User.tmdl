@@ -1,0 +1,110 @@
+table 'Dataset User'
+	lineageTag: 5923d8be-a0ab-4187-9476-4d23b3aead2f
+	sourceLineageTag: 40396c59-4899-4ae3-9abe-3d9669a6addf
+
+	column 'User Name'
+		dataType: string
+		lineageTag: 8fe4edf5-2022-4cba-97ea-534508eea5f4
+		sourceLineageTag: 86d1259c-634e-4172-8c10-bbcc0ccc8ba2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Workspace ID'
+		dataType: string
+		lineageTag: e636ddf1-e268-409a-906a-7dc482d68f4a
+		sourceLineageTag: 322bcb74-5eef-41f3-88c4-6a24a8100442
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataset ID'
+		dataType: string
+		lineageTag: 2f29d8cf-db55-46f0-8fb4-385f3dce66c2
+		sourceLineageTag: 90e3763e-37a0-459f-b31d-4ad2088f8b72
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataset ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataset Name'
+		dataType: string
+		lineageTag: a3d2c4a7-ec8c-4f43-861d-97164730ffd9
+		sourceLineageTag: d3c39e24-26b3-49c2-8f93-e28ac1b8d6cc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataset Name
+
+		annotation SummarizationSetBy = User
+
+	column 'User Access Right'
+		dataType: string
+		lineageTag: 356d3fbf-79b4-45ea-841c-c11dbf8ff176
+		sourceLineageTag: 295aa384-ce33-4875-bef7-145d1e4556b4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Access Right
+
+		annotation SummarizationSetBy = User
+
+	column WsID_DsID_Key
+		dataType: string
+		lineageTag: 29c5b81d-ff85-4b54-9902-670bc6680322
+		sourceLineageTag: 4d911395-675d-4a76-83af-1e1c443837f7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: WsID_DsID_Key
+
+		annotation SummarizationSetBy = User
+
+	column 'User Identifier'
+		dataType: string
+		lineageTag: 648e99c4-aa3e-4d02-b56c-d641032ef5ca
+		sourceLineageTag: 32393fa9-d7e9-4a65-aea6-07745534b790
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Identifier
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataset User ID'
+		dataType: string
+		lineageTag: 0d111912-909d-4186-b4ac-2e335585357c
+		sourceLineageTag: 0c4b896f-d891-4398-a0ba-89e91fad91dd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataset User ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Principal Type'
+		dataType: string
+		lineageTag: 3fd39ef1-aded-4c31-8e31-6034ba622b6a
+		sourceLineageTag: d7a68b0b-744c-4ce2-b629-a7b4e08a48ce
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Principal Type
+
+		annotation SummarizationSetBy = User
+
+	column 'User Type'
+		dataType: string
+		lineageTag: 8bcb03ff-20fe-43ef-afa1-61bf46eed5ed
+		sourceLineageTag: 40e70553-755a-4b42-9302-372573ade094
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Type
+
+		annotation SummarizationSetBy = User
+
+	partition 'Dataset User' = entity
+		mode: directQuery
+		source
+			entityName: Dataset User
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

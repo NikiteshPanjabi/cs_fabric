@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "PBI Workspace Owners"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "09c1cff4-b049-9ca5-4831-f6ae9ed4a4aa"
+  }
+}

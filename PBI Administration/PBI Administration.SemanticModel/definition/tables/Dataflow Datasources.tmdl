@@ -1,0 +1,160 @@
+table 'Dataflow Datasources'
+	lineageTag: 4e9c63af-a18e-4c54-b4d2-76991f3b54b5
+	sourceLineageTag: 2cf7c833-153d-4f23-bbaf-bac228a68a5a
+
+	column Connection
+		dataType: string
+		lineageTag: 0a99d379-6efd-4efa-ad04-a6562720c23c
+		sourceLineageTag: 2e962b4a-f4fd-4235-8049-03c9c4da66dc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Connection
+
+		annotation SummarizationSetBy = User
+
+	column 'Datasource Type'
+		dataType: string
+		lineageTag: f2ff204b-763b-4f51-8aa8-aee320b7aad1
+		sourceLineageTag: c0f2718e-2bfa-4c85-b899-8f8769fa039e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Datasource Type
+
+		annotation SummarizationSetBy = User
+
+	column 'Datasource ID'
+		dataType: string
+		lineageTag: 90e2344c-45e0-430b-8a32-aa97fd6a9db8
+		sourceLineageTag: eaed92a3-a57e-4b10-bad7-c68296c60d25
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Datasource ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Gateway ID'
+		dataType: string
+		lineageTag: 21000e3d-6f08-448a-9699-b2a78bdca0c0
+		sourceLineageTag: 1e961ecf-d2f3-48bc-b9c8-5b6ca99c7ff7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Gateway ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Datasource Kind'
+		dataType: string
+		lineageTag: 0fe4296c-2f87-4311-9be0-f0c0f221940f
+		sourceLineageTag: 63f479b3-5d11-4f4a-b7a1-785edd61ea8f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Datasource Kind
+
+		annotation SummarizationSetBy = User
+
+	column 'Datasource Path'
+		dataType: string
+		lineageTag: 6c628e54-f0d5-4949-a8e4-06e2e01491d0
+		sourceLineageTag: d539ceec-f71b-4d03-83cf-13eeaeefcf1e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Datasource Path
+
+		annotation SummarizationSetBy = User
+
+	column URL
+		dataType: string
+		lineageTag: 38351eb0-d3c7-48b4-9c8a-f3da77e3d8a1
+		sourceLineageTag: e83e8660-4253-4798-872b-3c7d4b5bb266
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: URL
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataflow ID'
+		dataType: string
+		lineageTag: 8efc02ac-7ec4-43ef-a880-76a6ac47d9ec
+		sourceLineageTag: d11eb9b4-a647-481a-bac1-e9dd2f33b8a6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataflow ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Login Server'
+		dataType: string
+		lineageTag: 8ef2b1c0-beaa-49af-a4ab-640df3741899
+		sourceLineageTag: 1d63e5e4-eebf-461d-86e0-d7ac2b71554a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Login Server
+
+		annotation SummarizationSetBy = User
+
+	column 'Class Info'
+		dataType: string
+		lineageTag: 98b935b4-03d6-406a-a54d-150186bf8824
+		sourceLineageTag: 931919e1-7119-4d85-a4ed-05e14f3b65f8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Class Info
+
+		annotation SummarizationSetBy = User
+
+	column 'Sharepoint Site URL'
+		dataType: string
+		lineageTag: 7c4c5109-edf1-4361-b5e9-28868dfb796a
+		sourceLineageTag: ead8ad3b-5d27-41c3-ae5b-a346e116cb8f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Sharepoint Site URL
+
+		annotation SummarizationSetBy = User
+
+	column 'Connection String'
+		dataType: string
+		lineageTag: a954f643-b0ef-4a8b-99a2-b063d38fe97b
+		sourceLineageTag: 60dad520-4ba0-4df6-af75-e285c6585496
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Connection String
+
+		annotation SummarizationSetBy = User
+
+	column Server
+		dataType: string
+		lineageTag: e795965a-c498-422d-ad72-a13d4b931078
+		sourceLineageTag: 8efa06d3-2ff9-4f6d-a71b-00e6101bc33d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Server
+
+		annotation SummarizationSetBy = User
+
+	column Database
+		dataType: string
+		lineageTag: 3fdc9a5e-c086-4aa7-970f-a9f1b918156e
+		sourceLineageTag: 0895703a-dcc6-4a64-94cd-f3152450044c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Database
+
+		annotation SummarizationSetBy = User
+
+	column Email
+		dataType: string
+		lineageTag: 9d9432e0-b1a8-4b16-8a0a-80ae944488b3
+		sourceLineageTag: f1955fb7-df6b-485a-972c-a234eb5ce133
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Email
+
+		annotation SummarizationSetBy = User
+
+	partition 'Dataflow Datasources' = entity
+		mode: directQuery
+		source
+			entityName: Dataflow Datasources
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

@@ -1,0 +1,112 @@
+table Workspace
+	lineageTag: 7d4c10ea-2b85-4c90-846f-490a6f7bd7ea
+	sourceLineageTag: 0f6454c7-2fb8-4d90-87b0-5cf4336ce399
+
+	/// Workspace Name
+	column 'Workspace Name'
+		dataType: string
+		isNullable: false
+		displayFolder: .Principal
+		lineageTag: 53d637b0-4d2d-4d41-8d0c-da645dbf37e5
+		sourceLineageTag: 6ee8fdd7-1b0b-49d4-ab5e-22d73dd082b5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace Name
+
+		annotation SummarizationSetBy = User
+
+	column Type
+		dataType: string
+		displayFolder: Various
+		lineageTag: 7af8ad92-30e0-43ae-b9ab-bd4fc5e93646
+		sourceLineageTag: 4a1a0aac-ff2f-42b9-852e-5f6bbbb30fde
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type
+
+		annotation SummarizationSetBy = User
+
+	column State
+		dataType: string
+		displayFolder: .Principal
+		lineageTag: 81e23b7e-1930-43ff-b260-d782af50422a
+		sourceLineageTag: 087a9e41-2f4b-4c75-854c-bbe98de89fe7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = User
+
+	column 'Workspace ID'
+		dataType: string
+		isNullable: false
+		displayFolder: IDs
+		lineageTag: 9c5751a7-b627-4d42-aa1c-2aa602671c9e
+		sourceLineageTag: a9f95802-9edb-4622-8bf0-17ed5e96ae93
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Is On Dedicated Capacity'
+		dataType: string
+		displayFolder: .Principal
+		lineageTag: 4fb0f8d7-03ea-43de-b704-022f5b6a3e58
+		sourceLineageTag: c4280ae1-78a4-4c00-a19c-3747cad7b7a4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Is On Dedicated Capacity
+
+		annotation SummarizationSetBy = User
+
+	column Description
+		dataType: string
+		displayFolder: .Principal
+		lineageTag: 7251cc77-c1b9-4fc1-8ae0-9e67d20a10d7
+		sourceLineageTag: afe70b27-e13b-4bda-993d-914d32a677e2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = User
+
+	column 'Data Retrieval State'
+		dataType: string
+		displayFolder: Various
+		lineageTag: 60c867c1-41ca-4649-813f-382aec8f4c6d
+		sourceLineageTag: 32648fac-53e7-4f42-aee1-52dfddab88b0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Data Retrieval State
+
+		annotation SummarizationSetBy = User
+
+	column 'Capacity ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: f4335847-6e69-4fd1-877b-10400003c5ea
+		sourceLineageTag: 67304139-bd11-403b-b605-dd345bed4275
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Capacity ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Domain ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: d466c90a-5e51-44fb-942a-d109837ccffd
+		sourceLineageTag: 220cebd8-4df3-45d4-afe0-c16847d7c4a9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Domain ID
+
+		annotation SummarizationSetBy = User
+
+	partition Workspace = entity
+		mode: directQuery
+		source
+			entityName: Workspace
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

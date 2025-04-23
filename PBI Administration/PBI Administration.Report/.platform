@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "PBI Administration",
+    "description": "PBI metrics about workspaces, datasets, reports, tables."
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "69481ea4-bb8e-9c5e-43b5-a0be4b15a042"
+  }
+}

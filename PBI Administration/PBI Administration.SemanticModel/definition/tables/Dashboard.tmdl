@@ -1,0 +1,127 @@
+table Dashboard
+	lineageTag: 3af14f3a-4f96-4c31-9bf4-5b37d8665d1f
+	sourceLineageTag: 1b382a89-791e-4398-9a20-15a308bb85e9
+
+	column 'Dashboard ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: fdcf8c32-4bf5-4418-b6a6-6327c537d733
+		sourceLineageTag: 3db0b094-c3fb-4e96-8704-bafc13665d4d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dashboard ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Dashboard Name'
+		dataType: string
+		lineageTag: 755cb8c6-becd-4ab1-9f34-cbe5457da8af
+		sourceLineageTag: ca83c95e-0ab9-484c-bcda-bdfcb11c887c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dashboard Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Workspace ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: 803f37a6-bc9d-4938-be12-aacc7240ebf7
+		sourceLineageTag: dea0e79c-52f6-4516-bb28-8cb2540ff865
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Tile ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: 821623b4-c32b-4cb1-888d-cad4e45c185c
+		sourceLineageTag: bc84ba6e-b20f-4039-8ac6-7e1d611207f3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Tile ID
+
+		annotation SummarizationSetBy = User
+
+	column 'App ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: 91c68177-773b-4f6b-961a-f121309990e5
+		sourceLineageTag: bf9c12e9-f44e-4905-8e2f-9f6456c09b1c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: App ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Is Read Only?'
+		dataType: string
+		lineageTag: cb91d003-4952-4189-82a8-ffaafa998271
+		sourceLineageTag: 0b4f7862-5d14-4467-ba61-8aacad27f9f5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Is Read Only?
+
+		annotation SummarizationSetBy = User
+
+	column Title
+		dataType: string
+		lineageTag: 7aa1f0b6-baf6-4f45-be5e-bb2c41229062
+		sourceLineageTag: 7df4b699-fe27-49fa-8ea7-84cc92f8e936
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Title
+
+		annotation SummarizationSetBy = User
+
+	column 'Report ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: 214a6762-f8e1-460f-8f5c-5fa33380f8ff
+		sourceLineageTag: 8c9ccb8c-e5fe-49a9-b869-66199a616068
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Report ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataset ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: ee1c2831-72d1-4e3d-8334-f0e292492d01
+		sourceLineageTag: 9333af5a-447b-4301-984a-58902d633d14
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataset ID
+
+		annotation SummarizationSetBy = User
+
+	column Subtitle
+		dataType: string
+		lineageTag: 61a50065-1829-426a-96c9-665a7167518d
+		sourceLineageTag: a035fda3-2cd8-4502-9de1-f8d1cad704b6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Subtitle
+
+		annotation SummarizationSetBy = User
+
+	column 'Sensitivity Label ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: 91cdc744-8a39-471a-8ee4-59f565493767
+		sourceLineageTag: fdc56738-fbcd-4ff0-82ba-d84e1cb43269
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Sensitivity Label ID
+
+		annotation SummarizationSetBy = User
+
+	partition Dashboard = entity
+		mode: directQuery
+		source
+			entityName: Dashboard
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

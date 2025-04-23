@@ -1,0 +1,55 @@
+table Rights
+	isHidden
+	lineageTag: 337608fe-a283-47c9-b60e-5aed59393955
+	sourceLineageTag: 7c493caf-d18c-4085-997c-7882c7fd3556
+
+	column 'User Email'
+		dataType: string
+		isHidden
+		lineageTag: 37509a7f-2421-4dd0-bf6f-8fc6aac19932
+		sourceLineageTag: 834eaf70-0d4e-4b4f-a3e8-f491fafe8c80
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Email
+
+		annotation SummarizationSetBy = User
+
+	column Domain
+		dataType: string
+		isHidden
+		lineageTag: 6400ac64-e515-49e7-81f8-ec87b7f8cdce
+		sourceLineageTag: 5a22ff5a-2002-4140-959d-38acd1ec364e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Domain
+
+		annotation SummarizationSetBy = User
+
+	column Workspace
+		dataType: string
+		isHidden
+		lineageTag: b0c02ebf-e618-46c6-8872-d14e2cb12d37
+		sourceLineageTag: c0303437-b40c-41ff-8426-33440a4573ae
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace
+
+		annotation SummarizationSetBy = User
+
+	column Dataset
+		dataType: string
+		isHidden
+		lineageTag: 195e98f2-3ca6-4bd7-98ac-6c44f5ae48ad
+		sourceLineageTag: e4a2d016-305d-409d-b8c5-52dc1ff3f179
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataset
+
+		annotation SummarizationSetBy = User
+
+	partition Rights = entity
+		mode: directQuery
+		source
+			entityName: Rights
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

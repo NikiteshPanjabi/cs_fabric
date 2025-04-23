@@ -1,0 +1,72 @@
+table 'Workspace User'
+	lineageTag: 6887a187-1969-47a8-a184-0a58f5491683
+	sourceLineageTag: e4669806-060f-46b5-b5a1-97111499c19a
+
+	column 'Workspace ID'
+		dataType: string
+		isHidden
+		lineageTag: 875bb88d-b989-4d5a-a8e3-9e4e4d51f2a6
+		sourceLineageTag: d8395e7e-cd4f-4425-9372-e3302c52a28e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Principal Type'
+		dataType: string
+		isHidden
+		lineageTag: bdeaafaa-8535-400e-a55a-7305f0e22f92
+		sourceLineageTag: 89433b1c-e4ff-4cb0-93ee-980f3d370d18
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Principal Type
+
+		annotation SummarizationSetBy = User
+
+	column 'User Access Right'
+		dataType: string
+		lineageTag: beb30f8c-a4cc-4093-93b7-d220c5ef8db8
+		sourceLineageTag: eea641a3-3125-4094-9764-44333dea2f9f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Access Right
+
+		annotation SummarizationSetBy = User
+
+	column 'User Identifier'
+		dataType: string
+		lineageTag: feadbfbc-5fae-4fe7-86c6-98346a5f71d4
+		sourceLineageTag: a4bc2e43-d493-47b0-b1ac-50387a387edf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Identifier
+
+		annotation SummarizationSetBy = User
+
+	column 'Workspace User ID'
+		dataType: string
+		lineageTag: 4a5b12ff-05bd-4c12-94bd-8a78a2b70f26
+		sourceLineageTag: e4ddcc23-1093-4dfe-bcb9-af466236d1e2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace User ID
+
+		annotation SummarizationSetBy = User
+
+	column 'User Name'
+		dataType: string
+		lineageTag: 3da37f89-3273-4281-a107-4ac89af0c9ef
+		sourceLineageTag: ce044d00-1695-46eb-b6cd-8d099deaecae
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Name
+
+		annotation SummarizationSetBy = User
+
+	partition 'Workspace User' = entity
+		mode: directQuery
+		source
+			entityName: Workspace User
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

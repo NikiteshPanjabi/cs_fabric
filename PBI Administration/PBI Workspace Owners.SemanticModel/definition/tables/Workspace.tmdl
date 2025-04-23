@@ -1,0 +1,112 @@
+table Workspace
+	lineageTag: ddbcabd8-a0ef-4d89-99c7-09751412be95
+	sourceLineageTag: 0f6454c7-2fb8-4d90-87b0-5cf4336ce399
+
+	/// Workspace Name
+	column 'Workspace Name'
+		dataType: string
+		isNullable: false
+		displayFolder: .Main
+		lineageTag: 19c96f33-b113-48ab-9ea9-f688f4c37659
+		sourceLineageTag: 6ee8fdd7-1b0b-49d4-ab5e-22d73dd082b5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace Name
+
+		annotation SummarizationSetBy = User
+
+	column Type
+		dataType: string
+		displayFolder: Various
+		lineageTag: e278f95f-8b61-4f16-adec-d28ce581f684
+		sourceLineageTag: 4a1a0aac-ff2f-42b9-852e-5f6bbbb30fde
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Type
+
+		annotation SummarizationSetBy = User
+
+	column State
+		dataType: string
+		displayFolder: .Main
+		lineageTag: a5346544-8f78-4015-abd2-ae0040cb2e12
+		sourceLineageTag: 087a9e41-2f4b-4c75-854c-bbe98de89fe7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = User
+
+	column 'Workspace ID'
+		dataType: string
+		isNullable: false
+		displayFolder: IDs
+		lineageTag: 27e8ca09-8ff7-4ca7-976c-bae1f09ed66a
+		sourceLineageTag: a9f95802-9edb-4622-8bf0-17ed5e96ae93
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Is On Dedicated Capacity'
+		dataType: string
+		displayFolder: .Main
+		lineageTag: d25f234d-7844-4fcb-b6f1-3023872eedea
+		sourceLineageTag: c4280ae1-78a4-4c00-a19c-3747cad7b7a4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Is On Dedicated Capacity
+
+		annotation SummarizationSetBy = User
+
+	column Description
+		dataType: string
+		displayFolder: .Main
+		lineageTag: f57be13d-465f-45cc-9544-1a2ed36df215
+		sourceLineageTag: afe70b27-e13b-4bda-993d-914d32a677e2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = User
+
+	column 'Data Retrieval State'
+		dataType: string
+		displayFolder: Various
+		lineageTag: b77356bc-5f61-4a4a-b5dc-f3349b185255
+		sourceLineageTag: 32648fac-53e7-4f42-aee1-52dfddab88b0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Data Retrieval State
+
+		annotation SummarizationSetBy = User
+
+	column 'Capacity ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: cbd46ca2-3577-4b95-b405-bb0aae335341
+		sourceLineageTag: 67304139-bd11-403b-b605-dd345bed4275
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Capacity ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Domain ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: 1172ee4c-c7b2-4817-894c-de23ad3956dc
+		sourceLineageTag: 220cebd8-4df3-45d4-afe0-c16847d7c4a9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Domain ID
+
+		annotation SummarizationSetBy = User
+
+	partition Workspace = entity
+		mode: directQuery
+		source
+			entityName: Workspace
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

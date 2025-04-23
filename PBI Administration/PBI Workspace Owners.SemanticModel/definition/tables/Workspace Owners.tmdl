@@ -1,0 +1,61 @@
+table 'Workspace Owners'
+	lineageTag: ab93bd11-4dd1-4381-b6a4-a5bb816c39cc
+
+	column 'Workspace Name'
+		lineageTag: 8109df05-6c42-442f-9ecc-84284654a2d0
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Workspace[Workspace Name]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Potential Owners'
+		lineageTag: a653e830-b76b-4d00-9e14-7cfb6c356433
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Potential Owners]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'User Access Right'
+		lineageTag: c88a16c8-416f-4eb8-a0c4-5804a2d6c981
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Workspace User[User Access Right]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Workspace Owners' = calculated
+		mode: import
+		source = ```
+				
+				VAR selectedWorkspace = SELECTEDVALUE(Workspace[Workspace Name])
+				VAR selectedUser = SELECTEDVALUE('Workspace User'[User Identifier])
+				VAR selectedUserAccess = SELECTEDVALUE('Workspace User'[User Access Right])
+				VAR biteam = 
+				    CALCULATETABLE(
+				        SELECTCOLUMNS(
+				            'BI Team',
+				            "Users",
+				            'BI Team'[Email]
+				        )
+				    )
+				VAR result = 
+				    SUMMARIZECOLUMNS(
+				        'Workspace'[Workspace Name],
+				        'Workspace User'[User Access Right],
+				        TREATAS( {"Admin", "Member"}, 'Workspace User'[User Access Right] ),
+				        "Potential Owners", CONCATENATEX( VALUES( 'Workspace User'[User Name] ), 'Workspace User'[User Name], ", ")
+				        // FILTER('Workspace User', 'Workspace User'[User Access Right] IN {"Admin", "Member"})
+				        // // ),
+				//         (NOT selectedUser IN biteam) && selectedUserAccess IN {"Admin", "Member"} && Workspace[Workspace Name] = selectedWorkspace
+				//     ),
+				//     'Workspace User'[User Name],
+				//     "|"
+				)
+				RETURN
+				    result
+				```
+
+	annotation PBI_Id = 605b1f522056444e800b540ec4d77f7a
+

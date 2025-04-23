@@ -1,0 +1,30 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["DirectQuery to AS - PBI Metadata Model"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.136.1202.0 (24.09)
+
+ref table Workspace
+ref table User
+ref table 'Workspace User'
+ref table 'Key Measures'
+ref table Calendar
+ref table Transformations
+ref table Domain
+ref table 'BI Team'
+ref table 'Workspace Owners'
+ref table 'Dataset to Dataflow Link'
+ref table 'Dataset Refresh'
+ref table 'Dataflow Refresh'
+ref table Rights
+
+ref cultureInfo en-US
+

@@ -1,0 +1,127 @@
+table 'Workspace User'
+	lineageTag: 080491d5-71fa-405b-b324-2708328750cc
+	sourceLineageTag: e4669806-060f-46b5-b5a1-97111499c19a
+
+	column 'Workspace ID'
+		dataType: string
+		isHidden
+		lineageTag: 4496c9e6-d544-4422-ae1f-a88f21b2ba60
+		sourceLineageTag: d8395e7e-cd4f-4425-9372-e3302c52a28e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Principal Type'
+		dataType: string
+		isHidden
+		lineageTag: 4725b486-96ad-46bb-8362-4be8c077cfb3
+		sourceLineageTag: 89433b1c-e4ff-4cb0-93ee-980f3d370d18
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Principal Type
+
+		annotation SummarizationSetBy = User
+
+	column 'User Access Right'
+		dataType: string
+		lineageTag: 37e6c0b6-75ff-4f56-8d6d-0659eb4b138a
+		sourceLineageTag: eea641a3-3125-4094-9764-44333dea2f9f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Access Right
+
+		annotation SummarizationSetBy = User
+
+	column 'User Identifier'
+		dataType: string
+		lineageTag: 717cb9ed-a635-4e94-9ebc-59ae6b24dc3f
+		sourceLineageTag: a4bc2e43-d493-47b0-b1ac-50387a387edf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Identifier
+
+		annotation SummarizationSetBy = User
+
+	column 'Workspace User ID'
+		dataType: string
+		lineageTag: 33b4660b-a097-4c12-ab54-be9ce98b78fc
+		sourceLineageTag: e4ddcc23-1093-4dfe-bcb9-af466236d1e2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace User ID
+
+		annotation SummarizationSetBy = User
+
+	column 'User Name'
+		dataType: string
+		lineageTag: b90b7394-ad26-4297-b243-8c7ecb696d3d
+		sourceLineageTag: ce044d00-1695-46eb-b6cd-8d099deaecae
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Workspace Owner' = ```
+			
+			VAR selectedWorkspace = SELECTEDVALUE(Workspace[Workspace Name])
+			VAR selectedUser = SELECTEDVALUE('Workspace User'[User Identifier])
+			VAR selectedUserAccess = SELECTEDVALUE('Workspace User'[User Access Right])
+			VAR biteam = 
+			    CALCULATETABLE(
+			        SELECTCOLUMNS(
+			            'BI Team',
+			            "Users",
+			            'BI Team'[Email]
+			        )
+			    )
+			// VAR result = 
+			//     CONCATENATEX( VALUES( 'Workspace User'[User Name] ), 'Workspace User'[User Name], "|"),
+			//     TREATAS( {"Admin", "Member"}, 'Workspace User'[User Access Right] )
+			// )
+			VAR result = 
+			CALCULATE(
+			    CONCATENATEX( VALUES( 'Workspace User'[User Name] ), 'Workspace User'[User Name], "|"),
+			    TREATAS( {"Admin", "Member"}, 'Workspace User'[User Access Right] )
+			)
+			// )
+			// VAR result = 
+			// IF(
+			//     ISBLANK(NOT selectedUser IN biteam),
+			//     // ISBLANK(TREATAS(biteam, 'Workspace User'[User Identifier])),
+			//     CALCULATE(
+			//         CONCATENATEX( VALUES( 'Workspace User'[User Name] ), 'Workspace User'[User Name], "|"),
+			//         TREATAS( {"Admin", "Member"}, 'Workspace User'[User Access Right] )
+			//     ),
+			//     CALCULATE(
+			//         CONCATENATEX( VALUES( 'Workspace User'[User Name] ), 'Workspace User'[User Name], "|"),
+			//         NOT selectedUser IN biteam
+			//     )
+			// )
+			
+			        // ),
+			//         (NOT selectedUser IN biteam) && selectedUserAccess IN {"Admin", "Member"} && Workspace[Workspace Name] = selectedWorkspace
+			//     ),
+			//     'Workspace User'[User Name],
+			//     "|"
+			// )
+			RETURN
+			    result
+			
+			
+			```
+		lineageTag: 1c4589f1-57ef-4e1b-b1dd-2b973e82b6fd
+		summarizeBy: none
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Workspace User' = entity
+		mode: directQuery
+		source
+			entityName: Workspace User
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

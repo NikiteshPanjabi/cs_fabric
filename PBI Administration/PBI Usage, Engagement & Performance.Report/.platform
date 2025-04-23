@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "PBI Usage, Engagement & Performance",
+    "description": "Analysis of PBI Usage, Engagement & Performance"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e95f5109-a152-b260-4d8d-392da35b63d8"
+  }
+}

@@ -1,0 +1,34 @@
+relationship e9e84e3a-1660-4c47-82d1-30f504e6943c
+	fromColumn: Workspace.'Domain ID'
+	toColumn: Domain.'Domain ID'
+
+relationship 4ef15166-7fdd-4f2a-b443-75be575d1591
+	fromColumn: 'Workspace User'.'Workspace ID'
+	toColumn: Workspace.'Workspace ID'
+
+relationship 84c5c07f-ce1e-400a-b3b0-9a99f189d47a
+	fromColumn: 'Workspace User'.'User Identifier'
+	toColumn: User.'User Identifier'
+
+relationship ffdd245b-ca39-4551-baa7-d7b2909c0a68
+	isActive: false
+	fromColumn: 'Dataset to Dataflow Link'.'Workspace ID'
+	toColumn: Workspace.'Workspace ID'
+
+relationship a48baed6-42e7-4e26-a420-f1189eb44870
+	fromColumn: 'Dataset Refresh'.'Last Refresh Start Date'
+	toColumn: Calendar.Date
+
+relationship 159ef238-4e65-49ab-ae18-b52b121c3320
+	isActive: false
+	fromColumn: 'Dataflow Refresh'.'Workspace Name'
+	toColumn: Workspace.'Workspace Name'
+
+relationship 4ec9b9d3-26ea-4d52-84af-7506d7c5763c
+	fromColumn: 'Dataflow Refresh'.'Start Date'
+	toColumn: Calendar.Date
+
+relationship 509db5bd-9358-4455-9017-642cbf94e10e
+	fromColumn: Rights.Workspace
+	toColumn: Workspace.'Workspace Name'
+

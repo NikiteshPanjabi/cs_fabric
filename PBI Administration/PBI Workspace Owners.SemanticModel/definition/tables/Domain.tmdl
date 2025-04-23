@@ -1,0 +1,71 @@
+table Domain
+	lineageTag: f89fc45c-0c0c-490f-87b7-c779ed748f6a
+	sourceLineageTag: c2bbce28-07ce-4384-90ce-211d8efba5d1
+
+	column 'Domain ID'
+		dataType: string
+		isNullable: false
+		lineageTag: 748ebd33-d45d-4ad7-948e-10988cef7552
+		sourceLineageTag: 94c20fa7-702d-4ef2-8064-f127f77d483b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Domain ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Domain Name'
+		dataType: string
+		lineageTag: d33e9d8f-e733-4deb-b489-10bb02309c38
+		sourceLineageTag: d50de649-e4d3-4834-a287-41cd5c93919c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Domain Name
+
+		annotation SummarizationSetBy = User
+
+	column Description
+		dataType: string
+		lineageTag: c99117bf-93e2-4932-a7df-3ecf94686da9
+		sourceLineageTag: c7df5acb-1bee-4cb5-ae42-94a6c9fda4cd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = User
+
+	column 'Contributors Scope'
+		dataType: string
+		lineageTag: 0dbecce0-f6e3-4b57-9c12-6d68d64398fb
+		sourceLineageTag: 41c7ae3c-a497-453c-a371-f084cb7fee14
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Contributors Scope
+
+		annotation SummarizationSetBy = User
+
+	column 'Is Default Data Domain For User'
+		dataType: string
+		lineageTag: 7af3d65c-d6a9-4841-afa3-4d79ea45aa1c
+		sourceLineageTag: c95e6f1b-a66f-4d52-a000-87c4fe2a3237
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Is Default Data Domain For User
+
+		annotation SummarizationSetBy = User
+
+	column 'Default Members'
+		dataType: string
+		lineageTag: 276f4727-ecc3-44a2-80df-bfbdc9d19db2
+		sourceLineageTag: 55a174d2-3b0c-4a4c-bb12-a8eb21a01ffd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Default Members
+
+		annotation SummarizationSetBy = User
+
+	partition Domain = entity
+		mode: directQuery
+		source
+			entityName: Domain
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

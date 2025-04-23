@@ -1,0 +1,201 @@
+table Dataset
+	lineageTag: 486d30aa-f13f-4daa-9267-8333d6b507b8
+	sourceLineageTag: 9cd0b8c1-5764-4c6d-9f77-7a41b57d7aef
+
+	column 'Dataset Name'
+		dataType: string
+		lineageTag: 34838782-3361-4ef9-93ac-284fbd60696a
+		sourceLineageTag: 0618d581-f3eb-4c3b-9067-8403c5c1135a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataset Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Configured By'
+		dataType: string
+		lineageTag: e50e26ca-2606-41cc-ac73-4674231ffb4b
+		sourceLineageTag: 056deb69-6404-4249-bc72-27fe92682bb3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Configured By
+
+		annotation SummarizationSetBy = User
+
+	column 'Configured By ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: 75200528-1dcc-475d-8c18-0502cbfe5acf
+		sourceLineageTag: 973f4b63-ce28-45dd-8c77-af315f798526
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Configured By ID
+
+		annotation SummarizationSetBy = User
+
+	column WsID_DsID_Key
+		dataType: string
+		isHidden
+		isNullable: false
+		displayFolder: Hidden
+		lineageTag: 1b4d4d4c-c71f-41c2-9d67-ba135f7bd328
+		sourceLineageTag: efcde9cf-66ee-4723-956e-867f1c8710c5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: WsID_DsID_Key
+
+		annotation SummarizationSetBy = User
+
+	column 'Created Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b3757a02-a126-4446-85d7-a8c47f220b54
+		sourceLineageTag: 6c9fe1df-157d-421a-9199-bf90ae15f0ae
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Created Date
+
+		annotation SummarizationSetBy = User
+
+	column 'Workspace ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: 678bc7de-0bbd-4dfa-a4a8-0296640712af
+		sourceLineageTag: f2d6c861-2ebf-4c79-bb24-f2794caadce3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataset ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: dfa923bb-7cbc-44b4-a543-6335cbb5b5a5
+		sourceLineageTag: aee37393-d581-4654-945d-06a04480cbe1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataset ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Target Storage Mode'
+		dataType: string
+		lineageTag: 18dd72a6-0afe-4e56-985b-b4d58bebcb8e
+		sourceLineageTag: a49c6b9d-a91a-47a7-84f8-cad15c0e99ba
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Target Storage Mode
+
+		annotation SummarizationSetBy = User
+
+	column 'Content Provider Type'
+		dataType: string
+		lineageTag: be672f7c-f356-45ba-a8c6-e8ef1dd43cff
+		sourceLineageTag: 95989de1-3980-4bcb-b9c0-35601d26c6cb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Content Provider Type
+
+		annotation SummarizationSetBy = User
+
+	column 'Sensitivity Label ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: 63a114e1-400b-40fa-b40e-4ab3af4c7b2c
+		sourceLineageTag: f1a18aaa-1027-4260-98ec-8430013ad3ab
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Sensitivity Label ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Schema May Not Be Up To Date'
+		dataType: string
+		displayFolder: Various
+		lineageTag: 687a3190-4dfc-4df0-914d-dfc06421ff30
+		sourceLineageTag: 36691d81-1fd6-4e85-a67e-b271f76a5943
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Schema May Not Be Up To Date
+
+		annotation SummarizationSetBy = User
+
+	column Tables
+		dataType: string
+		lineageTag: d8b0fdd9-2e74-481d-abd9-127448071923
+		sourceLineageTag: bcfb8370-5972-4ac1-aef9-53955950fc99
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Tables
+
+		annotation SummarizationSetBy = User
+
+	column 'Is Effective Identity Required?'
+		dataType: string
+		displayFolder: Various
+		lineageTag: 196179be-bd08-4157-94de-d1a9bfce35dd
+		sourceLineageTag: 07066f2f-83a9-4f11-a06c-083fc4c8dd79
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Is Effective Identity Required?
+
+		annotation SummarizationSetBy = User
+
+	column 'Is Effective Identity Roles Required?'
+		dataType: string
+		displayFolder: Various
+		lineageTag: 23a189ca-10c5-46a4-a680-cd0360fde8ea
+		sourceLineageTag: 66e8073d-2ccf-439b-a038-b020d8f3138a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Is Effective Identity Roles Required?
+
+		annotation SummarizationSetBy = User
+
+	column 'Created Date Time Zone'
+		dataType: string
+		lineageTag: 35f47d3c-1c8d-4f93-b483-6b4defef692d
+		sourceLineageTag: ceba4f47-ce93-43c7-8b0b-3c904da47601
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Created Date Time Zone
+
+		annotation SummarizationSetBy = User
+
+	column Endorsement
+		dataType: string
+		lineageTag: 0455ca3b-fc32-4c2b-a490-1267ec83ac09
+		sourceLineageTag: ca7540ad-28bc-4d52-a8af-3a6e6b4e49c1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Endorsement
+
+		annotation SummarizationSetBy = User
+
+	column 'Certified By'
+		dataType: string
+		lineageTag: 81272bcc-ea10-46bd-a76b-65f71fde576f
+		sourceLineageTag: 2ceebd44-14b6-46ba-82bf-50ec56bff403
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Certified By
+
+		annotation SummarizationSetBy = User
+
+	column Relationships
+		dataType: string
+		lineageTag: 85420caa-aebb-4415-91ed-c8154ec54e72
+		sourceLineageTag: c712e81a-c8b8-4548-841a-05786a148620
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Relationships
+
+		annotation SummarizationSetBy = User
+
+	partition Dataset = entity
+		mode: directQuery
+		source
+			entityName: Dataset
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

@@ -1,0 +1,80 @@
+table 'Report User'
+	lineageTag: a599411e-24eb-4835-9dc1-d580e1bcff06
+	sourceLineageTag: 4c629579-8fa6-4059-a576-e5dfbaba2c16
+
+	column 'Report ID'
+		dataType: string
+		lineageTag: 2ee89065-0bbf-4543-87d6-225ebeb72bae
+		sourceLineageTag: 12981f55-1ab1-4d0d-a45c-3e6282140348
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Report ID
+
+		annotation SummarizationSetBy = User
+
+	column 'User Identifier'
+		dataType: string
+		lineageTag: 800184a2-2fed-4f54-af4d-d65fff938f78
+		sourceLineageTag: 5d9bb217-268b-4476-931c-4436ba30cea4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Identifier
+
+		annotation SummarizationSetBy = User
+
+	column 'Report User ID'
+		dataType: string
+		lineageTag: dff9671f-279d-4f3f-852f-160114fd92d0
+		sourceLineageTag: 4a624314-5af8-4111-9c15-34a921c44e4d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Report User ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Report User Name'
+		dataType: string
+		lineageTag: f99881dc-046c-44a5-91eb-61ab1b734300
+		sourceLineageTag: 9466f37e-5d47-4db0-86fa-5d3e502f16ec
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Report User Name
+
+		annotation SummarizationSetBy = User
+
+	column 'User Access Right'
+		dataType: string
+		lineageTag: 609b6e33-bebe-4757-b752-a3b475d722d8
+		sourceLineageTag: ea0f5224-8113-4c7a-8c0c-874e8c98a163
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Access Right
+
+		annotation SummarizationSetBy = User
+
+	column 'Principal Type'
+		dataType: string
+		lineageTag: 0b1b549e-5ee3-4728-a500-69aa5bd40287
+		sourceLineageTag: 86ac59d8-bf88-456e-b694-1b7a70af4101
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Principal Type
+
+		annotation SummarizationSetBy = User
+
+	column 'User Type'
+		dataType: string
+		lineageTag: cef6090a-7cd6-4a9e-bb3a-465fe5e89f40
+		sourceLineageTag: 7a8014a6-8438-4a5a-9772-0fc8d2725741
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Type
+
+		annotation SummarizationSetBy = User
+
+	partition 'Report User' = entity
+		mode: directQuery
+		source
+			entityName: Report User
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

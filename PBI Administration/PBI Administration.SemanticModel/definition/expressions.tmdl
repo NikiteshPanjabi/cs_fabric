@@ -1,0 +1,11 @@
+expression 'DirectQuery to AS - PBI Metadata Model' =
+		let
+		    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/Data%20Models%20-%20IT%20Governance", "PBI Metadata Model"),
+		    Cubes = Table.Combine(Source[Data]),
+		    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+		in
+		    Cube
+	lineageTag: 0c2db9f0-7d69-4557-8cc3-0d91dd69f19d
+
+	annotation PBI_IncludeFutureArtifacts = True
+

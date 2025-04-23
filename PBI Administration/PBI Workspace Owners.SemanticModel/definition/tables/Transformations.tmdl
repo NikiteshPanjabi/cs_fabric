@@ -1,0 +1,34 @@
+table Transformations
+	isHidden
+	lineageTag: 495e7092-8883-451d-b289-7d8c3f663dfa
+	sourceLineageTag: 7fc70eb9-d06b-4bd1-ae0b-303b03553467
+
+	column Value
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 0114a4fd-b454-4d0f-90f1-b7eb52422bd2
+		sourceLineageTag: 466f1562-8af6-4924-bb16-ae9939fe6590
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = User
+
+	column Replacement
+		dataType: string
+		isHidden
+		lineageTag: dae88252-2688-493b-861c-b9e1a05df4b8
+		sourceLineageTag: 45868438-9e20-450e-ba40-f08c19331745
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Replacement
+
+		annotation SummarizationSetBy = User
+
+	partition Transformations = entity
+		mode: directQuery
+		source
+			entityName: Transformations
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

@@ -1,0 +1,13 @@
+expression 'DirectQuery to AS - PBI Metadata Model' =
+		let
+		    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/Data%20Models%20-%20IT%20Governance", "PBI Metadata Model"),
+		    Cubes = Table.Combine(Source[Data]),
+		    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+		in
+		    Cube
+	lineageTag: 49585d53-dedf-42c3-a296-dbfb0ecaacc9
+
+	annotation PBI_IncludeFutureArtifacts = True
+
+	annotation PBI_RemovedChildren = [{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"371d951b-1ac1-4f0b-a50b-cee1f1d9a701"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"9cd0b8c1-5764-4c6d-9f77-7a41b57d7aef"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"1b382a89-791e-4398-9a20-15a308bb85e9"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"5600b0ea-addb-4642-8aa3-fc3842a980b4"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"40396c59-4899-4ae3-9abe-3d9669a6addf"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"ab97efcf-9177-498c-a11e-dc6884f8aec2"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"ad66dc53-321f-4a33-ad1b-1a2085e1139f"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"ab47f46e-2014-4e19-8966-28beabcdef68"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"4c629579-8fa6-4059-a576-e5dfbaba2c16"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"5797e593-3b98-4721-a9fb-59bb085dea97"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"ce344e38-660d-4baf-996a-f5f87a7b4ad6"}},"objectType":"Table"},{"remoteItemId":{"analysisServicesObject":{"sourceName":null,"sourceLineageTag":"2cf7c833-153d-4f23-bbaf-bac228a68a5a"}},"objectType":"Table"}]
+

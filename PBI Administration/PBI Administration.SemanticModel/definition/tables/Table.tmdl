@@ -1,0 +1,197 @@
+table Table
+	lineageTag: 5f5da258-f72d-4b4b-988d-2475b0b46530
+	sourceLineageTag: 5797e593-3b98-4721-a9fb-59bb085dea97
+
+	measure Measure3 = EXTERNALMEASURE("Measure3", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: 0
+		lineageTag: db73418f-6e2a-4426-86e0-d18e06f04049
+		sourceLineageTag: 9157fed8-8172-4792-9337-d7e9d5d14b54
+		dataCategory: Uncategorized
+
+	column 'Table Key'
+		dataType: string
+		isHidden
+		lineageTag: a3df882a-1b14-4dc1-a99c-430da0eb0894
+		sourceLineageTag: 119ebde5-854a-48fa-97fa-520fc7407c75
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Table Key
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataset ID'
+		dataType: string
+		lineageTag: 481e612b-4921-4636-bb73-236e7d98c678
+		sourceLineageTag: ce144b00-85a2-4856-a33f-4e2a2c66b45f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataset ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Table Name'
+		dataType: string
+		lineageTag: 89ac9931-0909-4fa7-8fc7-984231e22be8
+		sourceLineageTag: 5107c0cb-3ac7-4804-8bb8-d359ec9a00cd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Table Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Column Name'
+		dataType: string
+		lineageTag: b8ecff0a-3275-421c-9488-b9165ac8066f
+		sourceLineageTag: 0e016848-8a33-4096-af53-b5923a87c8fa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Column Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Column Data Type'
+		dataType: string
+		lineageTag: 91869a0d-03b1-4e47-b24c-22d4774ac83e
+		sourceLineageTag: 208ba195-a8fa-4f21-914f-7181dfaf5388
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Column Data Type
+
+		annotation SummarizationSetBy = User
+
+	column 'Column Type'
+		dataType: string
+		lineageTag: e28c2817-d033-4bf6-b023-1c6d60653ed3
+		sourceLineageTag: 742b73b0-71e7-4097-876a-baee932e1a7f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Column Type
+
+		annotation SummarizationSetBy = User
+
+	column 'Column Expression'
+		dataType: string
+		lineageTag: fa5e656c-9f9c-49eb-8643-8238afd6cd1d
+		sourceLineageTag: 5e7ceba5-d110-44ef-89b3-97e11355fcfb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Column Expression
+
+		annotation SummarizationSetBy = User
+
+	column 'Measure Name'
+		dataType: string
+		lineageTag: 8a95afdf-1a31-4ab5-914b-13c58b74b819
+		sourceLineageTag: 715a79f7-4ce8-4728-99af-f0b78347aa5e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Measure Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Measure Expression'
+		dataType: string
+		lineageTag: 271ce352-535d-40aa-a834-14a6fbb6ac1f
+		sourceLineageTag: bc8543dc-932c-465a-9570-6be89ec3615e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Measure Expression
+
+		annotation SummarizationSetBy = User
+
+	column 'Source Expression'
+		dataType: string
+		lineageTag: 1930c4eb-8365-4486-b865-201395e2eec6
+		sourceLineageTag: ce9c273f-c4a8-482d-8ace-bc0a9e556c85
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Source Expression
+
+		annotation SummarizationSetBy = User
+
+	column 'Workspace ID'
+		dataType: string
+		lineageTag: 319b9747-6460-4b29-b40c-9fee5359a0d5
+		sourceLineageTag: 5d7d7ff9-767e-4365-8c9d-170abb534576
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace ID
+
+		annotation SummarizationSetBy = User
+
+	column WsID_DsID_Key
+		dataType: string
+		lineageTag: 48a9241b-1d9a-4a31-9f19-02f4d392c407
+		sourceLineageTag: c9e33ac7-e98e-4f5c-98d0-bf0820c8a1c1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: WsID_DsID_Key
+
+		annotation SummarizationSetBy = User
+
+	column 'Is Table Hidden?'
+		dataType: string
+		lineageTag: e0a00a0e-fa7e-47d4-86a8-6435117b7046
+		sourceLineageTag: b027e948-0e0d-4963-9b87-a97febb7b9a0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Is Table Hidden?
+
+		annotation SummarizationSetBy = User
+
+	column 'Is Column Hidden?'
+		dataType: string
+		lineageTag: 551c9977-3a1f-4c25-89b6-5e4c48ce7b5f
+		sourceLineageTag: 50576797-8150-4b63-b4db-babd90ea4927
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Is Column Hidden?
+
+		annotation SummarizationSetBy = User
+
+	column 'Is Measure Hidden?'
+		dataType: string
+		lineageTag: e2cc1cc8-bcb3-45cf-8d5d-19cb39927965
+		sourceLineageTag: fda1e116-f992-4bce-a77b-54ea5840f9bf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Is Measure Hidden?
+
+		annotation SummarizationSetBy = User
+
+	column 'Table Description'
+		dataType: string
+		lineageTag: 380395ae-7f5e-4516-b71c-615f64d5befd
+		sourceLineageTag: 544bc516-4eda-408d-8a63-f6acc6a0f1bd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Table Description
+
+		annotation SummarizationSetBy = User
+
+	column 'Column Description'
+		dataType: string
+		lineageTag: 74ae7eaa-6527-47fc-85f1-fe4322a5a7ac
+		sourceLineageTag: d96051ba-b09f-4454-9a10-570fe927cfa4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Column Description
+
+		annotation SummarizationSetBy = User
+
+	column 'Measure Description'
+		dataType: string
+		lineageTag: 7e7d5a44-c732-4247-843a-f0580344cb73
+		sourceLineageTag: da9f7ca1-7ff1-475a-8db4-f7ad88218a50
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Measure Description
+
+		annotation SummarizationSetBy = User
+
+	partition Table = entity
+		mode: directQuery
+		source
+			entityName: Table
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

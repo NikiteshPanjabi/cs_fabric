@@ -1,0 +1,145 @@
+table 'Key Measures'
+	lineageTag: f508a191-395d-4194-8087-095506e67b3c
+	sourceLineageTag: fa70be4d-3591-485f-a7c2-5fa62c963ad1
+
+	/// Number of Workspaces
+	measure 'Workspaces #' = EXTERNALMEASURE("Workspaces #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: #,0
+		lineageTag: 92ee0547-923d-44a1-84ed-627d3428f325
+		sourceLineageTag: d1d9ea5c-516f-4fff-8135-073482c0db37
+		dataCategory: Uncategorized
+
+	measure 'Workspace Users #' = EXTERNALMEASURE("Workspace Users #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: #,0
+		lineageTag: 0e80dc96-2911-45dd-9acd-db42a557e4b1
+		sourceLineageTag: 32f4a709-9ba2-473a-a4a0-6d24d6c7feff
+		dataCategory: Uncategorized
+
+	measure 'Datasets #' = EXTERNALMEASURE("Datasets #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: #,##0
+		lineageTag: f6b61cdd-dcc0-4606-adc6-3596ddc5c201
+		sourceLineageTag: ee370892-3acc-4cdb-b3bc-22d009b5ab4c
+		dataCategory: Uncategorized
+
+	measure 'Dataflows #' = EXTERNALMEASURE("Dataflows #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: #,##0
+		lineageTag: 7ef0de3a-b79f-4732-8ed2-283d8461c015
+		sourceLineageTag: 55cd3bc6-b67f-440b-86cf-0f6cc84d067d
+		dataCategory: Uncategorized
+
+	/// DISTINCTCOUNT(Report[Report ID] ),
+	/// FILTER( Report[App ID] = BLANK() )
+	measure 'Reports #' = EXTERNALMEASURE("Reports #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: #,0
+		lineageTag: 3387cc5f-824a-4c5c-b1fd-1007bfe5b87a
+		sourceLineageTag: 5a92bc75-eff6-4768-aeb3-b80a2b1f7190
+		dataCategory: Uncategorized
+
+	measure 'Total Users #' = EXTERNALMEASURE("Total Users #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: #,0
+		lineageTag: 635264a2-35cd-4ba5-92e2-b57db54dea72
+		sourceLineageTag: 6e5895ba-98f9-4076-82ac-1b9277a85620
+		dataCategory: Uncategorized
+
+	measure 'Tables #' = EXTERNALMEASURE("Tables #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: #,0
+		lineageTag: c3037a3b-1838-4377-9c12-52d8fead842c
+		sourceLineageTag: f95b1925-fa67-44a0-b63b-7cc3e1504c5e
+		dataCategory: Uncategorized
+
+	/// Number of columns
+	measure 'Columns #' = EXTERNALMEASURE("Columns #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: #,0
+		displayFolder: Columns
+		lineageTag: f903fac6-1105-4dd5-9f22-263e09d4cb3c
+		sourceLineageTag: 9f5f1b01-378e-4651-a8fd-df434aaa2353
+		dataCategory: Uncategorized
+
+	measure 'Dataset Users #' = EXTERNALMEASURE("Dataset Users #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: 0
+		lineageTag: 34212a92-232f-4b13-80d6-f909b431e10a
+		sourceLineageTag: ec2b38ed-4830-455e-9586-095482459e28
+		dataCategory: Uncategorized
+
+	measure 'Measures #' = EXTERNALMEASURE("Measures #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: #,##0
+		lineageTag: 5fb4188c-3a79-4959-bfc8-141fffb4f394
+		sourceLineageTag: fe48622e-48df-4901-bad9-ef43b018d590
+		dataCategory: Uncategorized
+
+	measure 'Calculated Column #' = EXTERNALMEASURE("Calculated Column #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: #,0
+		lineageTag: f444237e-4e18-4963-b159-3546a89978e8
+		sourceLineageTag: 3cb0521f-e8f1-4eeb-8d34-08a041dbce38
+		dataCategory: Uncategorized
+
+	measure 'Calculated Table #' = EXTERNALMEASURE("Calculated Table #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: #,0
+		lineageTag: 2555069a-5dad-4b46-8acc-593dd4696f98
+		sourceLineageTag: 1411af8b-6e91-4105-bdac-bf86569e86de
+		dataCategory: Uncategorized
+
+	measure 'Dataflow Users #' = EXTERNALMEASURE("Dataflow Users #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: #,0
+		lineageTag: d682c539-922f-4886-9dd9-8176e1e1214e
+		sourceLineageTag: 807a399c-fb30-45cc-9592-ae5082ea0219
+		dataCategory: Uncategorized
+
+	measure 'Report Users #' = EXTERNALMEASURE("Report Users #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: #,0
+		lineageTag: f347506f-4948-49cf-9d47-7ee9f1bb6a3c
+		sourceLineageTag: db9af84a-ac13-42fe-9132-52ab257faeff
+		dataCategory: Uncategorized
+
+	measure 'Reports Created #' = EXTERNALMEASURE("Reports Created #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: 0
+		lineageTag: b1e3481e-072f-4b86-8abc-e662b071e017
+		sourceLineageTag: daf97d0e-935d-4f72-9479-4313d5e93e61
+		dataCategory: Uncategorized
+
+	measure 'Reports Modified #' = EXTERNALMEASURE("Reports Modified #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: #,0
+		lineageTag: 45c0dd30-3a26-4313-b829-e8764f1f9fd5
+		sourceLineageTag: efa49dd1-0709-438e-a96d-7a11301ef560
+		dataCategory: Uncategorized
+
+	measure 'Report Modified Names' = EXTERNALMEASURE("Report Modified Names", STRING, "DirectQuery to AS - PBI Metadata Model")
+		lineageTag: eacde713-4bc0-4f79-8e40-0c3222b9b7ab
+		sourceLineageTag: a363520c-b876-4bdc-b564-bca04eec0fcd
+		dataCategory: Uncategorized
+
+	measure 'Report Modified Date Filter' = EXTERNALMEASURE("Report Modified Date Filter", DATETIME, "DirectQuery to AS - PBI Metadata Model")
+		formatString: General Number
+		lineageTag: c16a634c-b770-4a1c-a8d8-bbfb4174164c
+		sourceLineageTag: 742ee4fd-7f95-4da5-ad4b-280c2dcbaa09
+		dataCategory: Uncategorized
+
+	measure 'Show Filters' = EXTERNALMEASURE("Show Filters", STRING, "DirectQuery to AS - PBI Metadata Model")
+		lineageTag: bb9d54fe-6655-414b-a485-4abfa90da91b
+		sourceLineageTag: d59dc008-c628-40cc-b7d3-cb2dfd93346d
+		dataCategory: Uncategorized
+
+	measure 'Show Filter Header' = EXTERNALMEASURE("Show Filter Header", STRING, "DirectQuery to AS - PBI Metadata Model")
+		lineageTag: cf95061e-26ee-4fae-ac44-9133b361f346
+		sourceLineageTag: d76a2062-9063-48ed-8eb6-30f3b6ca2018
+		dataCategory: Uncategorized
+
+	measure 'Datasets per Dataflow #' = EXTERNALMEASURE("Datasets per Dataflow #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: #,##0
+		lineageTag: 49f089c3-1f40-4ab9-97dc-bfa96a928f8b
+		sourceLineageTag: 58e342cb-a370-4ee9-bae6-5e5091238c54
+		dataCategory: Uncategorized
+
+	/// Number of datasets used in reports
+	measure 'Report Datasets #' = EXTERNALMEASURE("Report Datasets #", INTEGER, "DirectQuery to AS - PBI Metadata Model")
+		formatString: 0
+		lineageTag: e4dd2fa0-dd53-4b4b-be98-8e8e8cead3d5
+		sourceLineageTag: 1806cce9-8db8-4d99-b2f1-5a53d61ea662
+		dataCategory: Uncategorized
+
+	partition 'Key Measures' = entity
+		mode: directQuery
+		source
+			entityName: Key Measures
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

@@ -1,0 +1,40 @@
+table 'BI Team'
+	lineageTag: bef4ae51-3558-48a1-8464-33edf1c56e4b
+	sourceLineageTag: 0d63c2bd-d8d4-41c3-9a3c-397c47f3e787
+
+	column 'First Name'
+		dataType: string
+		lineageTag: 337bb294-208b-430f-a9e3-d25f54cf0f28
+		sourceLineageTag: 7b6b89b1-e73e-4a37-81ac-fe15b5340a0e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: First Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Last Name'
+		dataType: string
+		lineageTag: 6699e429-e748-45eb-8d07-61ebc83550b1
+		sourceLineageTag: de95c681-db5d-44c2-bcf2-d9273ed6f3b5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last Name
+
+		annotation SummarizationSetBy = User
+
+	column Email
+		dataType: string
+		lineageTag: 742e5e30-a21f-4a43-a58c-1180aec6c580
+		sourceLineageTag: 567f212d-b7fd-4420-8653-dee967380930
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Email
+
+		annotation SummarizationSetBy = User
+
+	partition 'BI Team' = entity
+		mode: directQuery
+		source
+			entityName: BI Team
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

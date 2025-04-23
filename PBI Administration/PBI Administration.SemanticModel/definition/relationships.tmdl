@@ -1,0 +1,158 @@
+relationship db9e4204-6eca-4b22-a46e-01a2fe498fc9
+	isActive: false
+	fromColumn: Report.'Modified Date'
+	toColumn: Calendar.Date
+
+relationship f6feac4f-7d8e-4b77-84cc-ab40c7296b32
+	fromColumn: Report.'Created Date'
+	toColumn: Calendar.Date
+
+relationship 7601c6ca-2936-48df-9bc4-0e6103a99309
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: Dataset.WsID_DsID_Key
+	toColumn: 'Dataset User'.WsID_DsID_Key
+
+relationship 2f403ffb-66ca-4ab8-a805-c99212215b07
+	fromColumn: Dataset.'Workspace ID'
+	toColumn: Workspace.'Workspace ID'
+
+relationship 73af6779-e3db-4d53-a0aa-3207fb866e37
+	fromColumn: Dashboard.'Workspace ID'
+	toColumn: Workspace.'Workspace ID'
+
+relationship c7b18013-b2f9-4ac3-bd5c-b8f519e0d99b
+	isActive: false
+	fromColumn: 'Dataset User'.'Workspace ID'
+	toColumn: Workspace.'Workspace ID'
+
+relationship aa764d96-3187-4934-80e8-80640604cfb1
+	fromColumn: 'Dataset User'.'User Identifier'
+	toColumn: User.'User Identifier'
+
+relationship 010226c8-f054-4262-b1f7-e8f5a4144166
+	isActive: false
+	fromColumn: 'Dataflow User'.'Workspace Name'
+	toColumn: Workspace.'Workspace Name'
+
+relationship 2feeae2c-20cf-499b-9c9a-c906020ede02
+	fromColumn: 'Dataflow User'.'User Identifier'
+	toColumn: User.'User Identifier'
+
+relationship 6aa0435e-a89f-4256-8bd0-0c360ee43216
+	fromColumn: 'Dashboard User'.'Workspace ID'
+	toColumn: Workspace.'Workspace ID'
+
+relationship 22d7244e-5475-4a7a-b7a7-1ce5588b2b95
+	fromColumn: 'Report User'.'User Identifier'
+	toColumn: User.'User Identifier'
+
+relationship cc832f1f-4ff8-470f-bd3c-d68c216d6464
+	fromColumn: 'Workspace User'.'Workspace ID'
+	toColumn: Workspace.'Workspace ID'
+
+relationship 7dd819a3-d124-48fa-8197-7cada526e2df
+	fromColumn: 'Workspace User'.'User Identifier'
+	toColumn: User.'User Identifier'
+
+relationship ea39ba47-6ac6-4bdb-9def-77e3d18e78cc
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: Table.WsID_DsID_Key
+	toColumn: Dataset.WsID_DsID_Key
+
+relationship a5bd2f75-1eed-4765-ae79-462c6b45cb71
+	isActive: false
+	fromColumn: Table.'Workspace ID'
+	toColumn: Workspace.'Workspace ID'
+
+relationship 0508a964-6887-4e84-8d14-00fb4f2b8a66
+	isActive: false
+	fromColumn: 'Dataset to Dataflow Link'.'Workspace ID'
+	toColumn: Workspace.'Workspace ID'
+
+relationship ea600bd1-2c59-41da-bab5-8ae1c7286010
+	fromColumn: Workspace.'Domain ID'
+	toColumn: Domain.'Domain ID'
+
+relationship 475e7b65-1abf-4e18-a2fe-6e255f3d49fb
+	fromColumn: Dataflow.'Workspace ID'
+	toColumn: Workspace.'Workspace ID'
+
+relationship 4f9030c9-b302-4a98-9ab5-76f7628640e9
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'Report User'.'Report ID'
+	toColumn: Report.'Report ID'
+
+relationship 52d0ad59-99f1-44c1-841c-351a6ff8e856
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'Dataflow User'.'Dataflow ID'
+	toColumn: Dataflow.'Dataflow ID'
+
+relationship dc8bdce1-295a-4155-9974-b843dad7f180
+	crossFilteringBehavior: bothDirections
+	fromColumn: 'Dataset to Dataflow Link'.workspace_dataset_key
+	toColumn: Dataset.WsID_DsID_Key
+
+relationship e5a1ce40-d3cb-461e-8a08-85fdaa60055d
+	isActive: false
+	fromColumn: 'Dataset to Dataflow Link'.workspace_dataflow_key
+	toColumn: Dataflow.workspace_dataflow_key
+
+relationship 004044b0-4033-4113-8d0f-7954c6d6cd67
+	fromColumn: 'Dataset Refresh'.'Last Refresh Start Date'
+	toColumn: Calendar.Date
+
+relationship eb1c608a-b47a-430c-a695-e94d8acff77c
+	crossFilteringBehavior: bothDirections
+	fromColumn: Report.'Workspace Name'
+	toColumn: Workspace.'Workspace Name'
+
+relationship d6d3a79c-8927-44ed-9e1f-6bffe85d50c3
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: Report.'Dataset ID'
+	toColumn: Table.'Dataset ID'
+
+relationship 18ee545d-4975-4796-ad20-729ee47afaaa
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: Report.'Dataset ID'
+	toColumn: Dataset.'Dataset ID'
+
+relationship 920d971a-38c6-49a9-981e-3817ee442507
+	fromColumn: Dataset.'Dataset ID'
+	toColumn: 'Dataset Refresh'.'Dataset ID'
+
+relationship ff470d47-1ba5-45c0-98e6-79023c0e62ab
+	isActive: false
+	fromColumn: 'Dataflow Refresh'.'Workspace Name'
+	toColumn: Workspace.'Workspace Name'
+
+relationship 02d5efe6-c271-4e1c-ac23-fe350648eed7
+	fromColumn: 'Dataflow Refresh'.'Dataflow ID'
+	toColumn: Dataflow.'Dataflow ID'
+
+relationship 4a12130b-6719-4c8b-80b0-7612d1735836
+	fromColumn: 'Dataflow Refresh'.'Start Date'
+	toColumn: Calendar.Date
+
+relationship e6e3b52a-0f0b-45d3-9393-420a757d5cb9
+	fromColumn: 'Dataset Refresh Schedule'.'Dataset ID'
+	toColumn: 'Dataset Refresh'.'Dataset ID'
+
+relationship b187e24d-b88a-401d-abf0-f8478e4a569b
+	fromColumn: 'Dataset Refresh Schedule'.'Workspace ID'
+	toColumn: Workspace.'Workspace ID'
+
+relationship a5b4f0be-4466-4bcb-8bcd-be3fcd978faf
+	fromColumn: 'Dataflow Refresh Schedule'.workspace_dataflow_key
+	toColumn: Dataflow.workspace_dataflow_key
+
+relationship 7d9de951-c433-45dc-9c66-53bd01850fd1
+	fromColumn: 'Dataflow Datasources'.'Dataflow ID'
+	toColumn: Dataflow.'Dataflow ID'
+

@@ -1,0 +1,111 @@
+table 'Dataflow User'
+	lineageTag: b5b4a4be-7d96-4059-aacf-56addd026bf9
+	sourceLineageTag: ad66dc53-321f-4a33-ad1b-1a2085e1139f
+
+	column 'Workspace ID'
+		dataType: string
+		lineageTag: 58c130fd-f450-4c61-99ca-ca7ac27cdb97
+		sourceLineageTag: 43c5341a-1050-4c17-ba1b-74279d1ab6a8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Workspace Name'
+		dataType: string
+		lineageTag: f2fc5d2a-d8a7-4e09-a4bf-bb169ffdfdde
+		sourceLineageTag: cc5a1fcc-6574-4bd9-bf60-fd3a9c3c753a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataflow ID'
+		dataType: string
+		lineageTag: 19f94a0d-e3d3-4add-aa2b-8ac1e812a4de
+		sourceLineageTag: c2a83f62-4efd-4446-aee1-ec24b28129f9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataflow ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataflow Name'
+		dataType: string
+		isHidden
+		lineageTag: f22922c9-cf6d-4ce1-9afc-3b437228a6e8
+		sourceLineageTag: 5a2d96b0-a3a3-4cb4-a8b6-2604d7c35bcc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataflow Name
+
+		annotation SummarizationSetBy = User
+
+	column 'User Access Right'
+		dataType: string
+		lineageTag: de1eb639-8c57-4464-a23b-b064e41faab4
+		sourceLineageTag: be9e39ad-9476-4363-94f3-ddbaa9024619
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Access Right
+
+		annotation SummarizationSetBy = User
+
+	column 'User Name'
+		dataType: string
+		lineageTag: d379e232-93a5-4821-ae04-f136fc0730d5
+		sourceLineageTag: 2384243f-7836-4777-ba04-814758b41503
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Name
+
+		annotation SummarizationSetBy = User
+
+	column 'User Identifier'
+		dataType: string
+		lineageTag: e8f29fcd-e23c-4f7c-9073-d1c84cd3c285
+		sourceLineageTag: a8416053-527a-4fb6-974c-d04265310faf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Identifier
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataflow User ID'
+		dataType: string
+		lineageTag: d554448f-0e77-4458-859e-a5ff2859bdb3
+		sourceLineageTag: 326416d9-86f4-4494-a5c3-99f44baf72a4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataflow User ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Principal Type'
+		dataType: string
+		lineageTag: d80d567a-6749-4c47-b313-4eca00ac5a9b
+		sourceLineageTag: 0cdb517b-1b33-4b4f-a3bd-8f6b0da0c90d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Principal Type
+
+		annotation SummarizationSetBy = User
+
+	column 'User Type'
+		dataType: string
+		lineageTag: af29e6ca-f7ec-4cd8-b002-18b1065fed9e
+		sourceLineageTag: d349d105-871e-480f-ad87-453553d6fc9e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Type
+
+		annotation SummarizationSetBy = User
+
+	partition 'Dataflow User' = entity
+		mode: directQuery
+		source
+			entityName: Dataflow User
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

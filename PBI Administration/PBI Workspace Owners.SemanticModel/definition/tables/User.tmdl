@@ -1,0 +1,41 @@
+table User
+	lineageTag: 1675c768-8690-4a28-a528-4d8b113cf859
+	sourceLineageTag: 517154c6-a57a-4eb0-9f61-86efd45d62da
+
+	column 'User Name'
+		dataType: string
+		lineageTag: 24209498-b292-42e1-aaee-8cede4454482
+		sourceLineageTag: 2b4342d8-b4ad-4128-a367-d07f9a973c64
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Name
+
+		annotation SummarizationSetBy = User
+
+	column 'User Identifier'
+		dataType: string
+		isNullable: false
+		lineageTag: 57515e72-0a89-4396-9df3-2da5d514bf46
+		sourceLineageTag: 79a397c1-08f7-4fb1-b5ba-47620204c164
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Identifier
+
+		annotation SummarizationSetBy = User
+
+	column 'Principal Type'
+		dataType: string
+		lineageTag: de7bd2ce-ade9-45b5-94cb-93895bdc2387
+		sourceLineageTag: c3b78308-207e-4ff2-a12d-b56853d8f226
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Principal Type
+
+		annotation SummarizationSetBy = User
+
+	partition User = entity
+		mode: directQuery
+		source
+			entityName: User
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

@@ -1,0 +1,90 @@
+table 'Dashboard User'
+	lineageTag: daea0d48-3295-465f-9cb3-0f35c91707cd
+	sourceLineageTag: ab47f46e-2014-4e19-8966-28beabcdef68
+
+	column 'Workspace ID'
+		dataType: string
+		lineageTag: 0066b39e-e935-4ed4-9829-b2b16c937a38
+		sourceLineageTag: b27bf458-f102-4fdc-a03f-7ebdffd7ee97
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Dashboard ID'
+		dataType: string
+		lineageTag: a43c84f4-5bee-4224-bb74-55b0d90f86f5
+		sourceLineageTag: dbf808d0-2f90-409c-9fd9-e94eca6ea2e4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dashboard ID
+
+		annotation SummarizationSetBy = User
+
+	column 'User Access Right'
+		dataType: string
+		lineageTag: cdc456b3-2294-42e6-8afe-c65badfd8d6c
+		sourceLineageTag: 37fbcad9-2060-4aa6-b632-ee833a4f7d5f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Access Right
+
+		annotation SummarizationSetBy = User
+
+	column 'User Name'
+		dataType: string
+		lineageTag: 54297470-78a6-452d-8f1a-8c785930451c
+		sourceLineageTag: 72d65a78-92fc-48ed-8cc2-79613bcb6e23
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Dashboard User Identifier'
+		dataType: string
+		lineageTag: 56e2b610-aec1-4b1b-95c6-630526486ddd
+		sourceLineageTag: 3ab00446-6611-48dd-a1f8-2fefc59c4f78
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dashboard User Identifier
+
+		annotation SummarizationSetBy = User
+
+	column 'Dashboard User ID'
+		dataType: string
+		lineageTag: e693aedb-781b-45e9-a384-ebc218133642
+		sourceLineageTag: 19f24a6c-d12f-49f4-a6d0-70f6005937f6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dashboard User ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Principal Type'
+		dataType: string
+		lineageTag: ab7eb6ae-61e9-4ece-8d5a-522c233611e4
+		sourceLineageTag: 4e75fe94-b661-462e-ac50-dc663373d95a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Principal Type
+
+		annotation SummarizationSetBy = User
+
+	column 'User Type'
+		dataType: string
+		lineageTag: 44d1143f-7c1a-49e7-9025-9bd2e3260053
+		sourceLineageTag: 5c50f1ed-47e0-4adf-9c79-97490e92cd44
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: User Type
+
+		annotation SummarizationSetBy = User
+
+	partition 'Dashboard User' = entity
+		mode: directQuery
+		source
+			entityName: Dashboard User
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

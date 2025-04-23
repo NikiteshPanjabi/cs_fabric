@@ -1,0 +1,176 @@
+table Dataflow
+	lineageTag: 3375a5dc-c3fc-4ef6-a8bb-64cc14889f1b
+	sourceLineageTag: 5600b0ea-addb-4642-8aa3-fc3842a980b4
+
+	column 'Dataflow ID'
+		dataType: string
+		isNullable: false
+		displayFolder: IDs
+		lineageTag: ac19237b-b688-4459-b149-40cad6fc6770
+		sourceLineageTag: a49f91fa-90dc-470c-9e19-cb442c62d0d5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataflow ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataflow Name'
+		dataType: string
+		lineageTag: 3ebe2c36-f284-4ae9-9d83-047c1f91daea
+		sourceLineageTag: 0dc8d1ff-0ac0-478a-a99a-1499519f09a9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataflow Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Workspace ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: ec9cddd9-c19b-4aba-99b3-7b72114ffeab
+		sourceLineageTag: 46c663d1-a663-4ad0-b5a8-dd980f761602
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Modified Date'
+		dataType: dateTime
+		formatString: yyyy\-mm\-dd
+		lineageTag: acac03c9-d3a7-4724-95c2-f93953fadace
+		sourceLineageTag: 4350b441-6738-4d02-8d4d-1ceb75e2a835
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Modified Date
+
+		annotation SummarizationSetBy = User
+
+	column Description
+		dataType: string
+		lineageTag: f4f56279-602c-4b8c-916e-4a39a31e41c4
+		sourceLineageTag: 03a49111-e361-43cd-b0ae-dd4134baf163
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = User
+
+	column 'Configured By'
+		dataType: string
+		lineageTag: 4934e193-2451-438e-8869-8bdb233a7601
+		sourceLineageTag: a2c9240e-f987-4551-bd76-2495a63b8206
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Configured By
+
+		annotation SummarizationSetBy = User
+
+	column 'Modified By'
+		dataType: string
+		lineageTag: ed7b009b-ac10-4f19-9ab8-750cbfa48e00
+		sourceLineageTag: 719398bb-b10b-4464-88e5-795b9e074162
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Modified By
+
+		annotation SummarizationSetBy = User
+
+	column 'Modified Date/Time'
+		dataType: string
+		lineageTag: b6606269-1601-4d49-8fa8-54ee28b1b9c6
+		sourceLineageTag: 07a65978-e1d7-4da4-8cc1-4210ac8bd56b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Modified Date/Time
+
+		annotation SummarizationSetBy = User
+
+	column Generation
+		dataType: string
+		lineageTag: d7654813-c3a8-4820-baa5-994d0c62f54d
+		sourceLineageTag: c9e16f52-8f58-4885-9d51-fe632c762ee1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Generation
+
+		annotation SummarizationSetBy = User
+
+	column 'Refresh Schedule'
+		dataType: string
+		lineageTag: 5bde3553-3d60-4b0e-8c07-beab6a3ba0b7
+		sourceLineageTag: 2d99a4b8-d3f9-4e66-8841-42845de10f30
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Refresh Schedule
+
+		annotation SummarizationSetBy = User
+
+	column Endorsement
+		dataType: string
+		lineageTag: 2360343e-a0e0-42e8-b2e6-529d0aacb505
+		sourceLineageTag: 5931ed23-2f70-440a-af3b-d5bfe0907a4d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Endorsement
+
+		annotation SummarizationSetBy = User
+
+	column 'Certified By'
+		dataType: string
+		lineageTag: 41eb398f-7f76-418c-b0d2-850dcd31c5f3
+		sourceLineageTag: cd5e3e97-305e-49ce-a1ea-1f3a1e58b592
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Certified By
+
+		annotation SummarizationSetBy = User
+
+	column 'Sensitivity Label ID'
+		dataType: string
+		displayFolder: IDs
+		lineageTag: 25dda3f9-6d6c-4455-ba31-29a528490c97
+		sourceLineageTag: 30adff89-389d-459f-889e-d29f3faa52e0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Sensitivity Label ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Misconfigured Datasource Usages'
+		dataType: string
+		lineageTag: 6b85265c-2926-4926-8c0d-a10462689426
+		sourceLineageTag: 1c983ebc-2bee-4318-be97-d0aba2c252ac
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Misconfigured Datasource Usages
+
+		annotation SummarizationSetBy = User
+
+	column 'Upstream Dataflows'
+		dataType: string
+		lineageTag: 8bed699f-1e46-41e3-84d7-2feed2d6699e
+		sourceLineageTag: 5c911716-9511-49a8-8170-bd02549261a8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Upstream Dataflows
+
+		annotation SummarizationSetBy = User
+
+	column workspace_dataflow_key
+		dataType: string
+		isNullable: false
+		lineageTag: 1015a749-52d3-4683-ae7e-3fc4fbd3fc7e
+		sourceLineageTag: 4f3bdbb5-3a04-4e8a-8479-14aa99fa245a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: workspace_dataflow_key
+
+		annotation SummarizationSetBy = User
+
+	partition Dataflow = entity
+		mode: directQuery
+		source
+			entityName: Dataflow
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

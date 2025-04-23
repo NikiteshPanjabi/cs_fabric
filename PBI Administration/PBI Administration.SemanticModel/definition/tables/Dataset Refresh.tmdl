@@ -1,0 +1,290 @@
+table 'Dataset Refresh'
+	lineageTag: af22fcd4-70bb-486f-8438-a06aab6775a6
+	sourceLineageTag: d9eee6dc-b3c3-4420-9f85-fd413530c7ee
+
+	column 'Dataset ID'
+		dataType: string
+		isNullable: false
+		lineageTag: 5d34dde6-b782-44f4-9c98-7bf47a7cfb06
+		sourceLineageTag: 5e4dc420-792b-4e5d-bd7a-634532a734ff
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataset ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataset Name'
+		dataType: string
+		lineageTag: a382a3e0-eeaf-41a1-9641-eda7bb603e69
+		sourceLineageTag: f87f6b37-a18c-4359-a582-9f7b9c7e2443
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataset Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Configured By'
+		dataType: string
+		lineageTag: 1494429f-597b-4aba-bfc5-04d0a74aa803
+		sourceLineageTag: a7a3c1b1-a1e3-441e-b963-cba471e711b1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Configured By
+
+		annotation SummarizationSetBy = User
+
+	column 'Last Refresh ID'
+		dataType: string
+		lineageTag: 6140ec14-cd5f-423f-82d6-a8c3f12491cc
+		sourceLineageTag: 060042f3-9526-4308-91a2-ab40ba739296
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last Refresh ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Last Refresh Type'
+		dataType: string
+		lineageTag: b06aa4da-ba3d-49a9-b0fd-6349a9837df5
+		sourceLineageTag: 345c7211-53aa-4d40-b194-d7407eed7742
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last Refresh Type
+
+		annotation SummarizationSetBy = User
+
+	column 'Last Refresh Service Exception JSON'
+		dataType: string
+		lineageTag: b988caf6-038c-4e17-b84e-3c8abd41ddca
+		sourceLineageTag: 8c692778-d085-4820-be74-b89b6095a3ad
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last Refresh Service Exception JSON
+
+		annotation SummarizationSetBy = User
+
+	column 'Last Refresh Status'
+		dataType: string
+		lineageTag: e9efa6fe-bbc4-4ae5-ad6c-98daf0de8e86
+		sourceLineageTag: 02741154-aace-4368-934c-379cca9dda85
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last Refresh Status
+
+		annotation SummarizationSetBy = User
+
+	column 'Last Refresh Request ID'
+		dataType: string
+		lineageTag: 2e17783b-95eb-4e66-8f93-a0cb8f5fcaaf
+		sourceLineageTag: dae9c4c4-5e92-411f-a240-0aea1dde2e6f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last Refresh Request ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Last Refresh Attempts'
+		dataType: string
+		lineageTag: 5d8c0502-e6ad-426d-bcf8-9b59824d5233
+		sourceLineageTag: d2934e47-208f-4997-b4d5-7b8bdc0ddeb0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last Refresh Attempts
+
+		annotation SummarizationSetBy = User
+
+	column 'Refresh Count #'
+		dataType: int64
+		formatString: 0
+		lineageTag: bcc8c292-e3fa-41fe-81b0-dc4c6fb4b160
+		sourceLineageTag: 380e9ee3-6dff-4f8c-ab84-aa72a36bae9a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Refresh Count #
+
+		annotation SummarizationSetBy = User
+
+	column 'Refresh Failures #'
+		dataType: int64
+		formatString: 0
+		lineageTag: ba2faa73-99fc-4fcb-8e61-56eecaf96749
+		sourceLineageTag: 1fa07586-dac4-40a0-b098-1b0b84cac30f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Refresh Failures #
+
+		annotation SummarizationSetBy = User
+
+	column 'Refreshes Per Day #'
+		dataType: int64
+		formatString: 0
+		lineageTag: 31b0c533-b488-4f91-a2bf-685fc0c0d1a5
+		sourceLineageTag: 037d5f3a-a34d-4ce3-8b05-efb22651e3c9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Refreshes Per Day #
+
+		annotation SummarizationSetBy = User
+
+	column 'Last Refresh Start Date/Time'
+		dataType: dateTime
+		formatString: yyyy\-mm\-dd h:nn:ss
+		displayFolder: Dates
+		lineageTag: 3ee825dc-51e5-4896-86a3-739523b903ca
+		sourceLineageTag: 43f4204e-2c77-4fac-99b0-de73beb85559
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last Refresh Start Date/Time
+
+		annotation SummarizationSetBy = User
+
+	column 'Last Refresh End Date/Time'
+		dataType: dateTime
+		formatString: dd\-mmm\-yy hh:nn:ss
+		displayFolder: Dates
+		lineageTag: 27bb86f1-9c86-4ded-81ba-ec1c001a41af
+		sourceLineageTag: d603aae4-0836-4bce-bdbb-4b9dfc7def2e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last Refresh End Date/Time
+
+		annotation SummarizationSetBy = User
+
+	column 'Last Refresh Start Date'
+		dataType: dateTime
+		formatString: yyyy\-mm\-dd
+		displayFolder: Dates
+		lineageTag: 62934985-9ae2-4d1a-a938-563267021231
+		sourceLineageTag: b2424ed2-bbe4-4a31-81e1-4f3a8f75ad3c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last Refresh Start Date
+
+		annotation SummarizationSetBy = User
+
+	column 'Start Date/Time Stat'
+		dataType: dateTime
+		formatString: General Number
+		displayFolder: Dates
+		lineageTag: d0c00a7d-d1c7-4602-866f-1178eba384eb
+		sourceLineageTag: 3d32ee33-612b-4951-851c-0d9d22a3ab64
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Start Date/Time Stat
+
+		annotation SummarizationSetBy = User
+
+	column 'End Date/Time Stat'
+		dataType: dateTime
+		formatString: General Number
+		displayFolder: Dates
+		lineageTag: f518813e-a3ae-476c-afca-dd839fe6d765
+		sourceLineageTag: 0facb9fa-104c-4879-849b-b3fcb09ef42f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: End Date/Time Stat
+
+		annotation SummarizationSetBy = User
+
+	column 'Start Date Stat'
+		dataType: dateTime
+		formatString: yyyy\-mm\-dd
+		displayFolder: Dates
+		lineageTag: ef607cf7-e93f-4706-9d78-8c29167d9ec0
+		sourceLineageTag: 76ccb159-55d1-4ffd-82bc-044f5818068b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Start Date Stat
+
+		annotation SummarizationSetBy = User
+
+	column 'End Date Stat'
+		dataType: dateTime
+		formatString: yyyy\-mm\-dd
+		displayFolder: Dates
+		lineageTag: e0b28776-a25d-4f6e-b9f1-045fe762f7e3
+		sourceLineageTag: 9d7eb7ba-5a75-46cc-aaa5-037e4bb32eea
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: End Date Stat
+
+		annotation SummarizationSetBy = User
+
+	column 'Duration Variance to Average (s)'
+		dataType: double
+		formatString: 0.0
+		lineageTag: e11f1b16-40b8-4f02-a2c0-338467ef5360
+		sourceLineageTag: af09cd89-90bc-461b-a68d-481191e9ab6d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Duration Variance to Average (s)
+
+		annotation SummarizationSetBy = User
+
+	column 'Average Duration (s)'
+		dataType: double
+		lineageTag: 5aecdc29-7a45-472a-8109-ad3a9adf56e7
+		sourceLineageTag: 10683ec5-6a50-4dd0-a8f0-a1b80e320d53
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Average Duration (s)
+
+		annotation SummarizationSetBy = User
+
+	column 'Median Duration (s)'
+		dataType: double
+		lineageTag: 1dce28d7-06c1-43e0-ae16-8b81f5f775ef
+		sourceLineageTag: d7d8d5a1-b24c-46bb-8cc8-27fb289d5ea9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Median Duration (s)
+
+		annotation SummarizationSetBy = User
+
+	column 'Last Refresh Duration (s)'
+		dataType: double
+		formatString: #,0.0
+		lineageTag: 6d6df702-f849-4d07-b5a9-4af73ebad35d
+		sourceLineageTag: 69a326fc-a8a7-4228-9fe0-e68cbcdcaae2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last Refresh Duration (s)
+
+		annotation SummarizationSetBy = User
+
+	column 'Schedule Enabled'
+		dataType: string
+		lineageTag: 96e490d3-efde-43f5-bda6-23ec79f45790
+		sourceLineageTag: 6f5da3dc-2351-4ac0-bcbf-06d5948a15f9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Schedule Enabled
+
+		annotation SummarizationSetBy = User
+
+	column 'Schedule Local Time Zone'
+		dataType: string
+		lineageTag: 00018ca2-8fda-4bc2-81d6-97d40e045161
+		sourceLineageTag: 68e64424-8996-4cc8-9136-69b527d6e56d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Schedule Local Time Zone
+
+		annotation SummarizationSetBy = User
+
+	column 'Schedule Notify Option'
+		dataType: string
+		lineageTag: bf74c837-6b11-481b-b4a5-83602b7443fb
+		sourceLineageTag: 620bc7e2-2875-4ea5-b17d-a2fc7e0161e7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Schedule Notify Option
+
+		annotation SummarizationSetBy = User
+
+	partition 'Dataset Refresh' = entity
+		mode: directQuery
+		source
+			entityName: Dataset Refresh
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+

@@ -1,0 +1,100 @@
+table 'Dataflow Refresh Schedule'
+	lineageTag: e6101ec5-cb5f-41b2-8281-b0c50811c582
+	sourceLineageTag: ce344e38-660d-4baf-996a-f5f87a7b4ad6
+
+	column 'Workspace ID'
+		dataType: string
+		lineageTag: df49962e-0332-46c6-9d96-2b46138b13df
+		sourceLineageTag: 0c4d277a-d1d7-4dac-bc9f-6b9d51f26f9e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Workspace ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataflow ID'
+		dataType: string
+		lineageTag: 5365f7e3-cc8f-4d6c-a9d1-cf252e1fa372
+		sourceLineageTag: 27667525-8443-48d1-b922-83156ed917c7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataflow ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Dataflow Name'
+		dataType: string
+		lineageTag: dac99dc5-146f-4a36-aa6d-5793bde022f0
+		sourceLineageTag: c14b29f9-fe34-4b13-b590-954c6fcfa29c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Dataflow Name
+
+		annotation SummarizationSetBy = User
+
+	column Days
+		dataType: string
+		lineageTag: b58c49e5-0993-4770-accc-d36b852773fb
+		sourceLineageTag: 9028e93e-67da-4154-adf3-cc34cb2f9119
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Days
+
+		annotation SummarizationSetBy = User
+
+	column Times
+		dataType: string
+		lineageTag: 00acb13b-01cf-4d37-8b79-8f26331fdab4
+		sourceLineageTag: 6703e716-c5f0-40ec-8cdc-a4d6d9ef8855
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Times
+
+		annotation SummarizationSetBy = User
+
+	column Enabled
+		dataType: string
+		lineageTag: 5c2b863b-43f2-4b2a-99b1-794c3a0477fc
+		sourceLineageTag: fa279814-4b1c-44ed-a2e9-266e4ffc0e1d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Enabled
+
+		annotation SummarizationSetBy = User
+
+	column 'Local Time Zone ID'
+		dataType: string
+		lineageTag: 171c650b-4e79-4f0b-ac7e-341f3cf6a0b7
+		sourceLineageTag: 99ca6d47-d77c-4a84-b417-65c2de0b7b21
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Local Time Zone ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Notify Option'
+		dataType: string
+		lineageTag: 271432ff-4ae8-437a-b24a-5b5b113c514b
+		sourceLineageTag: b0861061-6e5d-42e6-8ed0-0b732a5d084d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Notify Option
+
+		annotation SummarizationSetBy = User
+
+	column workspace_dataflow_key
+		dataType: string
+		lineageTag: 3d70be9c-a2c9-4564-985d-90875689695d
+		sourceLineageTag: f4b73afb-44db-419b-a2e3-e84a4551e2a8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: workspace_dataflow_key
+
+		annotation SummarizationSetBy = User
+
+	partition 'Dataflow Refresh Schedule' = entity
+		mode: directQuery
+		source
+			entityName: Dataflow Refresh Schedule
+			expressionSource: 'DirectQuery to AS - PBI Metadata Model'
+
