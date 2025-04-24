@@ -1,0 +1,73 @@
+table Sheet1
+	lineageTag: 649ed725-6a25-47ce-95e8-db01efcf54f5
+
+	column FieldID
+		dataType: string
+		lineageTag: 6d33b7e8-d1dd-4c54-a0e3-bd45b1f76125
+		summarizeBy: none
+		sourceColumn: FieldID
+
+		annotation SummarizationSetBy = Automatic
+
+	column FieldLabel
+		dataType: string
+		lineageTag: d74f2a35-12e3-4eaf-ad09-7165da8716ee
+		summarizeBy: none
+		sourceColumn: FieldLabel
+
+		annotation SummarizationSetBy = Automatic
+
+	column IntegrationID
+		dataType: string
+		lineageTag: 86b1d2c8-7db5-4f61-b653-ccfd07f14f8b
+		summarizeBy: none
+		sourceColumn: IntegrationID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tab
+		dataType: string
+		lineageTag: 3c1747ba-0bdc-48d8-98ff-8a769f3ed86c
+		summarizeBy: none
+		sourceColumn: Tab
+
+		annotation SummarizationSetBy = Automatic
+
+	column FieldType
+		dataType: string
+		lineageTag: 778baad9-3d54-4c9a-9c59-5a14689e3326
+		summarizeBy: none
+		sourceColumn: FieldType
+
+		annotation SummarizationSetBy = Automatic
+
+	column StandardCustom
+		dataType: string
+		lineageTag: 5a9b0ba7-28d1-4669-94c7-993892ebbc95
+		summarizeBy: none
+		sourceColumn: StandardCustom
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProfilesContainingData
+		dataType: int64
+		formatString: 0
+		lineageTag: d1245761-d4e2-49f0-8ef1-eb65bc72bbd5
+		summarizeBy: sum
+		sourceColumn: ProfilesContainingData
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sheet1 = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\npanjabi.KINAXIS\Downloads\Person.xlsx"), null, true),
+				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"FieldID", type text}, {"FieldLabel", type text}, {"IntegrationID", type text}, {"Tab", type text}, {"FieldType", type text}, {"StandardCustom", type text}, {"ProfilesContainingData", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
