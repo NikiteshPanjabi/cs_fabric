@@ -1,0 +1,57 @@
+table f6aa7add-5165-4b64-a5b6-8d9b7a26a835
+	isHidden
+	systemManaged
+
+	column account_company_name
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: account.company_name
+
+	column account_account_type
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: account.account_type
+
+	column account_active_account_id
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: account_active.account_id
+
+	column account_active_is_active
+		dataType: string
+		isAvailableInMdx: false
+
+		alternateOf
+			baseColumn: account_active.is_active
+
+	column 4
+		dataType: int64
+		isAvailableInMdx: false
+
+		alternateOf
+			summarization: count
+			baseTable: account_active
+
+	partition Partition = inferred
+		mode: import
+
+	annotation activeFrequency = 8
+
+	annotation activeQueries = 1
+
+	annotation relativeGain(%) = 100
+
+	annotation relativeLift(%) = 100
+
+	annotation relativeSize(%) = 100
+
+	annotation estimatedCardinality(Krows) = 54.939
+
+	annotation avoidQueryHints = false
+

@@ -26,6 +26,8 @@ ref table account_active
 ref table Time
 ref table kinaxis_server_feature_tracker
 ref table 03987b10-8179-4298-976c-876137a4fdb9
+ref table ebcaade1-89a1-49cd-9228-fff82cfdc9a2
+ref table f6aa7add-5165-4b64-a5b6-8d9b7a26a835
 
 ref cultureInfo en-CA
 

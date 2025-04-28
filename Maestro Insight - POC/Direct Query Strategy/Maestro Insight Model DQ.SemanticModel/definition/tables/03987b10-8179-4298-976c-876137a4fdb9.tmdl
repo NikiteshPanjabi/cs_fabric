@@ -27,15 +27,15 @@ table 03987b10-8179-4298-976c-876137a4fdb9
 	partition Partition = inferred
 		mode: import
 
-	annotation activeFrequency = 10
+	annotation activeFrequency = 8
 
-	annotation activeQueries = 3
+	annotation activeQueries = 2
 
-	annotation relativeGain(%) = 100
+	annotation relativeGain(%) = 240.58011048060345
 
-	annotation relativeLift(%) = 100
+	annotation relativeLift(%) = 79.5668291823473
 
-	annotation relativeSize(%) = 100
+	annotation relativeSize(%) = 33.072904083133793
 
 	annotation estimatedCardinality(Krows) = 0.001
 
