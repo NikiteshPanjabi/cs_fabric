@@ -1,6 +1,25 @@
 table 'Looker Model'
 	lineageTag: 25b6e83a-f9e7-451a-b67a-f77859ba72b3
 
+	measure 'Uptime Quarter' = ```
+			
+			VAR dt = MAX('Looker Model'[02 - Salesforce.dim.On Demand Downtime.Start Date])
+			RETURN
+			YEAR(dt) & " - Q" & QUARTER(dt)
+			
+			
+			```
+		lineageTag: edb31d36-6329-4cba-8665-deb08491db30
+
+	measure 'Case Month' = ```
+			
+			VAR dt = MAX('Looker Model'[02 - Salesforce.dim.Case.Actual Date Opened Date])
+			RETURN
+			YEAR(dt) & " - " & MONTH(dt)
+			
+			```
+		lineageTag: 1e8a0a67-7bbf-49c9-b94a-7044b668175e
+
 	column 'Date Filter'
 		dataType: dateTime
 		formatString: Long Date

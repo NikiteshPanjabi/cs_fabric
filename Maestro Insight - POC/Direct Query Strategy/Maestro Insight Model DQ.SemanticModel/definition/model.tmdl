@@ -25,8 +25,7 @@ ref table scheduled_task_monitor
 ref table account_active
 ref table Time
 ref table kinaxis_server_feature_tracker
-ref table cf7cb1e6-bd5c-4a86-858c-59d741c1b03c
-ref table 6c09d2bb-eff5-43f7-bf8c-a553f2f486c1
+ref table 03987b10-8179-4298-976c-876137a4fdb9
 
 ref cultureInfo en-CA
 
