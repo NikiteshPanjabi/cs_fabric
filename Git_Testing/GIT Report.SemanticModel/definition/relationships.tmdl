@@ -1,6 +1,0 @@
-relationship 6e73c156-7068-f2a2-ce63-81ddbc3b9074
-	crossFilteringBehavior: bothDirections
-	fromCardinality: one
-	fromColumn: Sheet1.IntegrationID
-	toColumn: 'Sheet1 (2)'.IntegrationID
-
