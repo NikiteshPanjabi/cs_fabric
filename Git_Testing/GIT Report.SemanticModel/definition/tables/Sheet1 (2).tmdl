@@ -1,0 +1,75 @@
+table 'Sheet1 (2)'
+	lineageTag: e580cb11-985b-464b-a97a-30799842ce02
+
+	column FieldID
+		dataType: string
+		lineageTag: 2789fce6-9295-47c6-a74b-1a683073f074
+		summarizeBy: none
+		sourceColumn: FieldID
+
+		annotation SummarizationSetBy = Automatic
+
+	column FieldLabel
+		dataType: string
+		lineageTag: 8917a549-b868-41c0-be28-b45a9ec97230
+		summarizeBy: none
+		sourceColumn: FieldLabel
+
+		annotation SummarizationSetBy = Automatic
+
+	column IntegrationID
+		dataType: string
+		lineageTag: a260616a-8016-4a43-972c-a80e2f3a61e1
+		summarizeBy: none
+		sourceColumn: IntegrationID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tab
+		dataType: string
+		lineageTag: 55d5208e-1a2e-4fdd-8ad7-673c9d3c2fa5
+		summarizeBy: none
+		sourceColumn: Tab
+
+		annotation SummarizationSetBy = Automatic
+
+	column FieldType
+		dataType: string
+		lineageTag: 7c50d071-95d5-497d-b898-bf2a954c29d9
+		summarizeBy: none
+		sourceColumn: FieldType
+
+		annotation SummarizationSetBy = Automatic
+
+	column StandardCustom
+		dataType: string
+		lineageTag: 921268ed-dea7-455d-b3d0-4bbbd767a67f
+		summarizeBy: none
+		sourceColumn: StandardCustom
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProfilesContainingData
+		dataType: int64
+		formatString: 0
+		lineageTag: e8007c95-a48c-443d-9506-bdb879d39bb8
+		summarizeBy: sum
+		sourceColumn: ProfilesContainingData
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Sheet1 (2)' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\npanjabi.KINAXIS\Downloads\Person.xlsx"), null, true),
+				    Sheet1_Sheet = Source{[Item="Sheet1",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sheet1_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"FieldID", type text}, {"FieldLabel", type text}, {"IntegrationID", type text}, {"Tab", type text}, {"FieldType", type text}, {"StandardCustom", type text}, {"ProfilesContainingData", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
