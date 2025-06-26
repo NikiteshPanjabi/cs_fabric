@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
-  "name": "478a775cd54a559b88e7",
+  "name": "5dc62b5ba67a980a74d3",
   "position": {
-    "x": 980.10861132660978,
-    "y": 135.05042668735453,
+    "x": 818.96656534954411,
+    "y": 99.209726443769,
     "z": 1003,
-    "height": 299.89138867339022,
-    "width": 299.89138867339022,
+    "height": 136.17021276595744,
+    "width": 261.64133738601822,
     "tabOrder": 1002
   },
   "visual": {
@@ -18,7 +18,7 @@
             "tileShape": {
               "expr": {
                 "Literal": {
-                  "Value": "'oval'"
+                  "Value": "'rectangleRounded'"
                 }
               }
             }
