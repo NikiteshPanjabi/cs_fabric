@@ -10,11 +10,12 @@ annotation __PBI_TimeIntelligenceEnabled = 0
 
 annotation PBIDesktopVersion = 2.144.878.0 (25.06)+9cca29236de5114792f4d7188221f91ad4a5cc50
 
-annotation PBI_QueryOrder = ["Sheet1"]
+annotation PBI_QueryOrder = ["Sheet1","Sheet1 (2)"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table Sheet1
+ref table 'Sheet1 (2)'
 
 ref cultureInfo en-CA
 
