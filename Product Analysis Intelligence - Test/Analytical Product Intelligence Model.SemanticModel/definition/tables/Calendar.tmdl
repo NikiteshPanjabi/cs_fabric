@@ -1,0 +1,404 @@
+table Calendar
+	lineageTag: ba4648fa-b0d7-4f93-bb14-413129259691
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c512c9d9-1380-4a7e-ab13-4bdc043ce133
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Year
+		dataType: string
+		lineageTag: 0809ee87-2b2c-45cf-b745-cf8430fc17ea
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Year No.'
+		dataType: int64
+		formatString: 0
+		lineageTag: 68a5e4c7-d920-4f44-a861-5f7c37ec4df6
+		summarizeBy: none
+		sourceColumn: Year No.
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month No.'
+		dataType: int64
+		formatString: 0
+		lineageTag: 670556fe-1334-41dd-8600-f5ac5d2f41a9
+		summarizeBy: none
+		sourceColumn: Month No.
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name'
+		dataType: string
+		lineageTag: 0835952f-8d10-42f8-a597-445e6bce7b7e
+		summarizeBy: none
+		sourceColumn: Month Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name Abrv.'
+		dataType: string
+		lineageTag: 5a801c9e-b4b1-4986-8e9f-9631217b6838
+		summarizeBy: none
+		sourceColumn: Month Name Abrv.
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month First Letter'
+		dataType: string
+		lineageTag: 45c6cdec-758a-480b-8935-03dbd49583db
+		summarizeBy: none
+		sourceColumn: Month First Letter
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month (yyyy-mm)'
+		dataType: string
+		lineageTag: 481fa586-fa6c-4727-8fc7-8527927d4e2d
+		summarizeBy: none
+		sourceColumn: Month (yyyy-mm)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month (yyyy-mmm)'
+		dataType: string
+		lineageTag: cb90c14f-a947-4504-b160-ded43663c801
+		summarizeBy: none
+		sourceColumn: Month (yyyy-mmm)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month (yyyymm)'
+		dataType: string
+		lineageTag: 46972a81-9d2e-4391-8ee2-65854498e6ce
+		summarizeBy: none
+		sourceColumn: Month (yyyymm)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Start Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 0011a2cc-2fe8-4ee9-8c93-ea19b7289063
+		summarizeBy: none
+		sourceColumn: Month Start Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Month End Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 338443d9-d72e-45ea-815d-4ab9405aed5e
+		summarizeBy: none
+		sourceColumn: Month End Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Month
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f345965a-ddcd-4c24-9eec-18f66c9be889
+		summarizeBy: none
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Quarter Abrv.'
+		dataType: string
+		lineageTag: 3bdf44bd-9418-46fb-9830-20c60a39c534
+		summarizeBy: none
+		sourceColumn: Quarter Abrv.
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: string
+		lineageTag: 2b3b656e-32f6-4aa4-b09d-e6a00f63e24b
+		summarizeBy: none
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Day No. in Month'
+		dataType: int64
+		formatString: 0
+		lineageTag: ce4a070f-1fd4-4803-9174-9b34ee17deb9
+		summarizeBy: none
+		sourceColumn: Day No. in Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CM & P12M (Yes/No)'
+		dataType: string
+		lineageTag: c33ec033-756c-4d8c-b4a0-6311302aab2c
+		summarizeBy: none
+		sourceColumn: CM & P12M (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CM & PM (Yes/No)'
+		dataType: string
+		lineageTag: 0d685e66-510b-4dc4-a707-4ad369984ebc
+		summarizeBy: none
+		sourceColumn: CM & PM (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CM (Yes/No)'
+		dataType: string
+		lineageTag: ce0882c1-69ce-463f-bf0c-fd354784caf7
+		summarizeBy: none
+		sourceColumn: CM (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PM (Yes/No)'
+		dataType: string
+		lineageTag: 8596765d-397b-4bcc-8494-a3410e502f2c
+		summarizeBy: none
+		sourceColumn: PM (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CQ (Yes/No)'
+		dataType: string
+		lineageTag: dbff6e81-6f7b-4a39-b021-8d3fadc507a2
+		summarizeBy: none
+		sourceColumn: CQ (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CY (Yes/No)'
+		dataType: string
+		lineageTag: eb2910e5-3675-422e-8988-095577c37db1
+		summarizeBy: none
+		sourceColumn: CY (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Quarter Start Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f2e65392-d6ba-4451-acb7-193767710e65
+		summarizeBy: none
+		sourceColumn: Quarter Start Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Quarter End Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 35975f67-618b-4203-bc5d-1ba804a40b51
+		summarizeBy: none
+		sourceColumn: Quarter End Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Week No. in Year'
+		dataType: int64
+		formatString: 0
+		lineageTag: 331d7ba2-c2b0-4a69-966e-e922d08a15c1
+		summarizeBy: none
+		sourceColumn: Week No. in Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Day No. in Week'
+		dataType: int64
+		formatString: 0
+		lineageTag: 641b301c-d65d-431e-94ef-78a8f1af0e02
+		summarizeBy: none
+		sourceColumn: Day No. in Week
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Day Name'
+		dataType: string
+		lineageTag: 5a1620c6-fd23-4275-a55f-4681af46f2c6
+		summarizeBy: none
+		sourceColumn: Day Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Week Start Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9eb49c72-0792-430f-9792-62ad7a2974e3
+		summarizeBy: none
+		sourceColumn: Week Start Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Week Start Date (mmm-dd)'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d65c0001-252a-4742-889a-a77f722ab67d
+		summarizeBy: none
+		sourceColumn: Week Start Date (mmm-dd)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'CM & P24M (Yes/No)'
+		dataType: string
+		lineageTag: b33393a8-f438-4c08-a3c4-939d0dfd7570
+		summarizeBy: none
+		sourceColumn: CM & P24M (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N18M (Yes/No)'
+		dataType: string
+		lineageTag: c1304647-a266-4d2a-92d4-081eb577cfb2
+		summarizeBy: none
+		sourceColumn: N18M (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'P18M (Yes/No)'
+		dataType: string
+		lineageTag: 195618c4-4a96-42e0-8fe4-c70f77655e0e
+		summarizeBy: none
+		sourceColumn: P18M (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'N4Q (Yes/No)'
+		dataType: string
+		lineageTag: cdb92e43-767b-4a1d-822f-eb0d42d3b8e8
+		summarizeBy: none
+		sourceColumn: N4Q (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NQ (Yes/No)'
+		dataType: string
+		lineageTag: da970004-ed5a-4329-9d26-41a8503b68d6
+		summarizeBy: none
+		sourceColumn: NQ (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rolling 4Q (Yes/No)'
+		dataType: string
+		lineageTag: c3aae53a-3936-4a3d-94f9-4c59fb9e1a3c
+		summarizeBy: none
+		sourceColumn: Rolling 4Q (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'P5Q (Yes/No)'
+		dataType: string
+		lineageTag: 4c6b9326-98e8-4863-8fc2-397911cf894e
+		summarizeBy: none
+		sourceColumn: P5Q (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CQ & P5Q (Yes/No)'
+		dataType: string
+		lineageTag: 4ae875f5-e41f-44c1-8da8-9c03d88f220a
+		summarizeBy: none
+		sourceColumn: CQ & P5Q (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'P6Q (Yes/No)'
+		dataType: string
+		lineageTag: 994e895e-b854-44b4-b893-f2c457ee1a51
+		summarizeBy: none
+		sourceColumn: P6Q (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CQ & P6Q (Yes/No)'
+		dataType: string
+		lineageTag: 49a6b270-2478-4a6b-a55b-d11c3f9b3e87
+		summarizeBy: none
+		sourceColumn: CQ & P6Q (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CW (Yes/No)'
+		dataType: string
+		lineageTag: c6217c75-78ed-4676-9318-29a0e99b2d1b
+		summarizeBy: none
+		sourceColumn: CW (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CQ+2 (Yes/No)'
+		dataType: string
+		lineageTag: 65b30ba4-a2a8-4930-9b2e-ea24b8b642b1
+		summarizeBy: none
+		sourceColumn: CQ+2 (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CQ+3 (Yes/No)'
+		dataType: string
+		lineageTag: 08cdde01-2a2b-4f6a-ad5d-a617c59ab355
+		summarizeBy: none
+		sourceColumn: CQ+3 (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CQ+4 (Yes/No)'
+		dataType: string
+		lineageTag: 95a81c9b-e2eb-4b74-b359-2bc60df8e30f
+		summarizeBy: none
+		sourceColumn: CQ+4 (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CM & P4M (Yes/No)'
+		dataType: string
+		lineageTag: 6026a266-3397-45f2-a993-aa7dd52534d1
+		summarizeBy: none
+		sourceColumn: CM & P4M (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CQ & P3Q (Yes/No)'
+		dataType: string
+		lineageTag: 50823241-cf5e-4e79-a19b-367792346653
+		summarizeBy: none
+		sourceColumn: CQ & P3Q (Yes/No)
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendar = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"d890b178-1a78-4ffe-a63c-629e2aacebc4" = Workspaces{[workspaceId="d890b178-1a78-4ffe-a63c-629e2aacebc4"]}[Data],
+				    #"8b25b71b-c7c7-4782-b29f-8cf739fc0392" = #"d890b178-1a78-4ffe-a63c-629e2aacebc4"{[dataflowId="8b25b71b-c7c7-4782-b29f-8cf739fc0392"]}[Data],
+				    #"Calendar v1_02_" = #"8b25b71b-c7c7-4782-b29f-8cf739fc0392"{[entity="Calendar v1_02",version=""]}[Data]
+				in
+				    #"Calendar v1_02_"
+

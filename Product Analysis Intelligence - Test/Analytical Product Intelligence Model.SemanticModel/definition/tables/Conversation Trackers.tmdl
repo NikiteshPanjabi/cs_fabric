@@ -1,0 +1,83 @@
+table 'Conversation Trackers'
+	lineageTag: a6cf5a47-1873-47b9-885f-6c4bb0da2958
+
+	column COMPANY_ID
+		dataType: string
+		lineageTag: f308d9f3-5121-4577-8863-9c555f3b460e
+		summarizeBy: none
+		sourceColumn: COMPANY_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONVERSATION_KEY
+		dataType: string
+		lineageTag: 1763ce38-cea5-4ff6-a127-34d95ce5f32b
+		summarizeBy: none
+		sourceColumn: CONVERSATION_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column COUNT
+		dataType: double
+		lineageTag: 1c6e85a9-40ff-4868-99a9-bc37bb51b668
+		summarizeBy: sum
+		sourceColumn: COUNT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ETL_MODIFIED_DATETIME
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 793da5c3-4b46-429a-81bb-f87fd3650d02
+		summarizeBy: none
+		sourceColumn: ETL_MODIFIED_DATETIME
+
+		annotation SummarizationSetBy = Automatic
+
+	column IS_DELETED
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 4b399470-c6ee-4a6c-b005-f2ae81a3d87c
+		summarizeBy: none
+		sourceColumn: IS_DELETED
+
+		annotation SummarizationSetBy = Automatic
+
+	column ROW_ID
+		dataType: string
+		lineageTag: bd64082a-f915-4e83-ad0c-02bd4ac4838a
+		summarizeBy: none
+		sourceColumn: ROW_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column TRACKER_ID
+		dataType: string
+		lineageTag: 9cbc8fdb-e932-4c65-bb6b-12cfc5ea9079
+		summarizeBy: none
+		sourceColumn: TRACKER_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column WORKSPACE_ID
+		dataType: string
+		lineageTag: 6fbc2ed5-342a-49af-b3dd-7be197ac8e5e
+		summarizeBy: none
+		sourceColumn: WORKSPACE_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Conversation Trackers' = m
+		mode: import
+		source =
+				let
+				    Source = Value.NativeQuery(GoogleBigQuery.Database([Implementation="2.0"]){[Name="bizops-raw-data-dev-719d"]}[Data], "SELECT * FROM `bizops-raw-data-dev-719d.src_gong_data_cloud.CONVERSATION_TRACKERS`", null, [EnableFolding=true])
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

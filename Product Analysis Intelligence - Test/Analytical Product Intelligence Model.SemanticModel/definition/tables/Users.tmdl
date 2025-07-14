@@ -1,0 +1,248 @@
+table Users
+	isHidden
+	lineageTag: 99b5c513-dc25-457a-a3ae-0e8b19ce8b10
+
+	column ACTIVE
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b3d885ee-92bc-4331-bf6a-05bf704dbbfd
+		summarizeBy: none
+		sourceColumn: ACTIVE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMPANY_ID
+		dataType: string
+		isHidden
+		lineageTag: 30e20783-cdfe-4786-9ff4-0d6ab81308ca
+		summarizeBy: none
+		sourceColumn: COMPANY_ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DBT_UPDATED_AT
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 6c399f5a-beeb-4570-be2f-07f461418eb6
+		summarizeBy: none
+		sourceColumn: DBT_UPDATED_AT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column EMAIL_ADDRESS
+		dataType: string
+		isHidden
+		lineageTag: 854495bd-bfa0-4dca-9e5a-10b34ce9f2c4
+		summarizeBy: none
+		sourceColumn: EMAIL_ADDRESS
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ETL_MODIFIED_DATETIME
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 2a6466dd-ba79-4bf9-885e-6bfccadf353e
+		summarizeBy: none
+		sourceColumn: ETL_MODIFIED_DATETIME
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column FIRST_NAME
+		dataType: string
+		isHidden
+		lineageTag: 9acbc741-7a81-41b3-bab9-119a4fd93cec
+		summarizeBy: none
+		sourceColumn: FIRST_NAME
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column IS_DELETED
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 21a127d1-94ae-42f2-9747-27f0af2878bd
+		summarizeBy: none
+		sourceColumn: IS_DELETED
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LAST_NAME
+		dataType: string
+		isHidden
+		lineageTag: 5dc29f34-de79-4dd6-b5ac-da09c3fb26e1
+		summarizeBy: none
+		sourceColumn: LAST_NAME
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LICENSED
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 1a80e261-c955-4d10-999b-1d8e38149638
+		summarizeBy: none
+		sourceColumn: LICENSED
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LOCALE
+		dataType: string
+		isHidden
+		lineageTag: 0778ed31-8ce4-415f-8c4a-1c7cd22716ba
+		summarizeBy: none
+		sourceColumn: LOCALE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column MANAGER_ID
+		dataType: string
+		isHidden
+		lineageTag: 1488f489-07bb-4df5-b62a-19523759637b
+		summarizeBy: none
+		sourceColumn: MANAGER_ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ROW_ID
+		dataType: string
+		isHidden
+		lineageTag: 1555be98-8593-4e8a-bfd2-72a42e948011
+		summarizeBy: none
+		sourceColumn: ROW_ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SHOULD_IMPORT_TELEPHONY_CALLS
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 003eb4c7-495f-4cd9-b8ef-6731e225bd29
+		summarizeBy: none
+		sourceColumn: SHOULD_IMPORT_TELEPHONY_CALLS
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SHOULD_RECORD_WEB_CONFERENCE_CALLS
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 00366fa1-7641-4d70-b945-9588a0d70a15
+		summarizeBy: none
+		sourceColumn: SHOULD_RECORD_WEB_CONFERENCE_CALLS
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SHOULD_SYNC_EMAILS
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 4d327f8e-bc2c-45e1-a776-542d621a11ea
+		summarizeBy: none
+		sourceColumn: SHOULD_SYNC_EMAILS
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIME_ZONE
+		dataType: string
+		isHidden
+		lineageTag: e6364dbc-9194-4e8c-90d8-1b99320f0957
+		summarizeBy: none
+		sourceColumn: TIME_ZONE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column TITLE
+		dataType: string
+		isHidden
+		lineageTag: fd8a97d7-edbd-4fb3-ad36-7ff5cf39a553
+		summarizeBy: none
+		sourceColumn: TITLE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column USER_ID
+		dataType: string
+		isHidden
+		lineageTag: 2295a6cc-d695-46db-a560-529a06baf005
+		summarizeBy: none
+		sourceColumn: USER_ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALID_FROM_DATETIME
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 1c570be3-3568-4812-b089-6a72d1b0e1e1
+		summarizeBy: none
+		sourceColumn: VALID_FROM_DATETIME
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALID_TO_DATETIME
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: ca030b67-9c30-4ab0-9669-37d5717a8099
+		summarizeBy: none
+		sourceColumn: VALID_TO_DATETIME
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Users = m
+		mode: import
+		source =
+				let
+				    Source = Value.NativeQuery(GoogleBigQuery.Database([Implementation="2.0"]){[Name="bizops-raw-data-dev-719d"]}[Data], "SELECT * FROM `bizops-raw-data-dev-719d.src_gong_data_cloud.USERS`", null, [EnableFolding=true])
+				in
+				    Source
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

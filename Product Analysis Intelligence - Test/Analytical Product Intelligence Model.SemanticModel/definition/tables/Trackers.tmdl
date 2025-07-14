@@ -1,0 +1,305 @@
+table Trackers
+	lineageTag: 6aa65a51-27bb-40a0-a511-a3c023b71941
+
+	column BROWSER_DURATION_SEC
+		dataType: double
+		lineageTag: 0630a98c-1c5c-4ef2-83ec-791761e1412f
+		summarizeBy: sum
+		sourceColumn: BROWSER_DURATION_SEC
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CALL_SPOTLIGHT
+		dataType: string
+		lineageTag: a97ae731-25c9-4928-8af2-eedb530cc41a
+		summarizeBy: none
+		sourceColumn: CALL_SPOTLIGHT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CALL_SPOTLIGHT_AUTOMATIC_DISPOSITION
+		dataType: string
+		lineageTag: 7d8203cb-4945-4c6b-9250-0f415273e911
+		summarizeBy: none
+		sourceColumn: CALL_SPOTLIGHT_AUTOMATIC_DISPOSITION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CALL_SPOTLIGHT_BRIEF
+		dataType: string
+		lineageTag: 5c9acc27-c689-40b1-9e1c-81a6d5d0565c
+		summarizeBy: none
+		sourceColumn: CALL_SPOTLIGHT_BRIEF
+
+		annotation SummarizationSetBy = Automatic
+
+	column CALL_SPOTLIGHT_KEY_POINTS
+		dataType: string
+		lineageTag: a3b1af52-5217-4097-8c02-7024843877d4
+		summarizeBy: none
+		sourceColumn: CALL_SPOTLIGHT_KEY_POINTS
+
+		annotation SummarizationSetBy = Automatic
+
+	column CALL_SPOTLIGHT_NEXT_STEPS
+		dataType: string
+		lineageTag: 1b0f0b86-0ac3-47b3-a07d-d2a38c607177
+		summarizeBy: none
+		sourceColumn: CALL_SPOTLIGHT_NEXT_STEPS
+
+		annotation SummarizationSetBy = Automatic
+
+	column CALL_SPOTLIGHT_OUTCOME
+		dataType: string
+		lineageTag: 44257259-969e-4d0c-aaa6-7912b77d4c7e
+		summarizeBy: none
+		sourceColumn: CALL_SPOTLIGHT_OUTCOME
+
+		annotation SummarizationSetBy = Automatic
+
+	column CALL_SPOTLIGHT_TYPE
+		dataType: string
+		lineageTag: 75dd179e-40f9-41d6-98b8-da6161d166eb
+		summarizeBy: none
+		sourceColumn: CALL_SPOTLIGHT_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CALL_URL
+		dataType: string
+		lineageTag: 774814e2-e0b6-423e-aacb-6635bd1e9626
+		summarizeBy: none
+		sourceColumn: CALL_URL
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMPANY_ID
+		dataType: string
+		lineageTag: 984a3c61-cf13-46fd-9c91-572ef79cd2aa
+		summarizeBy: none
+		sourceColumn: COMPANY_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONVERSATION_ID
+		dataType: string
+		lineageTag: be2b01e6-c09d-4674-8016-6954442dd5c9
+		summarizeBy: none
+		sourceColumn: CONVERSATION_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONVERSATION_KEY
+		dataType: string
+		lineageTag: 503a7a5f-3227-49a9-bef6-04e5f3fd25ac
+		summarizeBy: none
+		sourceColumn: CONVERSATION_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column DIRECTION
+		dataType: string
+		lineageTag: 48e93943-3495-4a17-a2e1-cac90f452302
+		summarizeBy: none
+		sourceColumn: DIRECTION
+
+		annotation SummarizationSetBy = Automatic
+
+	column DISPOSITION
+		dataType: string
+		lineageTag: 30be4ff0-84ba-4047-bb67-2b2b7fb38fc0
+		summarizeBy: none
+		sourceColumn: DISPOSITION
+
+		annotation SummarizationSetBy = Automatic
+
+	column EFFECTIVE_START_DATETIME
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c7b1681f-b093-41dd-afdd-3631ed9a902c
+		summarizeBy: none
+		sourceColumn: EFFECTIVE_START_DATETIME
+
+		annotation SummarizationSetBy = Automatic
+
+	column ETL_MODIFIED_DATETIME
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: fe349d7f-d45a-4287-8b82-86133394e9ed
+		summarizeBy: none
+		sourceColumn: ETL_MODIFIED_DATETIME
+
+		annotation SummarizationSetBy = Automatic
+
+	column IS_DELETED
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ec852f3d-6e0a-4212-a323-b22e9e27dc95
+		summarizeBy: none
+		sourceColumn: IS_DELETED
+
+		annotation SummarizationSetBy = Automatic
+
+	column IS_PRIVATE
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 088b75dd-7307-4d63-8764-574c33c5753a
+		summarizeBy: none
+		sourceColumn: IS_PRIVATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column OWNER_ID
+		dataType: string
+		lineageTag: 83fff9c0-dae8-4357-b0a3-0dfed20b8f6d
+		summarizeBy: none
+		sourceColumn: OWNER_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PHONE_NUMBER
+		dataType: string
+		lineageTag: f5e249e9-ac17-4bad-9636-d026416b7329
+		summarizeBy: none
+		sourceColumn: PHONE_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column PLANNED_END_DATETIME
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5e84abbb-b89e-4ec7-ba95-bbd40418f82c
+		summarizeBy: none
+		sourceColumn: PLANNED_END_DATETIME
+
+		annotation SummarizationSetBy = Automatic
+
+	column PLANNED_START_DATETIME
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f44729b7-35df-4130-b51d-eb37f4893de4
+		summarizeBy: none
+		sourceColumn: PLANNED_START_DATETIME
+
+		annotation SummarizationSetBy = Automatic
+
+	column PRESENTATION_DURATION_SEC
+		dataType: double
+		lineageTag: 95d5645a-6bca-46ab-a7a5-3dcfb8479be0
+		summarizeBy: sum
+		sourceColumn: PRESENTATION_DURATION_SEC
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column PROVIDER_UNIQUE_ID
+		dataType: string
+		lineageTag: 2e69df04-739a-4c00-b4ae-759459a5008c
+		summarizeBy: none
+		sourceColumn: PROVIDER_UNIQUE_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column QUESTION_COMPANY_COUNT
+		dataType: double
+		lineageTag: db2655ca-44c7-4a56-8c11-31bd063b1ab4
+		summarizeBy: sum
+		sourceColumn: QUESTION_COMPANY_COUNT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column QUESTION_NON_COMPANY_COUNT
+		dataType: double
+		lineageTag: cfc82fab-cf06-4a16-bbe1-660a695fa6ae
+		summarizeBy: sum
+		sourceColumn: QUESTION_NON_COMPANY_COUNT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ROW_ID
+		dataType: string
+		lineageTag: 070f8119-fb33-4f25-9a03-de9d2d5cf762
+		summarizeBy: none
+		sourceColumn: ROW_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column SCOPE
+		dataType: string
+		lineageTag: ed3dd272-4219-4821-9eaf-e6e09fc3f1f1
+		summarizeBy: none
+		sourceColumn: SCOPE
+
+		annotation SummarizationSetBy = Automatic
+
+	column SOURCE_SYSTEM
+		dataType: string
+		lineageTag: 1a7bf1e6-1e1d-4f92-9561-9f2fe369f225
+		summarizeBy: none
+		sourceColumn: SOURCE_SYSTEM
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATUS
+		dataType: string
+		lineageTag: 8e509c32-6e2c-4889-adac-917de0393f31
+		summarizeBy: none
+		sourceColumn: STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column TITLE
+		dataType: string
+		lineageTag: 1b5a7e31-9ea2-48f4-b48d-889dd2276a5e
+		summarizeBy: none
+		sourceColumn: TITLE
+
+		annotation SummarizationSetBy = Automatic
+
+	column WEBCAM_NON_COMPANY_DURATION_SEC
+		dataType: double
+		lineageTag: ec9afd0f-1317-442f-9073-cd2cebcbc6d7
+		summarizeBy: sum
+		sourceColumn: WEBCAM_NON_COMPANY_DURATION_SEC
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column WEBCAM_OWNER_DURATION_SEC
+		dataType: double
+		lineageTag: 91f13290-6a38-4fc4-80bc-812abc9e96ea
+		summarizeBy: sum
+		sourceColumn: WEBCAM_OWNER_DURATION_SEC
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column WORKSPACE_ID
+		dataType: string
+		lineageTag: 26940d6e-3af5-42f9-8b4c-9ad5133908e2
+		summarizeBy: none
+		sourceColumn: WORKSPACE_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Trackers = m
+		mode: import
+		source =
+				let
+				    Source = Value.NativeQuery(GoogleBigQuery.Database([Implementation="2.0"]){[Name="bizops-raw-data-dev-719d"]}[Data], "SELECT * FROM `bizops-raw-data-dev-719d.src_gong_data_cloud.CALLS`", null, [EnableFolding=true])
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

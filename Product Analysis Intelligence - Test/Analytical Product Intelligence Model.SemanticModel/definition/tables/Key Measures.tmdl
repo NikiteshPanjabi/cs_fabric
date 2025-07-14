@@ -1,0 +1,55 @@
+table 'Key Measures'
+	lineageTag: 4b03097d-9549-465f-83cf-06d417a45e07
+
+	measure '# of Opportunities' = DISTINCTCOUNT(Opportunity[Opportunity ID])
+		formatString: 0
+		lineageTag: 25b4b352-b460-495b-8777-8cef9c739937
+
+	measure '# of Opportunities Won' = ```
+			
+			CALCULATE(
+			    DISTINCTCOUNT(Opportunity[Opportunity ID]),
+			    FILTER(
+			        Opportunity,
+			        Opportunity[Forecast Category] = "Won" &&
+			        Opportunity[Opportunity Type] = "New Name Account"
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 9a2e21b3-046e-413a-b312-a1fcb82c2999
+
+	measure '# of Opportunities Loss' = ```
+			
+			CALCULATE(
+			    DISTINCTCOUNT(Opportunity[Opportunity ID]),
+			    FILTER(
+			        Opportunity,
+			        Opportunity[Opportunity Type] = "New Name Account" &&
+			        Opportunity[Forecast Category] = "Omit" &&
+			        Opportunity[Previous Stage] IN {"SMO", "SQL"} &&
+			        Opportunity[Stage] IN {"Business Lost", "Lost"}
+			    )
+			)
+			
+			
+			```
+		lineageTag: 51385129-3539-42d4-b769-ff4e07f2ed37
+
+	measure '# of Parties' = DISTINCTCOUNT('Call Parties'[email_address] )
+		formatString: 0
+		lineageTag: b85fc9ba-b253-440c-8795-e92f65306b29
+
+	partition 'Key Measures' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

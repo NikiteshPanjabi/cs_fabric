@@ -1,0 +1,166 @@
+table Comments
+	isHidden
+	lineageTag: 705d9ab5-1d35-4617-84c2-b532f444f031
+
+	column COMMENT
+		dataType: string
+		isHidden
+		lineageTag: 3dc0baa7-c29e-401a-b172-bb8099cffc47
+		summarizeBy: none
+		sourceColumn: COMMENT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMMENT_ID
+		dataType: string
+		isHidden
+		lineageTag: 7f77c093-f78d-4335-a6f9-4941ec7a9a5f
+		summarizeBy: none
+		sourceColumn: COMMENT_ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMPANY_ID
+		dataType: string
+		isHidden
+		lineageTag: 7a1044e9-e67a-410e-a331-49ce66f56542
+		summarizeBy: none
+		sourceColumn: COMPANY_ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONVERSATION_KEY
+		dataType: string
+		isHidden
+		lineageTag: d07713eb-9db5-4a18-80ac-c588aa9066ab
+		summarizeBy: none
+		sourceColumn: CONVERSATION_KEY
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CREATED_DATETIME
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 5ebc5463-03b7-47d0-9c86-344b90cf216a
+		summarizeBy: none
+		sourceColumn: CREATED_DATETIME
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ETL_MODIFIED_DATETIME
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: d1c38744-59db-4327-a22c-b985f5fa3844
+		summarizeBy: none
+		sourceColumn: ETL_MODIFIED_DATETIME
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column IS_DELETED
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: a5cfbaf0-42f1-44ed-abdb-697472130877
+		summarizeBy: none
+		sourceColumn: IS_DELETED
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column MENTIONS
+		dataType: string
+		isHidden
+		lineageTag: 2f455d30-8680-4f0a-83ef-82f89c0f7f42
+		summarizeBy: none
+		sourceColumn: MENTIONS
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column REPLY_TO_COMMENT_ID
+		dataType: string
+		isHidden
+		lineageTag: 2cc69c24-6539-449c-b4cf-8954d12272f2
+		summarizeBy: none
+		sourceColumn: REPLY_TO_COMMENT_ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ROW_ID
+		dataType: string
+		isHidden
+		lineageTag: f3b487de-cb06-4ff2-a9c1-f8aa6d2d2199
+		summarizeBy: none
+		sourceColumn: ROW_ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column TAGS
+		dataType: string
+		isHidden
+		lineageTag: 1986def7-4793-45ec-8b9e-b5d7a740305c
+		summarizeBy: none
+		sourceColumn: TAGS
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIME_IN_CALL_SEC
+		dataType: double
+		isHidden
+		lineageTag: 4cd52c74-18db-47a8-b4fd-c8249496ecd3
+		summarizeBy: sum
+		sourceColumn: TIME_IN_CALL_SEC
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column USER_ID
+		dataType: string
+		isHidden
+		lineageTag: cebffb57-649e-4ced-a25c-e779b801f4e8
+		summarizeBy: none
+		sourceColumn: USER_ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Comments = m
+		mode: import
+		source =
+				let
+				    Source = Value.NativeQuery(GoogleBigQuery.Database([Implementation="2.0"]){[Name="bizops-raw-data-dev-719d"]}[Data], "SELECT * FROM `bizops-raw-data-dev-719d.src_gong_data_cloud.COMMENTS`", null, [EnableFolding=true])
+				in
+				    Source
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

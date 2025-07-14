@@ -1,0 +1,46 @@
+relationship fcfc7d88-7bf9-8bc1-3318-6cec82f52ec1
+	fromColumn: Opportunity.'Primary AE'
+	toColumn: 'Account Executive'.'User ID'
+
+relationship AutoDetected_6a51d2d3-45df-4289-843d-162cf05b60cf
+	fromColumn: stg_sf_opportunity_product.'Product ID'
+	toColumn: Product.'Product ID'
+
+relationship b50e2952-0aae-b234-7bf7-e9258f0efc7a
+	fromColumn: Opportunity.'Close Date (Calculated)'
+	toColumn: Calendar.Date
+
+relationship 812cee2f-2160-8240-3748-c0607b439381
+	fromColumn: Opportunity.'Account ID'
+	toColumn: Account.'Account ID'
+
+relationship 7c3961aa-b5bc-e3cb-1667-a944c6f2d632
+	fromColumn: SF_Conversation.Gong__Primary_Opportunity__c
+	toColumn: Opportunity.'Opportunity ID'
+
+relationship 1923df3c-2a07-245e-4e74-4e260659868f
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: SF_Conversation.Gong__Call_ID__c
+	toColumn: Calls.CONVERSATION_ID
+
+relationship 5b6f1e16-a868-ca22-dc38-c2f266bf98e7
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Calls.CONVERSATION_KEY
+	toColumn: Conversations.CONVERSATION_KEY
+
+relationship 6507bce8-c945-ddaa-b83e-908209b86d76
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Conversations.CONVERSATION_KEY
+	toColumn: Trackers.CONVERSATION_KEY
+
+relationship 8b8e9f81-dddd-9a87-d5ad-a49aa96df19a
+	fromColumn: 'Conversation Trackers'.CONVERSATION_KEY
+	toColumn: Conversations.CONVERSATION_KEY
+
+relationship 6f2f9aaf-51dc-a8f2-36a6-48a558759cf6
+	fromColumn: stg_sf_opportunity_product.'Opportunity ID'
+	toColumn: Opportunity.'Opportunity ID'
+

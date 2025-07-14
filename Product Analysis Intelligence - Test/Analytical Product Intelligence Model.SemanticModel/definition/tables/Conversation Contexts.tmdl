@@ -1,0 +1,119 @@
+table 'Conversation Contexts'
+	isHidden
+	lineageTag: 718cfdd3-22bc-4fc5-87b3-e4f66eb68060
+
+	column COMPANY_ID
+		dataType: string
+		isHidden
+		lineageTag: cf3afa20-ef67-44e1-a2ef-b46219e3a9b9
+		summarizeBy: none
+		sourceColumn: COMPANY_ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONVERSATION_KEY
+		dataType: string
+		isHidden
+		lineageTag: f6b92f07-0667-4c5b-babe-38cb3ee93e8b
+		summarizeBy: none
+		sourceColumn: CONVERSATION_KEY
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ETL_MODIFIED_DATETIME
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 8a1fd190-3213-4ed8-acb1-cd130cb3b361
+		summarizeBy: none
+		sourceColumn: ETL_MODIFIED_DATETIME
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column FIELDS_SNAPSHOT
+		dataType: string
+		isHidden
+		lineageTag: 04d924b0-b3a0-459a-a3a1-27364f6ae49c
+		summarizeBy: none
+		sourceColumn: FIELDS_SNAPSHOT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column IS_DELETED
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: cc849ad8-ad24-4f04-b32b-fadfef5b9146
+		summarizeBy: none
+		sourceColumn: IS_DELETED
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column MAPPED_FIELDS_SNAPSHOT
+		dataType: string
+		isHidden
+		lineageTag: af763565-dd05-4ac5-8285-8ecf292bb2bd
+		summarizeBy: none
+		sourceColumn: MAPPED_FIELDS_SNAPSHOT
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column OBJECT_ID
+		dataType: string
+		isHidden
+		lineageTag: 941ac7c2-82f1-43e2-bedd-c4ee030e603e
+		summarizeBy: none
+		sourceColumn: OBJECT_ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column OBJECT_TYPE
+		dataType: string
+		isHidden
+		lineageTag: 06a56150-f436-4981-a926-6d25670d0c84
+		summarizeBy: none
+		sourceColumn: OBJECT_TYPE
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ROW_ID
+		dataType: string
+		isHidden
+		lineageTag: cff23a9e-7ad0-4ea1-b873-f7abba79e788
+		summarizeBy: none
+		sourceColumn: ROW_ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Conversation Contexts' = m
+		mode: import
+		source =
+				let
+				    Source = Value.NativeQuery(GoogleBigQuery.Database([Implementation="2.0"]){[Name="bizops-raw-data-dev-719d"]}[Data], "SELECT * FROM `bizops-raw-data-dev-719d.src_gong_data_cloud.CONVERSATION_CONTEXTS`", null, [EnableFolding=true])
+				in
+				    Source
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

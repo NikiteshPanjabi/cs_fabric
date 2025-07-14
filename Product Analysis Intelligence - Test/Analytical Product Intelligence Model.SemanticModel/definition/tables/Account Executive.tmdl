@@ -1,0 +1,205 @@
+table 'Account Executive'
+	lineageTag: 84cf776c-779a-4a29-b6b7-a1b46452c370
+
+	column 'User ID'
+		dataType: string
+		lineageTag: 2d2113b1-75da-4fbe-af06-36c6ec6fd50e
+		summarizeBy: none
+		sourceColumn: User ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'User Name'
+		dataType: string
+		lineageTag: bb057d96-40dd-4c5a-aaa8-d640acc09a2c
+		summarizeBy: none
+		sourceColumn: User Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Name'
+		dataType: string
+		lineageTag: 2f148515-80da-4d08-b326-58622f33fb9d
+		summarizeBy: none
+		sourceColumn: Last Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'First Name'
+		dataType: string
+		lineageTag: a2c095d7-cca4-4c18-ba25-087a99442ff6
+		summarizeBy: none
+		sourceColumn: First Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Full Name'
+		dataType: string
+		lineageTag: 69e40a48-0c75-4081-825a-299fc5c59e50
+		summarizeBy: none
+		sourceColumn: Full Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Company Name'
+		dataType: string
+		lineageTag: 8cafd152-d989-4152-8abb-9a28ad7f10a0
+		summarizeBy: none
+		sourceColumn: Company Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Title
+		dataType: string
+		isHidden
+		lineageTag: 85c3a9ab-bdfc-4ae4-abc4-1e1bb67e19aa
+		summarizeBy: none
+		sourceColumn: Title
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column E-mail
+		dataType: string
+		lineageTag: 4940d007-d482-4af8-9458-fc4112760d24
+		summarizeBy: none
+		sourceColumn: E-mail
+
+		annotation SummarizationSetBy = Automatic
+
+	column Phone
+		dataType: string
+		lineageTag: 4bc9e070-4a67-4e6d-b267-e183311527d5
+		summarizeBy: none
+		sourceColumn: Phone
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'User Role ID'
+		dataType: string
+		lineageTag: 29031f60-b5f3-4d4c-a3ae-ef6ea92e1186
+		summarizeBy: none
+		sourceColumn: User Role ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profile ID'
+		dataType: string
+		lineageTag: 0802581a-419c-4880-972a-9d41158478a1
+		summarizeBy: none
+		sourceColumn: Profile ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created Datetime'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: af23e328-ec62-4abb-9fd0-8ec122d117d7
+		summarizeBy: none
+		sourceColumn: Created Datetime
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Modified Date'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 3b119494-1d1d-4d08-b74d-ce0f212f668c
+		summarizeBy: none
+		sourceColumn: Last Modified Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Contact ID'
+		dataType: string
+		lineageTag: 97ea921c-656f-4237-9907-08d29071c05e
+		summarizeBy: none
+		sourceColumn: Contact ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Account ID'
+		dataType: string
+		lineageTag: 2a76b6b5-8e8d-4357-b1c2-3ffec819ab82
+		summarizeBy: none
+		sourceColumn: Account ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Owner Support Role'
+		dataType: string
+		isHidden
+		lineageTag: fa986e82-18f7-4cdd-a33b-d7db7ac774c7
+		summarizeBy: none
+		sourceColumn: Owner Support Role
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Support Region'
+		dataType: string
+		isHidden
+		lineageTag: 951625df-ffbb-4193-9017-993c3b2aa7fb
+		summarizeBy: none
+		sourceColumn: Support Region
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Support Country'
+		dataType: string
+		isHidden
+		lineageTag: e5470f65-46e0-49f7-89a3-2f699ba80801
+		summarizeBy: none
+		sourceColumn: Support Country
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Support Affinity'
+		dataType: string
+		isHidden
+		lineageTag: 3c9bd8c2-a9e4-4c51-b197-69f6cf538c22
+		summarizeBy: none
+		sourceColumn: Support Affinity
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Support Manager'
+		dataType: string
+		isHidden
+		lineageTag: e1605df4-bcf4-4643-8ff5-da1506682eeb
+		summarizeBy: none
+		sourceColumn: Support Manager
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Active'
+		dataType: string
+		lineageTag: d44cb045-ec4f-48b7-9ab2-e6978a8f47a2
+		summarizeBy: none
+		sourceColumn: Is Active
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Account Executive' = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"05b8b535-6823-453f-890a-08ddf6ae067d" = Workspaces{[workspaceId="05b8b535-6823-453f-890a-08ddf6ae067d"]}[Data],
+				    #"396835a4-0bff-4ffd-827d-48f1d47ae635" = #"05b8b535-6823-453f-890a-08ddf6ae067d"{[dataflowId="396835a4-0bff-4ffd-827d-48f1d47ae635"]}[Data],
+				    User_ = #"396835a4-0bff-4ffd-827d-48f1d47ae635"{[entity="User",version=""]}[Data]
+				in
+				    User_
+
+	annotation PBI_ResultType = Table
+

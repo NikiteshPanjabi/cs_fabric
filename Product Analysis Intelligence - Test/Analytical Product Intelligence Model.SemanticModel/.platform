@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Analytical Product Intelligence Model"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ca27bfa1-a8f3-bc40-4764-d14ec873bdd7"
+  }
+}

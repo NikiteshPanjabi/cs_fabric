@@ -1,0 +1,195 @@
+table 'Gong Related Opportunities'
+	isHidden
+	lineageTag: 966c12b9-0bd6-402b-841a-3068280d8730
+
+	column Id
+		dataType: string
+		isHidden
+		lineageTag: 895ce645-b277-40b5-8ce1-499334c1bac6
+		summarizeBy: none
+		sourceColumn: Id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsDeleted
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e1692dc0-100d-4077-85f5-1c99e0ff70e3
+		summarizeBy: none
+		sourceColumn: IsDeleted
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		isHidden
+		lineageTag: fe35ba74-0326-4751-ae50-a456f825f0f6
+		summarizeBy: none
+		sourceColumn: Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CurrencyIsoCode
+		dataType: string
+		isHidden
+		lineageTag: 119d5054-3156-499f-8e86-e91dc52cda8e
+		summarizeBy: none
+		sourceColumn: CurrencyIsoCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedDate
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: ee207c7b-43df-49a6-a19f-b11d4e743f68
+		summarizeBy: none
+		sourceColumn: CreatedDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedById
+		dataType: string
+		isHidden
+		lineageTag: 520d19b5-8300-4eaa-af7f-ee7c50e7f3bb
+		summarizeBy: none
+		sourceColumn: CreatedById
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastModifiedDate
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 3a8b0a9b-82ec-4685-a8c4-dc81f3c48f42
+		summarizeBy: none
+		sourceColumn: LastModifiedDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastModifiedById
+		dataType: string
+		isHidden
+		lineageTag: 021b69e2-5a6a-4156-a65b-63c53e94f23a
+		summarizeBy: none
+		sourceColumn: LastModifiedById
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SystemModstamp
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 8ce2a0d5-ea70-482d-84af-5916098beb59
+		summarizeBy: none
+		sourceColumn: SystemModstamp
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastActivityDate
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: fcf1b7bf-06f5-4147-804b-0a975fd5f8b2
+		summarizeBy: none
+		sourceColumn: LastActivityDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Gong__Gong_Interaction__c
+		dataType: string
+		isHidden
+		lineageTag: 1c391baf-877d-4836-9e3a-e34453478733
+		summarizeBy: none
+		sourceColumn: Gong__Gong_Interaction__c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_Entity_ID__c
+		dataType: string
+		isHidden
+		lineageTag: cc6c807d-5ec8-409d-a349-e1e1d3e18145
+		summarizeBy: none
+		sourceColumn: Gong__Related_Entity_ID__c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Opportunity_Name__c
+		dataType: string
+		isHidden
+		lineageTag: 6fecf2c0-fffc-4703-991a-5ad70a2613da
+		summarizeBy: none
+		sourceColumn: Gong__Opportunity_Name__c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Participants_Emails__c
+		dataType: string
+		isHidden
+		lineageTag: a87feb97-9272-49ab-9e1f-0210ec67f2bf
+		summarizeBy: none
+		sourceColumn: Gong__Participants_Emails__c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Primary_Opportunity__c
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ec3d96de-300a-46ff-9b72-022a93a35457
+		summarizeBy: none
+		sourceColumn: Gong__Primary_Opportunity__c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Gong Related Opportunities' = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"1b676173-4fb3-43dc-95a3-a62be19f628c" = Workspaces{[workspaceId="1b676173-4fb3-43dc-95a3-a62be19f628c"]}[Data],
+				    #"44151e45-b743-41f1-8e91-8db7b29528fb" = #"1b676173-4fb3-43dc-95a3-a62be19f628c"{[dataflowId="44151e45-b743-41f1-8e91-8db7b29528fb"]}[Data],
+				    #"Gong Related Opportunities_" = #"44151e45-b743-41f1-8e91-8db7b29528fb"{[entity="Gong Related Opportunities",version=""]}[Data]
+				in
+				    #"Gong Related Opportunities_"
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,64 @@
+table stg_sf_opportunity_product
+	isHidden
+	lineageTag: 302a5cdb-ff9c-466f-86e5-efef6473344e
+
+	column Id
+		dataType: string
+		isHidden
+		lineageTag: 2f4e2d4d-f003-4f82-b6e3-b8dac06795c0
+		summarizeBy: none
+		sourceColumn: Id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Opportunity ID'
+		dataType: string
+		isHidden
+		lineageTag: 219d984f-a44e-4b27-bb73-6369fc734117
+		summarizeBy: none
+		sourceColumn: Opportunity ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product ID'
+		dataType: string
+		isHidden
+		lineageTag: 56180707-db9e-4b7a-aea8-3d3c572d3d38
+		summarizeBy: none
+		sourceColumn: Product ID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Code'
+		dataType: string
+		isHidden
+		lineageTag: 4424fbac-5334-4ce1-af72-ab5e22ce577e
+		summarizeBy: none
+		sourceColumn: Product Code
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition stg_sf_opportunity_product = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"1b676173-4fb3-43dc-95a3-a62be19f628c" = Workspaces{[workspaceId="1b676173-4fb3-43dc-95a3-a62be19f628c"]}[Data],
+				    #"aafade58-0ccd-41e0-8e21-25827ece3ba6" = #"1b676173-4fb3-43dc-95a3-a62be19f628c"{[dataflowId="aafade58-0ccd-41e0-8e21-25827ece3ba6"]}[Data],
+				    stg_sf_opportunity_product_ = #"aafade58-0ccd-41e0-8e21-25827ece3ba6"{[entity="stg_sf_opportunity_product",version=""]}[Data]
+				in
+				    stg_sf_opportunity_product_
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

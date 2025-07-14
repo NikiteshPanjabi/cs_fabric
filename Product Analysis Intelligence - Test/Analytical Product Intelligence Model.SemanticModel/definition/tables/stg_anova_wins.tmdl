@@ -1,0 +1,1909 @@
+table stg_anova_wins
+	isHidden
+	lineageTag: 98c2935a-fdc4-433b-8c4f-ebdc8dc6698f
+
+	column contact_id
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 988057d5-f875-4dbd-b9cf-05ac05568190
+		summarizeBy: sum
+		sourceColumn: contact_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column interview_id
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: cf067fb5-3e25-459e-b7cd-8375666dde3f
+		summarizeBy: sum
+		sourceColumn: interview_id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column win_loss_outcome
+		dataType: string
+		isHidden
+		lineageTag: 16d6004a-4452-48b0-84df-508985ee85e3
+		summarizeBy: none
+		sourceColumn: win_loss_outcome
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column program_year
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: cd5637cf-51e9-4459-b4dd-5c8c8411ba67
+		summarizeBy: sum
+		sourceColumn: program_year
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column organization_name
+		dataType: string
+		isHidden
+		lineageTag: c46282ff-de05-4b10-bc74-d1a9b25af0f8
+		summarizeBy: none
+		sourceColumn: organization_name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_do_not_call_policy
+		dataType: string
+		isHidden
+		lineageTag: 973ead16-baa0-44ec-a696-ebe9f6fda398
+		summarizeBy: none
+		sourceColumn: has_do_not_call_policy
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_anonymized_btf
+		dataType: string
+		isHidden
+		lineageTag: 2bb56810-7602-47c2-a680-364f6ed69e4c
+		summarizeBy: none
+		sourceColumn: is_anonymized_btf
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column interview_number
+		dataType: string
+		isHidden
+		lineageTag: 07a01a5e-3d73-401a-a7fb-4ad05577f797
+		summarizeBy: none
+		sourceColumn: interview_number
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column contact_email
+		dataType: string
+		isHidden
+		lineageTag: b688dd2d-bdf3-4b21-ba38-3dc67b067e15
+		summarizeBy: none
+		sourceColumn: contact_email
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column contact_time_zone
+		dataType: string
+		isHidden
+		lineageTag: fc3fd7f5-07aa-4896-a853-c6e11142b1b9
+		summarizeBy: none
+		sourceColumn: contact_time_zone
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column contact_phone
+		dataType: string
+		isHidden
+		lineageTag: 195e5e5f-5076-4b8c-ba13-74745b88897d
+		summarizeBy: none
+		sourceColumn: contact_phone
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column contact_title
+		dataType: string
+		isHidden
+		lineageTag: 0bc8b729-fdbb-4411-93e4-96abd5115a38
+		summarizeBy: none
+		sourceColumn: contact_title
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_contact_anonymous
+		dataType: string
+		isHidden
+		lineageTag: cc4d19df-9f19-43bc-94d0-a38d403e84cb
+		summarizeBy: none
+		sourceColumn: is_contact_anonymous
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column contact_full_name
+		dataType: string
+		isHidden
+		lineageTag: 2f3f43d0-0120-48a9-9698-0d5b44a38e4b
+		summarizeBy: none
+		sourceColumn: contact_full_name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column edited_at
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: b651dda9-87d8-476b-b0bd-080eb864d6c9
+		summarizeBy: none
+		sourceColumn: edited_at
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column account_executive
+		dataType: string
+		isHidden
+		lineageTag: 722621a3-2dc1-4a50-83b5-2f0cb7f5991a
+		summarizeBy: none
+		sourceColumn: account_executive
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column deal_type
+		dataType: string
+		isHidden
+		lineageTag: a0c0445a-7fbc-4416-92ec-91cfe5e52a4d
+		summarizeBy: none
+		sourceColumn: deal_type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column incumbent_provider
+		dataType: string
+		isHidden
+		lineageTag: 30b22442-fa7e-4ad4-893f-60a1f1fa341b
+		summarizeBy: none
+		sourceColumn: incumbent_provider
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column industry
+		dataType: string
+		isHidden
+		lineageTag: e7ed3d64-a93f-4af2-a849-9d9d22fba3c5
+		summarizeBy: none
+		sourceColumn: industry
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column products
+		dataType: string
+		isHidden
+		lineageTag: 16221914-984d-44d3-984a-fab1f6744e58
+		summarizeBy: none
+		sourceColumn: products
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column market_region
+		dataType: string
+		isHidden
+		lineageTag: d983bdc5-b645-4a8b-8055-87baf40240f9
+		summarizeBy: none
+		sourceColumn: market_region
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column winning_provider
+		dataType: string
+		isHidden
+		lineageTag: c448ebf5-4934-4859-8780-4f12026029b4
+		summarizeBy: none
+		sourceColumn: winning_provider
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column deal_amount
+		dataType: double
+		isHidden
+		lineageTag: 3e9be852-6230-4fc7-b165-7ef0f930f3d0
+		summarizeBy: sum
+		sourceColumn: deal_amount
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column deal_type_details
+		dataType: string
+		isHidden
+		lineageTag: 44f309b5-18af-48ae-abfe-bf43d3f60097
+		summarizeBy: none
+		sourceColumn: deal_type_details
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sales_process_comment
+		dataType: string
+		isHidden
+		lineageTag: 5ad67952-76f2-48f8-b422-098bb619e869
+		summarizeBy: none
+		sourceColumn: sales_process_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sales_process_business_goal
+		dataType: string
+		isHidden
+		lineageTag: 54a32e63-881f-46d8-a0d7-4c0bdb1e0226
+		summarizeBy: none
+		sourceColumn: sales_process_business_goal
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sales_process_incumbent_solution
+		dataType: string
+		isHidden
+		lineageTag: 9e19946b-c925-49b6-bd4d-14fddde88305
+		summarizeBy: none
+		sourceColumn: sales_process_incumbent_solution
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sales_process_metrics_focus
+		dataType: string
+		isHidden
+		lineageTag: 858c7f13-6769-41e8-9a44-49950e94f014
+		summarizeBy: none
+		sourceColumn: sales_process_metrics_focus
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column change_vendor_likelihood_comment
+		dataType: string
+		isHidden
+		lineageTag: 37eceb57-3a19-45b0-bca2-856a0a509d49
+		summarizeBy: none
+		sourceColumn: change_vendor_likelihood_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column change_vendor_likelihood
+		dataType: string
+		isHidden
+		lineageTag: 6b49b16a-c57b-429d-94bb-8b1e61d602f8
+		summarizeBy: none
+		sourceColumn: change_vendor_likelihood
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_discovery
+		dataType: string
+		isHidden
+		lineageTag: 171c8b81-51bf-442f-84f9-fdc72c327f35
+		summarizeBy: none
+		sourceColumn: kinaxis_discovery
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column decision_process_comment
+		dataType: string
+		isHidden
+		lineageTag: d1b715fc-8f29-4f4c-8788-d97597e58f12
+		summarizeBy: none
+		sourceColumn: decision_process_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column decision_process_decision_makers
+		dataType: string
+		isHidden
+		lineageTag: 0577bf85-5b63-4fd6-bc7f-a0d2d22ee695
+		summarizeBy: none
+		sourceColumn: decision_process_decision_makers
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column decision_process_rfp_process
+		dataType: string
+		isHidden
+		lineageTag: 756542c1-26d4-420f-82bc-d27c5bd5a229
+		summarizeBy: none
+		sourceColumn: decision_process_rfp_process
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column decision_process_competitors
+		dataType: string
+		isHidden
+		lineageTag: 4f394b71-96dd-4be0-b890-3ad15b6dbad7
+		summarizeBy: none
+		sourceColumn: decision_process_competitors
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column decision_process_third_party_involvement
+		dataType: string
+		isHidden
+		lineageTag: efe9bc93-b2d2-4c5d-8fd8-491a00104f1d
+		summarizeBy: none
+		sourceColumn: decision_process_third_party_involvement
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column important_attributes_comment
+		dataType: string
+		isHidden
+		lineageTag: b7f31d40-569f-4ced-9829-3553b4882580
+		summarizeBy: none
+		sourceColumn: important_attributes_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column important_attributes_1
+		dataType: string
+		isHidden
+		lineageTag: 19710994-c56c-4a5d-bac4-05e9ede22c12
+		summarizeBy: none
+		sourceColumn: important_attributes_1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column important_attributes_2
+		dataType: string
+		isHidden
+		lineageTag: 67e795a0-d274-4876-9df6-c082853b21e8
+		summarizeBy: none
+		sourceColumn: important_attributes_2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column important_attributes_3
+		dataType: string
+		isHidden
+		lineageTag: 2bcf25af-da65-40a7-a164-3a39ff37f4d3
+		summarizeBy: none
+		sourceColumn: important_attributes_3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competitor_comparison_comment
+		dataType: string
+		isHidden
+		lineageTag: 9c6aed52-2220-470f-999b-3d89ddeedcfc
+		summarizeBy: none
+		sourceColumn: competitor_comparison_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competitor_comparison_rank_1_attribute
+		dataType: string
+		isHidden
+		lineageTag: 16aca1f6-e5df-47ef-bafb-868a8dccd953
+		summarizeBy: none
+		sourceColumn: competitor_comparison_rank_1_attribute
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competitor_comparison_rank_1_scoring
+		dataType: string
+		isHidden
+		lineageTag: 23b15b66-4ac4-4d48-b6a3-701650fdbf8a
+		summarizeBy: none
+		sourceColumn: competitor_comparison_rank_1_scoring
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competitor_rank_2_attribute
+		dataType: string
+		isHidden
+		lineageTag: bb0eda96-0713-4d0f-8df2-1400aa3b999e
+		summarizeBy: none
+		sourceColumn: competitor_rank_2_attribute
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competitor_comparison_rank_2_scoring
+		dataType: string
+		isHidden
+		lineageTag: 750d314f-2f98-4465-94e4-2916810c20d4
+		summarizeBy: none
+		sourceColumn: competitor_comparison_rank_2_scoring
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competitor_comparison_rank_3_attribute
+		dataType: string
+		isHidden
+		lineageTag: 949f07a1-0898-4c69-8058-e429a496bd92
+		summarizeBy: none
+		sourceColumn: competitor_comparison_rank_3_attribute
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competitor_comparison_rank_3_scoring
+		dataType: string
+		isHidden
+		lineageTag: 7decfdca-e6d5-4f97-aa60-b42307fae7ef
+		summarizeBy: none
+		sourceColumn: competitor_comparison_rank_3_scoring
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_offering_comment
+		dataType: string
+		isHidden
+		lineageTag: 842d4b55-85a2-4093-9b53-7628c4108eac
+		summarizeBy: none
+		sourceColumn: product_offering_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_offering_top_functionality
+		dataType: string
+		isHidden
+		lineageTag: a9d766bf-50bf-44b6-a970-a6ced655a49f
+		summarizeBy: none
+		sourceColumn: product_offering_top_functionality
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_offering_lacking_functionality
+		dataType: string
+		isHidden
+		lineageTag: ab3e6e5b-83dd-47e0-ba0f-cb67455e0a79
+		summarizeBy: none
+		sourceColumn: product_offering_lacking_functionality
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sales_team_comment
+		dataType: string
+		isHidden
+		lineageTag: e9a461a0-45fd-4822-a96c-d05173c9bae6
+		summarizeBy: none
+		sourceColumn: sales_team_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sales_team_approach_feedback
+		dataType: string
+		isHidden
+		lineageTag: 924359e1-a1ca-47f7-a88a-117e18d48ad0
+		summarizeBy: none
+		sourceColumn: sales_team_approach_feedback
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sales_team_strengths
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: 7a436d8d-2199-450e-84a1-df4ecc138fa5
+		summarizeBy: none
+		sourceColumn: sales_team_strengths
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sales_team_weaknesses
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: f5ee26bf-cdef-4d3b-8192-b75785cc0e39
+		summarizeBy: none
+		sourceColumn: sales_team_weaknesses
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sales_team_compared_to_competitors
+		dataType: string
+		isHidden
+		lineageTag: 41a41dba-1fb2-41be-b0d9-405d965bc9fc
+		summarizeBy: none
+		sourceColumn: sales_team_compared_to_competitors
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sales_team_uniqueness
+		dataType: string
+		isHidden
+		lineageTag: 70f232f2-6a75-4867-be62-67c469648618
+		summarizeBy: none
+		sourceColumn: sales_team_uniqueness
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column sales_team_competitor_uniqueness
+		dataType: string
+		isHidden
+		lineageTag: 978ac45f-fe4d-404c-9e56-09f16114291d
+		summarizeBy: none
+		sourceColumn: sales_team_competitor_uniqueness
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column considered_competitors
+		dataType: string
+		isHidden
+		lineageTag: f5dc483f-eb3d-4d3d-9544-279d484928b6
+		summarizeBy: none
+		sourceColumn: considered_competitors
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_selected_reasoning_comment
+		dataType: string
+		isHidden
+		lineageTag: 70a359bf-130b-4bb7-9ea6-2bc7bbb7c1c0
+		summarizeBy: none
+		sourceColumn: kinaxis_selected_reasoning_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_selected_reason_1
+		dataType: string
+		isHidden
+		lineageTag: 10a781fa-b234-4d79-97fa-dc4637877d56
+		summarizeBy: none
+		sourceColumn: kinaxis_selected_reason_1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_selected_reason_2
+		dataType: string
+		isHidden
+		lineageTag: 06e0e054-1d8c-487a-9c8a-0cfdc63ceff7
+		summarizeBy: none
+		sourceColumn: kinaxis_selected_reason_2
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_selected_reason_3
+		dataType: string
+		isHidden
+		lineageTag: a73bc067-0e51-4ff6-ae2d-7cb0d6143efd
+		summarizeBy: none
+		sourceColumn: kinaxis_selected_reason_3
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column selected_solution_implementation_approach
+		dataType: string
+		isHidden
+		lineageTag: 3dd16579-4508-4a12-bb66-56acbe2043ce
+		summarizeBy: none
+		sourceColumn: selected_solution_implementation_approach
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column other_vendor_decline_reasoning
+		dataType: string
+		isHidden
+		lineageTag: 3156a8ef-6fc1-42ac-8db7-2ad92fe8908d
+		summarizeBy: none
+		sourceColumn: other_vendor_decline_reasoning
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column phrase_to_describe_kinaxis
+		dataType: string
+		isHidden
+		lineageTag: 1879b94f-2c86-4117-bcba-fb5c3dafa94e
+		summarizeBy: none
+		sourceColumn: phrase_to_describe_kinaxis
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column future_industry_challenge_projection
+		dataType: string
+		isHidden
+		lineageTag: 5c544274-c462-452e-ac58-3a50fc311828
+		summarizeBy: none
+		sourceColumn: future_industry_challenge_projection
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column interview_areas_missed
+		dataType: string
+		isHidden
+		lineageTag: 6ab4ff55-ee09-4ea8-bde8-cd0a1879231a
+		summarizeBy: none
+		sourceColumn: interview_areas_missed
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_strengths_comment
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: d92aa63f-2ed0-497e-a73d-5cf8ff7d6d5d
+		summarizeBy: none
+		sourceColumn: kinaxis_strengths_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_1_category
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: 2df0a289-a040-44b4-99aa-135870042575
+		summarizeBy: none
+		sourceColumn: strengths_1_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_1_comment
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: eb358694-6822-4f58-9030-77cf96788c0b
+		summarizeBy: none
+		sourceColumn: strengths_1_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_2_category
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: a378344b-9342-4c87-bba0-c9f2c2281827
+		summarizeBy: none
+		sourceColumn: strengths_2_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_2_comment
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: a4185516-12ca-4926-a21b-fb1b7f938a61
+		summarizeBy: none
+		sourceColumn: strengths_2_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_3_category
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: deebf121-359d-40ad-8fe2-26d4e2047451
+		summarizeBy: none
+		sourceColumn: strengths_3_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_3_comment
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: 89e9d489-7d15-4405-ba9d-c56e32148cfd
+		summarizeBy: none
+		sourceColumn: strengths_3_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_4_category
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: ce72a7ed-3f15-49d7-93f0-5a2a7b3ebe4c
+		summarizeBy: none
+		sourceColumn: strengths_4_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_4_comment
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: d58227a8-6b02-4ba2-84f3-7c4f2aec5048
+		summarizeBy: none
+		sourceColumn: strengths_4_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_5_category
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: 6908b004-c2ac-4404-b93c-16ad1e33aade
+		summarizeBy: none
+		sourceColumn: strengths_5_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_5_comment
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: 4b473d81-7f98-455e-bf47-346a3d56eeec
+		summarizeBy: none
+		sourceColumn: strengths_5_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_6_category
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: 904ccd06-043a-4774-9726-f31d3c69c3f6
+		summarizeBy: none
+		sourceColumn: strengths_6_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_6_comment
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: 63825345-dff4-4c04-ad14-93921ef41be6
+		summarizeBy: none
+		sourceColumn: strengths_6_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_7_category
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: a0a7f428-793b-46a8-bbae-baa981bfe94e
+		summarizeBy: none
+		sourceColumn: strengths_7_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_comment_7
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: c8b502d0-5c42-4be7-bd94-f8e0f54cbfda
+		summarizeBy: none
+		sourceColumn: strengths_comment_7
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_8_category
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: ae505631-7dfc-4b87-840b-396f5b8d0fed
+		summarizeBy: none
+		sourceColumn: strengths_8_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column strengths_8_comment
+		dataType: string
+		isHidden
+		displayFolder: Strengths
+		lineageTag: 322c2393-e2bb-4a5e-a15e-0793f71da7d5
+		summarizeBy: none
+		sourceColumn: strengths_8_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_weaknesses_comment
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: 46ddce9f-aac1-4c5d-a8ce-93e335bca3d0
+		summarizeBy: none
+		sourceColumn: kinaxis_weaknesses_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknesses_1_category
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: a426069f-3850-47dc-8a6f-0cebbd475aad
+		summarizeBy: none
+		sourceColumn: weaknesses_1_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknessess_1_comment
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: e80b0301-20ec-4f39-958c-5f3d3ab0f152
+		summarizeBy: none
+		sourceColumn: weaknessess_1_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknesses_2_category
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: aa200591-2ad6-48e1-9e45-a680272ce38e
+		summarizeBy: none
+		sourceColumn: weaknesses_2_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknesses_2_comment
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: 237e0ded-4bbf-4ae2-8178-a3d2b91ed8b8
+		summarizeBy: none
+		sourceColumn: weaknesses_2_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknesses_3_category
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: d81161c8-e83f-4de0-a7eb-cee10d9fa648
+		summarizeBy: none
+		sourceColumn: weaknesses_3_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknesses_3_comment
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: ca8befac-d05b-4b59-9fba-055ad91d617e
+		summarizeBy: none
+		sourceColumn: weaknesses_3_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknesses_4_category
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: 41414b36-99ff-4949-8de4-62b6af3d0846
+		summarizeBy: none
+		sourceColumn: weaknesses_4_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknesses_4_comment
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: bc1d65a2-b899-4568-a3dc-03ad8030cdf4
+		summarizeBy: none
+		sourceColumn: weaknesses_4_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknesses_5_category
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: ceb59f55-bf9e-4016-9cd1-2fe84f846e1e
+		summarizeBy: none
+		sourceColumn: weaknesses_5_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknesses_5_comment
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: 723b54b3-9220-463d-a99f-a9032b6a5d96
+		summarizeBy: none
+		sourceColumn: weaknesses_5_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknesses_6_category
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: 2dd29dcb-459a-4cbc-98c1-ef38b6f2592a
+		summarizeBy: none
+		sourceColumn: weaknesses_6_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknesses_6_comment
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: f1793adf-3673-4e57-bbdc-a771a0f4cb38
+		summarizeBy: none
+		sourceColumn: weaknesses_6_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknesses_7_category
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: 9ea64c22-4080-41b2-b5a6-0bc19a2f9c2b
+		summarizeBy: none
+		sourceColumn: weaknesses_7_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknesses_7_comment
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: 81a90261-f79b-45a3-bdae-c19363e5ce60
+		summarizeBy: none
+		sourceColumn: weaknesses_7_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknesses_8_category
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: 31622038-cb1d-48ad-817d-2727a17dc77a
+		summarizeBy: none
+		sourceColumn: weaknesses_8_category
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column weaknesses_8_comment
+		dataType: string
+		isHidden
+		displayFolder: Weakness
+		lineageTag: d976e301-951b-43d1-9dcb-16c685f0d373
+		summarizeBy: none
+		sourceColumn: weaknesses_8_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm
+		dataType: string
+		isHidden
+		lineageTag: b593865f-29cb-433a-9ac9-fb533c533146
+		summarizeBy: none
+		sourceColumn: competing_firm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_sales_rep_communication_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 9ee2bdd9-294c-47b4-a886-a7e2d53d9160
+		summarizeBy: none
+		sourceColumn: kinaxis_sales_rep_communication_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_sales_rep_communication_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: da79db3d-dd81-4359-9f77-c9387d25978e
+		summarizeBy: none
+		sourceColumn: competing_sales_rep_communication_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_sales_rep_communication_comment
+		dataType: string
+		isHidden
+		lineageTag: 1669db0a-ae78-406a-bb91-e27a98af795a
+		summarizeBy: none
+		sourceColumn: kinaxis_sales_rep_communication_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_sales_team_product_knowledge
+		dataType: string
+		isHidden
+		lineageTag: 6703535c-a84a-40e4-85da-cb2c026dc7c4
+		summarizeBy: none
+		sourceColumn: kinaxis_sales_team_product_knowledge
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_sales_team_product_knowledge
+		dataType: string
+		isHidden
+		lineageTag: 682904df-6c01-4ec1-bd1c-1a5988acf689
+		summarizeBy: none
+		sourceColumn: competing_sales_team_product_knowledge
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_sales_team_product_knowledge_comment
+		dataType: string
+		isHidden
+		lineageTag: 30a8f2db-c1ed-4227-92e5-c0385d2761c7
+		summarizeBy: none
+		sourceColumn: kinaxis_sales_team_product_knowledge_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_rfp_response_quality_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: a68c7b3c-10a4-43fa-9e80-a9d9adb9a6f2
+		summarizeBy: none
+		sourceColumn: kinaxis_rfp_response_quality_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_rfp_response_quality_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: f29591d1-7a06-47b5-b304-06035f290c48
+		summarizeBy: none
+		sourceColumn: competing_rfp_response_quality_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_rfp_response_comment
+		dataType: string
+		isHidden
+		lineageTag: 91d1fbd4-d77b-4cb7-9681-c2f5d46b1de9
+		summarizeBy: none
+		sourceColumn: kinaxis_rfp_response_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_product_presentation_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: e6c2d178-fb7f-4012-9ad1-36fc5362dccf
+		summarizeBy: none
+		sourceColumn: kinaxis_product_presentation_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_product_presentation_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: f6a6f50c-59b2-4106-8840-36a0d80cdf80
+		summarizeBy: none
+		sourceColumn: competing_product_presentation_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_product_presentation_comment
+		dataType: string
+		isHidden
+		lineageTag: 0be4d8c6-cca5-4d85-b1a2-c635bc5cce17
+		summarizeBy: none
+		sourceColumn: kinaxis_product_presentation_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_enthusiasm
+		dataType: string
+		isHidden
+		lineageTag: cfd2974a-cceb-4424-911e-fd64b8c52d63
+		summarizeBy: none
+		sourceColumn: kinaxis_enthusiasm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm_enthusiasm
+		dataType: string
+		isHidden
+		lineageTag: 9687aba6-638b-4920-bf50-35d3603df0e1
+		summarizeBy: none
+		sourceColumn: competing_firm_enthusiasm
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_enthusiasm_comment
+		dataType: string
+		isHidden
+		lineageTag: fab93037-6971-49c3-8b06-dc2d93af43d9
+		summarizeBy: none
+		sourceColumn: kinaxis_enthusiasm_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_needs_assessment
+		dataType: string
+		isHidden
+		lineageTag: a9d9fdbf-10d8-4d4b-b1c9-3715072c4cd6
+		summarizeBy: none
+		sourceColumn: kinaxis_needs_assessment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm_needs_assessment
+		dataType: string
+		isHidden
+		lineageTag: 7930d2ef-339f-43b2-8fd0-7670282ebeac
+		summarizeBy: none
+		sourceColumn: competing_firm_needs_assessment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_needs_assessment_comment
+		dataType: string
+		isHidden
+		lineageTag: a88a66a9-d15c-4add-80cb-bc07f26a0810
+		summarizeBy: none
+		sourceColumn: kinaxis_needs_assessment_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_consultive_tailoring_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 8f5c080f-969e-4dc5-a331-39df52f65b06
+		summarizeBy: none
+		sourceColumn: kinaxis_consultive_tailoring_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm_consultive_tailoring_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: b8857235-4673-42f3-b6d9-12182d680962
+		summarizeBy: none
+		sourceColumn: competing_firm_consultive_tailoring_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_consultive_tailoring_comment
+		dataType: string
+		isHidden
+		lineageTag: da49d99c-f140-4100-ada5-f8f443b9fb00
+		summarizeBy: none
+		sourceColumn: kinaxis_consultive_tailoring_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_uniqueness_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 0411ae95-daa8-4936-8d49-b3ecd5424a0f
+		summarizeBy: none
+		sourceColumn: kinaxis_uniqueness_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm_uniqueness_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 5295b6f2-daa8-458e-92f9-2d34e1f693d5
+		summarizeBy: none
+		sourceColumn: competing_firm_uniqueness_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_uniqueness_comment
+		dataType: string
+		isHidden
+		lineageTag: 68721190-3ac7-4309-8f05-43cac40d6be5
+		summarizeBy: none
+		sourceColumn: kinaxis_uniqueness_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_rapport_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 1aa74dfc-b1da-4604-80f6-ec255bccf863
+		summarizeBy: none
+		sourceColumn: kinaxis_rapport_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competiting_firm_rapport_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 6c7f6695-e8e5-4895-900d-2f73d2d5d159
+		summarizeBy: none
+		sourceColumn: competiting_firm_rapport_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_rapport_comment
+		dataType: string
+		isHidden
+		lineageTag: 52c5fa91-53cf-4d13-ba94-c51a6eb893cc
+		summarizeBy: none
+		sourceColumn: kinaxis_rapport_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_industry_analysis_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: bcd6b870-9e30-4f71-80a8-6a0b56b0144a
+		summarizeBy: none
+		sourceColumn: kinaxis_industry_analysis_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm_industry_analysis_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 1a380ad4-b6f5-4017-aa2e-548663e60a4b
+		summarizeBy: none
+		sourceColumn: competing_firm_industry_analysis_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_industry_analysis_comment
+		dataType: string
+		isHidden
+		lineageTag: 673fc500-9cdc-465b-b788-1c1a42795579
+		summarizeBy: none
+		sourceColumn: kinaxis_industry_analysis_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_overall_functionality_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: d72e0afe-1bae-4450-8f30-24ad5dbfc1c0
+		summarizeBy: none
+		sourceColumn: kinaxis_overall_functionality_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm_overall_funtionality_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: f58203cb-eed0-442a-9799-18f2d9963640
+		summarizeBy: none
+		sourceColumn: competing_firm_overall_funtionality_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_overall_functionality_comment
+		dataType: string
+		isHidden
+		lineageTag: 2ad1bbfe-6a61-4da6-b3d8-85362ae074a0
+		summarizeBy: none
+		sourceColumn: kinaxis_overall_functionality_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_user_experience_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 9814ca04-c4bf-46be-a6a5-0e850972a72f
+		summarizeBy: none
+		sourceColumn: kinaxis_user_experience_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm_user_experience_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 4d787495-95f1-4fcb-a215-cb4a9d46694c
+		summarizeBy: none
+		sourceColumn: competing_firm_user_experience_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_user_experience_comment
+		dataType: string
+		isHidden
+		lineageTag: aa636586-9e8f-48a9-8bfe-d47eba34d82b
+		summarizeBy: none
+		sourceColumn: kinaxis_user_experience_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_integration_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 045cbfd5-2fba-4e70-be80-95ea16eb3b3a
+		summarizeBy: none
+		sourceColumn: kinaxis_integration_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm_integration_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 1a26f7e1-e61d-4c8d-a7cb-4528fe42074d
+		summarizeBy: none
+		sourceColumn: competing_firm_integration_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_integration_comment
+		dataType: string
+		isHidden
+		lineageTag: a2bc178d-6d81-4549-b639-9217096935ec
+		summarizeBy: none
+		sourceColumn: kinaxis_integration_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_analytical_capabilities_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 380f04e3-472a-4edd-a903-20dc7595b9ac
+		summarizeBy: none
+		sourceColumn: kinaxis_analytical_capabilities_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm_analytical_capabilities_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 90c39e3a-354e-41d0-ba17-233afe7a0806
+		summarizeBy: none
+		sourceColumn: competing_firm_analytical_capabilities_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_analytical_capabilities_comment
+		dataType: string
+		isHidden
+		lineageTag: 9059788a-c8c7-468f-9508-0c61319705c9
+		summarizeBy: none
+		sourceColumn: kinaxis_analytical_capabilities_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_roadmap_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: eb4b238c-6236-4e67-9f56-51fe80ad0ed6
+		summarizeBy: none
+		sourceColumn: kinaxis_roadmap_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm_roadmap_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 36f009e6-eb51-46a2-9e3b-045fa3a3362c
+		summarizeBy: none
+		sourceColumn: competing_firm_roadmap_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_roadmap_comment
+		dataType: string
+		isHidden
+		lineageTag: 0ed4aa0b-11a5-4dee-ac25-adba87ea2b91
+		summarizeBy: none
+		sourceColumn: kinaxis_roadmap_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_ai_impact_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 1bf6518c-d2be-4e67-875f-a1a22982a8e0
+		summarizeBy: none
+		sourceColumn: kinaxis_ai_impact_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm_ai_impact_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 384fbd1a-a487-4d88-a15b-665247d2e02c
+		summarizeBy: none
+		sourceColumn: competing_firm_ai_impact_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_ai_impact_comment
+		dataType: string
+		isHidden
+		lineageTag: d54439d0-4528-403d-abc1-cf9ca8a5f79f
+		summarizeBy: none
+		sourceColumn: kinaxis_ai_impact_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_orchestration_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 06ad40f4-a2ec-4946-95dd-0eee46ec9584
+		summarizeBy: none
+		sourceColumn: kinaxis_orchestration_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm_orchestration_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 753e82ae-7bb2-4b4b-b745-b2b8a598fbc9
+		summarizeBy: none
+		sourceColumn: competing_firm_orchestration_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_orchestration_comment
+		dataType: string
+		isHidden
+		lineageTag: fb918d80-4344-40d6-999c-8e9db0971cd9
+		summarizeBy: none
+		sourceColumn: kinaxis_orchestration_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_customization_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 99a47048-5234-4582-8610-354cb72f5af4
+		summarizeBy: none
+		sourceColumn: kinaxis_customization_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competiting_firm_customization_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 46893fcc-9bb3-4ad9-9062-202b62bf5e2b
+		summarizeBy: none
+		sourceColumn: competiting_firm_customization_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_customization_comment
+		dataType: string
+		isHidden
+		lineageTag: bb095273-429d-4805-a22d-619b9db4dfdb
+		summarizeBy: none
+		sourceColumn: kinaxis_customization_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_ease_of_use_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 9d2046ca-c45a-408d-9fa2-e61ae5c0f51e
+		summarizeBy: none
+		sourceColumn: kinaxis_ease_of_use_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm_ease_of_use_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 8c543804-fa81-4317-bb62-58421756472e
+		summarizeBy: none
+		sourceColumn: competing_firm_ease_of_use_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_ease_of_use_comment
+		dataType: string
+		isHidden
+		lineageTag: cc799fd1-bbc3-423b-b3b5-ed05c2f114cd
+		summarizeBy: none
+		sourceColumn: kinaxis_ease_of_use_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_price_competitiveness_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 96bd014b-6b03-4188-8e34-41509efa67dd
+		summarizeBy: none
+		sourceColumn: kinaxis_price_competitiveness_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm_price_competitiveness_score
+		dataType: string
+		isHidden
+		displayFolder: Numeric Fields
+		lineageTag: 6dce75a8-cd9f-45b7-ac97-561ec6f2c60b
+		summarizeBy: none
+		sourceColumn: competing_firm_price_competitiveness_score
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_price_competitiveness_comment
+		dataType: string
+		isHidden
+		lineageTag: 5b1f48c5-5805-47e0-9896-9572176d6f5a
+		summarizeBy: none
+		sourceColumn: kinaxis_price_competitiveness_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_perceived_roi
+		dataType: string
+		isHidden
+		lineageTag: 6bc3e967-b3e0-420b-ae27-35ebf57df907
+		summarizeBy: none
+		sourceColumn: kinaxis_perceived_roi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column competing_firm_perceived_roi
+		dataType: string
+		isHidden
+		lineageTag: a7ef1b83-41f3-4919-ac48-77f8cbde7ca1
+		summarizeBy: none
+		sourceColumn: competing_firm_perceived_roi
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column kinaxis_perceived_roi_comment
+		dataType: string
+		isHidden
+		lineageTag: 3f732e0f-b465-4559-9d7d-1d4e33225fd6
+		summarizeBy: none
+		sourceColumn: kinaxis_perceived_roi_comment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition stg_anova_wins = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"1b676173-4fb3-43dc-95a3-a62be19f628c" = Workspaces{[workspaceId="1b676173-4fb3-43dc-95a3-a62be19f628c"]}[Data],
+				    #"6c725d6b-d005-4209-ab65-9149dee21915" = #"1b676173-4fb3-43dc-95a3-a62be19f628c"{[dataflowId="6c725d6b-d005-4209-ab65-9149dee21915"]}[Data],
+				    stg_anova_wins_ = #"6c725d6b-d005-4209-ab65-9149dee21915"{[entity="stg_anova_wins",version=""]}[Data]
+				in
+				    stg_anova_wins_
+
+	changedProperty = IsHidden
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Analytical Product Intelligence"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "1e8161b2-3009-9626-41e3-781a9bff33b5"
+  }
+}

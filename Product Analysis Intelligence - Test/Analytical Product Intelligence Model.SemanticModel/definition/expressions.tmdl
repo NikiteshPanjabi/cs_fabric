@@ -1,0 +1,18 @@
+expression 'Opportunity Stage Changes' =
+		let
+		    Source = PowerPlatform.Dataflows(null),
+		    Workspaces = Source{[Id="Workspaces"]}[Data],
+		    #"49468631-1fe1-4eb3-b684-aff7fadb83ad" = Workspaces{[workspaceId="49468631-1fe1-4eb3-b684-aff7fadb83ad"]}[Data],
+		    #"97072e0d-551e-43d9-b9da-e1eece483309" = #"49468631-1fe1-4eb3-b684-aff7fadb83ad"{[dataflowId="97072e0d-551e-43d9-b9da-e1eece483309"]}[Data],
+		    #"Opportunity Stage Changes_" = #"97072e0d-551e-43d9-b9da-e1eece483309"{[entity="Opportunity Stage Changes",version=""]}[Data],
+		    #"Removed Other Columns" = Table.SelectColumns(#"Opportunity Stage Changes_",{"Opportunity ID", "Index_Des", "Old Value (Renamed)"}),
+		    #"Filtered Rows" = Table.SelectRows(#"Removed Other Columns", each [Index_Des] = 1)
+		in
+		    #"Filtered Rows"
+	lineageTag: eae20f48-0af1-485f-aecd-91e99f21d5a3
+	queryGroup: Linked
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,129 @@
+table Product
+	lineageTag: 30b4f886-f680-40f2-bac8-89ed78e4b23d
+
+	column 'Product ID'
+		dataType: string
+		lineageTag: 57111360-c046-42ee-9872-0e53e02f2925
+		summarizeBy: none
+		sourceColumn: Product ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Name'
+		dataType: string
+		lineageTag: 2151ae5f-a55f-4ec5-95f7-4103b842143c
+		summarizeBy: none
+		sourceColumn: Product Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Code'
+		dataType: string
+		lineageTag: 7b2bd67d-1757-418f-8121-17f3c4fcb105
+		summarizeBy: none
+		sourceColumn: Product Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Active (Yes/No)'
+		dataType: string
+		lineageTag: fc8c6d9a-1bad-44b4-9eac-96e516e2c546
+		summarizeBy: none
+		sourceColumn: Is Active (Yes/No)
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created Date'
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 66425f69-7dd6-4cda-9ecb-ea871c300131
+		summarizeBy: none
+		sourceColumn: Created Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Created Time'
+		dataType: dateTime
+		isHidden
+		formatString: Long Time
+		lineageTag: 2388bd60-9ee9-46af-9ae6-93e75c14d4ff
+		summarizeBy: none
+		sourceColumn: Created Time
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+	column 'Product Family'
+		dataType: string
+		lineageTag: 86919075-10eb-427c-9233-6e41b93f980d
+		summarizeBy: none
+		sourceColumn: Product Family
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Family Sub-Type'
+		dataType: string
+		isHidden
+		lineageTag: 57060511-e866-48e8-97c6-8af9a50de1bf
+		summarizeBy: none
+		sourceColumn: Family Sub-Type
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SKU Bucket'
+		dataType: string
+		lineageTag: 7a062f83-37db-4b36-9899-52dddb1c02f7
+		summarizeBy: none
+		sourceColumn: SKU Bucket
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Price List Assignment'
+		dataType: string
+		isHidden
+		lineageTag: aca28a2f-6e18-415b-9c85-505a9fec2a53
+		summarizeBy: none
+		sourceColumn: Price List Assignment
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created Date/Time'
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: ad9e5de0-3b93-43dc-8292-218267c6f507
+		summarizeBy: none
+		sourceColumn: Created Date/Time
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Product = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"05b8b535-6823-453f-890a-08ddf6ae067d" = Workspaces{[workspaceId="05b8b535-6823-453f-890a-08ddf6ae067d"]}[Data],
+				    #"d27f5836-cb61-45a0-8876-b5c47f54b5a1" = #"05b8b535-6823-453f-890a-08ddf6ae067d"{[dataflowId="d27f5836-cb61-45a0-8876-b5c47f54b5a1"]}[Data],
+				    Product_ = #"d27f5836-cb61-45a0-8876-b5c47f54b5a1"{[entity="Product",version=""]}[Data]
+				in
+				    Product_
+
+	annotation PBI_ResultType = Table
+

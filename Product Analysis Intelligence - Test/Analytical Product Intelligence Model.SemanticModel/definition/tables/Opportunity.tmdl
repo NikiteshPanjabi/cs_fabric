@@ -1,0 +1,2930 @@
+table Opportunity
+	lineageTag: fe3fd195-cab3-4caa-877f-4a6508542998
+
+	column 'Opportunity ID'
+		dataType: string
+		lineageTag: c843fe2e-14d3-4a32-8f0d-676d85327edb
+		summarizeBy: none
+		sourceColumn: Opportunity ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Account ID'
+		dataType: string
+		lineageTag: 4b1b9415-d1a1-4066-b048-864ea8e1a0e2
+		summarizeBy: none
+		sourceColumn: Account ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Opportunity Name'
+		dataType: string
+		lineageTag: d525dca5-7a35-4189-a657-a45b766fb1c7
+		summarizeBy: none
+		sourceColumn: Opportunity Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Stage Original'
+		dataType: string
+		displayFolder: Others
+		lineageTag: dc34c3df-9c35-4292-addc-d88b700535f9
+		summarizeBy: none
+		sourceColumn: Stage Original
+
+		annotation SummarizationSetBy = Automatic
+
+	column Probability
+		dataType: double
+		displayFolder: Others
+		lineageTag: 71f1f5f8-e10d-48d0-a060-af4963c2e0e3
+		summarizeBy: sum
+		sourceColumn: Probability
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Close Date'
+		dataType: dateTime
+		formatString: yyyy-mm-dd
+		lineageTag: f839718c-f951-4427-adb6-da1e955aa226
+		summarizeBy: none
+		sourceColumn: Close Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'Opportunity Type'
+		dataType: string
+		lineageTag: b8548c42-9e60-4dc0-84df-fcacce0e48b0
+		summarizeBy: none
+		sourceColumn: Opportunity Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Lead Source'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 7254bf1f-039e-4666-a4d8-de292663733f
+		summarizeBy: none
+		sourceColumn: Lead Source
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Currency Code'
+		dataType: string
+		displayFolder: Others
+		lineageTag: b642b5d6-8c54-4a18-a22b-0615bbee49d1
+		summarizeBy: none
+		sourceColumn: Currency Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Primary Campaign Source ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: bcc0938e-aece-4c03-a2f3-89deccc212da
+		summarizeBy: none
+		sourceColumn: Primary Campaign Source ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Owner ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 4f4ece50-f7b2-494e-af27-5ccc12db4f73
+		summarizeBy: none
+		sourceColumn: Owner ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 7e480b07-4f8c-467d-a50a-39614256be03
+		summarizeBy: none
+		sourceColumn: Created Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Created By ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 3017e806-899a-417b-98d9-4efca7179a8e
+		summarizeBy: none
+		sourceColumn: Created By ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Modified Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 933ea6c1-8b6f-4481-8a0d-1fde551ec04f
+		summarizeBy: none
+		sourceColumn: Last Modified Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Software IMSA ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 2aae416f-f61f-4d6a-ae1c-fc91ab093c85
+		summarizeBy: sum
+		sourceColumn: Software IMSA ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Annual IMSA ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: f3ba2dbf-ab26-4574-814c-d6932e648358
+		summarizeBy: sum
+		sourceColumn: Annual IMSA ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Targeted Term'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 80fceda5-5b5e-4390-aba6-1805e82e53ca
+		summarizeBy: sum
+		sourceColumn: Targeted Term
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Partner
+		dataType: string
+		displayFolder: Others
+		lineageTag: 7a715288-5cc1-4d0c-8555-8b104da6befe
+		summarizeBy: none
+		sourceColumn: Partner
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Qualified Lead Type'
+		dataType: string
+		displayFolder: Others
+		lineageTag: c540f14e-e636-45f5-ac52-366a67cf25e4
+		summarizeBy: none
+		sourceColumn: Qualified Lead Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Business Lost Reason'
+		dataType: string
+		displayFolder: Others
+		lineageTag: d19007da-5a54-45e2-b1a3-b6726ccdbb0f
+		summarizeBy: none
+		sourceColumn: Business Lost Reason
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 297a8e3c-4e38-475e-bbcf-3458e2802aca
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary AE'
+		dataType: string
+		lineageTag: 86f44df9-5013-46ad-bd84-cc08a149397c
+		summarizeBy: none
+		sourceColumn: Secondary AE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Legal Engagement'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 9794a151-2716-4773-a056-3630b86eb1f4
+		summarizeBy: none
+		sourceColumn: Legal Engagement
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total Services $ ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: ed93a083-f11f-4e33-af50-4549d9b88abe
+		summarizeBy: sum
+		sourceColumn: Total Services $ ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Software ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 22a5993f-3e1a-4a81-830a-5027bfc349b7
+		summarizeBy: sum
+		sourceColumn: Total Software ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Support ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 291e99ee-a235-4ae1-a434-e781c0b52440
+		summarizeBy: sum
+		sourceColumn: Total Support ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column ERP
+		dataType: string
+		displayFolder: Others
+		lineageTag: ad440471-e9c2-4aa3-87d9-43d3c5e37026
+		summarizeBy: none
+		sourceColumn: ERP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Forecast Category'
+		dataType: string
+		lineageTag: ced7d3bd-88a5-43d5-9337-76dc7cd2f188
+		summarizeBy: none
+		sourceColumn: Forecast Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Qualified Out Reason'
+		dataType: string
+		displayFolder: Others
+		lineageTag: b1502334-b008-4ff3-924f-9e60ed3176ff
+		summarizeBy: none
+		sourceColumn: Qualified Out Reason
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Legal Prime'
+		dataType: string
+		displayFolder: Others
+		lineageTag: fa54b648-e491-48d5-ac5c-2392f2a4c814
+		summarizeBy: none
+		sourceColumn: Legal Prime
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total Amount ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 48626a1f-0789-4a10-aa21-2aec0f6f1e5a
+		summarizeBy: sum
+		sourceColumn: Total Amount ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Competitor 1'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 4146d1a9-3c64-4472-ac94-a5cb8eae2944
+		summarizeBy: none
+		sourceColumn: Competitor 1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Competitor 2'
+		dataType: string
+		displayFolder: Others
+		lineageTag: ed656731-3769-4d0b-b413-33fa9dc40f07
+		summarizeBy: none
+		sourceColumn: Competitor 2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total ACV (Excl SCE)'
+		dataType: double
+		displayFolder: Others
+		lineageTag: aeb599bb-5911-43ea-bbca-9c61dda7a112
+		summarizeBy: sum
+		sourceColumn: Total ACV (Excl SCE)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Business Consultant ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: a198edca-018f-4cdb-8b1d-e53e87617d28
+		summarizeBy: none
+		sourceColumn: Business Consultant ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Services Manager'
+		dataType: string
+		displayFolder: Others
+		lineageTag: d344047b-862a-4968-a880-11274ad55ec1
+		summarizeBy: none
+		sourceColumn: Services Manager
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Partner Services ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 18ef9e00-d4eb-48a3-b902-bad30fee7f73
+		summarizeBy: sum
+		sourceColumn: Partner Services ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Services Partner Kinaxis'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 643f62a5-bf36-46d3-b259-e9ed8e94bd7b
+		summarizeBy: sum
+		sourceColumn: Total Services Partner Kinaxis
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Net New ACV (Excl Renewal and SCE)'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 07d10d92-1938-4034-8583-9eedbb7ef96e
+		summarizeBy: sum
+		sourceColumn: Total Net New ACV (Excl Renewal and SCE)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Net New ACV (Excl Renewal)'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 636fec13-553f-43d7-adc1-8402a8a06f63
+		summarizeBy: sum
+		sourceColumn: Total Net New ACV (Excl Renewal)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Primary Business Consultant ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 9681e1cd-7154-48e5-b882-e5aa65ee67be
+		summarizeBy: none
+		sourceColumn: Primary Business Consultant ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Current Subscription Start Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 1c7e6544-afd8-42cf-bd38-1d1bfc8d7483
+		summarizeBy: none
+		sourceColumn: Current Subscription Start Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Market Place'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 1e8bb865-3af6-4b8c-b2cf-c6f898a1d2e8
+		summarizeBy: none
+		sourceColumn: Market Place
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CLS IMSA ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 100b91c6-63d6-4d2f-b1e3-829b19c1d77c
+		summarizeBy: sum
+		sourceColumn: CLS IMSA ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'CLS ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 09b61d2f-c99c-4a8a-bdeb-501da6811f18
+		summarizeBy: sum
+		sourceColumn: CLS ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Primary Cloud Partner Manager Splits'
+		dataType: double
+		displayFolder: Others
+		lineageTag: e6888c7f-77c5-4365-91a2-bbc05fc8b4b3
+		summarizeBy: sum
+		sourceColumn: Primary Cloud Partner Manager Splits
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Primary Cloud Partner Manager'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 99a779d9-f7e5-4017-b37c-228d85b1abb5
+		summarizeBy: none
+		sourceColumn: Primary Cloud Partner Manager
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Software EMSA ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 9abbb8c5-c05e-4f24-b2ac-303b37909d65
+		summarizeBy: sum
+		sourceColumn: Software EMSA ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'IMSA Credit ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 8a3bb130-8b9a-42c8-9d3a-c6b55590a6a5
+		summarizeBy: sum
+		sourceColumn: IMSA Credit ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Lost To Competitor'
+		dataType: string
+		lineageTag: 0a70257f-3fc0-4a55-8849-924895416f9f
+		summarizeBy: none
+		sourceColumn: Lost To Competitor
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Partner Present No Influence'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: a45aa15c-4303-46ad-a528-82928d3c6607
+		summarizeBy: none
+		sourceColumn: Partner Present No Influence
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total IMSA ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: c7b72285-2c1e-4453-a961-bad40c6cf74c
+		summarizeBy: sum
+		sourceColumn: Total IMSA ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total CLS Subscription Term ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 2fb23b0e-82fb-44a7-8529-be35fea8713f
+		summarizeBy: sum
+		sourceColumn: Total CLS Subscription Term ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Subscription Term ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: c07c8fe7-3bd2-42c7-b7bc-bfc25771bdf8
+		summarizeBy: sum
+		sourceColumn: Total Subscription Term ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'MPO IMSA $ ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: e479717a-84db-430e-b42c-4dee3f022d3d
+		summarizeBy: sum
+		sourceColumn: MPO IMSA $ ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Partner Influenced Decision'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 36006782-8f8a-403f-b576-0fd877ed950a
+		summarizeBy: none
+		sourceColumn: Partner Influenced Decision
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary Cloud Partner Manager Splits'
+		dataType: double
+		displayFolder: Others
+		lineageTag: a6e43708-9cfd-4e5d-82b8-0cac999c1b22
+		summarizeBy: sum
+		sourceColumn: Secondary Cloud Partner Manager Splits
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Win Loss Analysis'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 00902573-9773-4255-83a6-79a81e51ab19
+		summarizeBy: none
+		sourceColumn: Win Loss Analysis
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Primary IP ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 498a4123-9cbf-427c-bc6e-a6008a39e12b
+		summarizeBy: none
+		sourceColumn: Primary IP ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'PS Region'
+		dataType: string
+		displayFolder: Others
+		lineageTag: aff8974a-60da-43ec-b3d5-0dc1b3d79791
+		summarizeBy: none
+		sourceColumn: PS Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'On Demand/On Premise'
+		dataType: string
+		displayFolder: Others
+		lineageTag: a3c3a036-0473-4905-a917-c91c3353b6e5
+		summarizeBy: none
+		sourceColumn: On Demand/On Premise
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Professional Services Credit ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 19fb5a7f-ca09-46dd-8cac-686d4e2783c4
+		summarizeBy: sum
+		sourceColumn: Professional Services Credit ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Comments/Steps To Close'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 2f133fec-5559-4f57-9365-205b4704ff26
+		summarizeBy: none
+		sourceColumn: Comments/Steps To Close
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Software Lost IMSA ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: db6fbc70-7b97-4d90-bb30-2c88ddc33c53
+		summarizeBy: sum
+		sourceColumn: Software Lost IMSA ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Renewal Prime'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 248cfad5-b122-4dc0-b52a-253684fae285
+		summarizeBy: none
+		sourceColumn: Renewal Prime
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Renewal Health'
+		dataType: string
+		displayFolder: Others
+		lineageTag: ae70ac9a-184e-4ffc-a693-987298b5da7e
+		summarizeBy: none
+		sourceColumn: Renewal Health
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reason for Renewal Health'
+		dataType: string
+		displayFolder: Others
+		lineageTag: deb4d2f5-a042-4661-a29f-28f397a1f14d
+		summarizeBy: none
+		sourceColumn: Reason for Renewal Health
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Subscription Start Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 8ee3f4b4-31ec-49f5-bbef-96ece56b4dc6
+		summarizeBy: none
+		sourceColumn: Subscription Start Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Subscription Expiry Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 02b82e93-69a8-4078-917a-9f2417694535
+		summarizeBy: none
+		sourceColumn: Subscription Expiry Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Renewal IMSA ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: e63392b0-b609-4b4e-8464-a0afa8c80738
+		summarizeBy: sum
+		sourceColumn: Renewal IMSA ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'CLS EMSA ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 7470b13f-05de-42bd-8a3f-698199885976
+		summarizeBy: sum
+		sourceColumn: CLS EMSA ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total EMSA ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 4abbd3a3-619a-491f-8b96-c07d52b5fa91
+		summarizeBy: sum
+		sourceColumn: Total EMSA ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'CLS Lost IMSA ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: ff2f0bb3-a309-4ef6-884d-4a53532cc42b
+		summarizeBy: sum
+		sourceColumn: CLS Lost IMSA ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Lost IMSA ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: e75d0956-8683-43c9-9702-06390dd7a8cc
+		summarizeBy: sum
+		sourceColumn: Total Lost IMSA ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Renewal Software Subscription Term ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 0e00f656-c05e-48d0-9e47-d3d19251e154
+		summarizeBy: sum
+		sourceColumn: Total Renewal Software Subscription Term ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'NNA Opportunity'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 8588d95e-2b75-4f8b-83e6-91599dbac1f0
+		summarizeBy: none
+		sourceColumn: NNA Opportunity
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Assigned BDR ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: e992b8d3-9db9-4fa8-85b5-fa428c510b6b
+		summarizeBy: none
+		sourceColumn: Assigned BDR ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Service Offering Types'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 60a9c38e-1e28-479a-b432-9ed78ee9c47b
+		summarizeBy: none
+		sourceColumn: Service Offering Types
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Lost Reason'
+		dataType: string
+		lineageTag: f060a5ad-4a7c-4149-ac92-5a75dd71b090
+		summarizeBy: none
+		sourceColumn: Lost Reason
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Technical BC'
+		dataType: string
+		displayFolder: Others
+		lineageTag: a0163666-8502-4803-9904-2e7bb8b6cbc9
+		summarizeBy: none
+		sourceColumn: Technical BC
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Premier Support IMSA ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: a1eddeec-1e1a-408d-8d23-b9fa2c65c379
+		summarizeBy: sum
+		sourceColumn: Premier Support IMSA ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Premier Support Subscription Term ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: c9550d72-c7a7-4859-8c5d-4f0a2a942886
+		summarizeBy: sum
+		sourceColumn: Total Premier Support Subscription Term ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Renewal MSA ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 16f9f8c8-9816-42cd-94e7-159bdd3bfda3
+		summarizeBy: sum
+		sourceColumn: Total Renewal MSA ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Renewal Subscription Term ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: dfdc9e61-e386-463d-acfa-bdb3fad30ee9
+		summarizeBy: sum
+		sourceColumn: Total Renewal Subscription Term ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Owner 2nd ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: fccf2fb8-4cfe-4404-8c2e-c12c498d17e8
+		summarizeBy: none
+		sourceColumn: Owner 2nd ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Premier Support EMSA ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: c467afd0-dc3d-4da0-8952-abb32d1ea6ad
+		summarizeBy: sum
+		sourceColumn: Premier Support EMSA ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Reason For Not Participating In Win/Loss'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 90ab1b54-3d76-4867-9cb3-dfa3f7dc6e29
+		summarizeBy: none
+		sourceColumn: Reason For Not Participating In Win/Loss
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Reason For Not Participating Text'
+		dataType: string
+		displayFolder: Others
+		lineageTag: f70311f7-9c79-45f5-b43a-e59a7174928c
+		summarizeBy: none
+		sourceColumn: Reason For Not Participating Text
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sales Success Story Completed'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 04902ce7-6828-45a7-80b7-34e7139d3d79
+		summarizeBy: none
+		sourceColumn: Sales Success Story Completed
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sales Success Story'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 33291490-ca50-4588-8759-fc92099677fb
+		summarizeBy: none
+		sourceColumn: Sales Success Story
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Win Loss Interview'
+		dataType: string
+		lineageTag: 41be4ae8-f852-47e5-b01b-8a5c840d2927
+		summarizeBy: none
+		sourceColumn: Win Loss Interview
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SolEx Partner IMSA $ ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 17b1cdd2-303d-4664-902c-e47c022d926b
+		summarizeBy: sum
+		sourceColumn: SolEx Partner IMSA $ ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SolEx Partner EMSA $ ORIG'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 488fbb8a-0c57-4aa8-92c0-d0feb43029bc
+		summarizeBy: sum
+		sourceColumn: SolEx Partner EMSA $ ORIG
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Sales Territory'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 28ac7cdb-e48f-4df5-a0c0-42ac780103ca
+		summarizeBy: none
+		sourceColumn: Sales Territory
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Assigned VAR ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 8b17eeea-569c-4878-ad5d-297ac0e78293
+		summarizeBy: none
+		sourceColumn: Assigned VAR ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Third BC Splits'
+		dataType: double
+		displayFolder: Others
+		lineageTag: b54a5a2a-cb30-46ea-8d91-3ace5a6feb58
+		summarizeBy: sum
+		sourceColumn: Third BC Splits
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Third Client Partner Splits'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 137aba1b-f6d3-4488-97b6-413a28bc0713
+		summarizeBy: sum
+		sourceColumn: Third Client Partner Splits
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Third IP Splits'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 2842f3d8-c6fc-48f8-9b4f-398629dbe2c2
+		summarizeBy: sum
+		sourceColumn: Third IP Splits
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Primary BC Split'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 199bac21-791d-451d-81cd-ba45c271b2db
+		summarizeBy: sum
+		sourceColumn: Primary BC Split
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Primary Client Partner Splits'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 075afa75-2b6b-4406-932f-05e779634bba
+		summarizeBy: sum
+		sourceColumn: Primary Client Partner Splits
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Primary IP Splits'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 522ecf99-55ab-4e80-8418-dec3fd3f6738
+		summarizeBy: sum
+		sourceColumn: Primary IP Splits
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Secondary Client Partner Split'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 68b449b3-1434-4d2b-a921-446293c0e446
+		summarizeBy: sum
+		sourceColumn: Secondary Client Partner Split
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Secondary IP Splits'
+		dataType: double
+		displayFolder: Others
+		lineageTag: d5d3551a-db64-4722-b2fd-782daaeec598
+		summarizeBy: sum
+		sourceColumn: Secondary IP Splits
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Secondary Partner Manager Splits'
+		dataType: double
+		displayFolder: Others
+		lineageTag: d3f7cc12-82ae-4f0d-844a-07f843c053fe
+		summarizeBy: sum
+		sourceColumn: Secondary Partner Manager Splits
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Partner Manager ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 09d0db02-8176-4aa4-ad86-952e2c270e65
+		summarizeBy: none
+		sourceColumn: Partner Manager ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary Business Consultant'
+		dataType: string
+		displayFolder: Others
+		lineageTag: b9eaece2-e3ba-43b4-ac6e-da372e0144a5
+		summarizeBy: none
+		sourceColumn: Secondary Business Consultant
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary Client Partner'
+		dataType: string
+		displayFolder: Others
+		lineageTag: b3506a6c-4a79-46a0-9913-51d611c5f196
+		summarizeBy: none
+		sourceColumn: Secondary Client Partner
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary Industry Principal'
+		dataType: string
+		displayFolder: Others
+		lineageTag: b5788bf5-545d-49ee-ab39-7aa468197852
+		summarizeBy: none
+		sourceColumn: Secondary Industry Principal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary Partner Manager'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 30b96050-a508-40a3-a9f8-f698021619cd
+		summarizeBy: none
+		sourceColumn: Secondary Partner Manager
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'X3rd Business Consultant'
+		dataType: string
+		displayFolder: Others
+		lineageTag: a7dea869-8b4f-402d-b9ce-a945b82ae086
+		summarizeBy: none
+		sourceColumn: X3rd Business Consultant
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'X3rd Client Partner'
+		dataType: string
+		displayFolder: Others
+		lineageTag: d6819c45-6eb8-47cd-9957-d77d59406d80
+		summarizeBy: none
+		sourceColumn: X3rd Client Partner
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'X3rd Industry Principal'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 93ecee39-38b7-4153-97ce-b134c46fe875
+		summarizeBy: none
+		sourceColumn: X3rd Industry Principal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Primary AE'
+		dataType: string
+		lineageTag: ffbde3f8-c659-4a22-97cf-07a59c675470
+		summarizeBy: none
+		sourceColumn: Primary AE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type of INQ'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 61abd716-c59d-4d0f-b21f-266a5979361a
+		summarizeBy: none
+		sourceColumn: Type of INQ
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total Existing ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 607db103-13e0-4fb3-9fbf-39e7dc1eb5f2
+		summarizeBy: sum
+		sourceColumn: Total Existing ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Lost ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: fd83c729-65bd-4088-ad75-157f4ef3cc18
+		summarizeBy: sum
+		sourceColumn: Total Lost ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total New ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: f9b82401-9426-4577-9872-abebb993b166
+		summarizeBy: sum
+		sourceColumn: Total New ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Renewal ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 87bd4076-3c62-46bf-a8d0-22f767a83766
+		summarizeBy: sum
+		sourceColumn: Renewal ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Original Lead Source'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 5832509a-3c35-4cce-8886-f62a6d9189a2
+		summarizeBy: none
+		sourceColumn: Original Lead Source
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Primary Territory Split'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 6e03ae45-b592-402a-b064-4d5cf2b572b8
+		summarizeBy: sum
+		sourceColumn: Primary Territory Split
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Secondary Sales Territory'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 7a378565-6681-44b1-a87b-1406e09134a0
+		summarizeBy: none
+		sourceColumn: Secondary Sales Territory
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary Territory Split'
+		dataType: double
+		displayFolder: Others
+		lineageTag: eee15ea2-bfdc-49b3-9da5-33c804112a6f
+		summarizeBy: sum
+		sourceColumn: Secondary Territory Split
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Opportunity at Risk'
+		dataType: string
+		lineageTag: 3ba3b24a-4ee3-4934-854f-f5eec0271597
+		summarizeBy: none
+		sourceColumn: Opportunity at Risk
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Primary Business Challenge'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 5690dbc4-302e-4aa7-ada8-10092c7fdcc4
+		summarizeBy: none
+		sourceColumn: Primary Business Challenge
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary Business Challenge'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 2ac62924-c744-46c9-bf04-a2c4b37387f2
+		summarizeBy: none
+		sourceColumn: Secondary Business Challenge
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Accenture ESP Partnership'
+		dataType: string
+		displayFolder: Others
+		lineageTag: d7ab40e8-fe26-40ab-9d48-4183adaec5e1
+		summarizeBy: none
+		sourceColumn: Accenture ESP Partnership
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RVP Upside'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 4adc87c2-feb6-4164-91fe-881b80a1d76c
+		summarizeBy: none
+		sourceColumn: RVP Upside
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sales Ops Forecast'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 0fe2101d-3f52-4d8a-b6c1-b0224197a0c3
+		summarizeBy: none
+		sourceColumn: Sales Ops Forecast
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RVP Commit'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 99122c9e-c865-4499-9245-46df402d29c8
+		summarizeBy: none
+		sourceColumn: RVP Commit
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Deal Desk Engagement'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 278a4562-24f4-41c9-8814-c7bbb9b0e03b
+		summarizeBy: none
+		sourceColumn: Deal Desk Engagement
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Deal Desk Comments'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 82e03268-1a07-4506-a453-f0b7459c53a1
+		summarizeBy: none
+		sourceColumn: Deal Desk Comments
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Deal Desk Prime'
+		dataType: string
+		displayFolder: Others
+		lineageTag: a8d8427b-dbbd-4854-8fab-edd59ca4d7ba
+		summarizeBy: none
+		sourceColumn: Deal Desk Prime
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Deal Desk Secondary'
+		dataType: string
+		displayFolder: Others
+		lineageTag: f4f46e50-2e9a-4c27-8ad4-4fef0b57bb45
+		summarizeBy: none
+		sourceColumn: Deal Desk Secondary
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Modified Date/Time Deal Desk'
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Others
+		lineageTag: f6997d6a-73ba-438d-8c24-313092c7fe25
+		summarizeBy: none
+		sourceColumn: Last Modified Date/Time Deal Desk
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Modified Date/Time Legal'
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Others
+		lineageTag: c325968f-8b2f-4066-ad27-3954c8681ca3
+		summarizeBy: none
+		sourceColumn: Last Modified Date/Time Legal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Current Subscription Expiry Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 5c4049fb-c121-43f8-ae6c-7b9c22064392
+		summarizeBy: none
+		sourceColumn: Current Subscription Expiry Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Won
+		dataType: string
+		lineageTag: bb587908-d7f7-4e86-94c8-c94c4717fb86
+		summarizeBy: none
+		sourceColumn: Won
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Stage 1'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 667d1af1-5563-4950-a8d2-15af0d675460
+		summarizeBy: none
+		sourceColumn: Stage 1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Stage 2'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 98a0fd4e-e389-4254-b358-46192b529120
+		summarizeBy: none
+		sourceColumn: Stage 2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Stage 3'
+		dataType: string
+		displayFolder: Others
+		lineageTag: d91d89cf-df5a-4620-9177-bfd4816b3480
+		summarizeBy: none
+		sourceColumn: Stage 3
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ch Hows The Relationship With Champions'
+		dataType: string
+		displayFolder: Others
+		lineageTag: aaa8f1dc-a92a-4af8-a456-ce6c00d321d9
+		summarizeBy: none
+		sourceColumn: Ch Hows The Relationship With Champions
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Co Competition Who What They Have'
+		dataType: string
+		displayFolder: Others
+		lineageTag: baa72200-12a7-4139-94ee-a808e820d641
+		summarizeBy: none
+		sourceColumn: Co Competition Who What They Have
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DC Know Formal Solution Requirements'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 1b154507-1833-4d52-b975-c4f289c6e045
+		summarizeBy: none
+		sourceColumn: DC Know Formal Solution Requirements
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DP Has Budget Been Agreed'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 98cf36da-5283-41d3-9cf7-77258a01b8e4
+		summarizeBy: none
+		sourceColumn: DP Has Budget Been Agreed
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'DP Whats Needed To Close Close Plan'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 4b545ddd-49b6-4d6e-adef-0a3d6e36de9a
+		summarizeBy: none
+		sourceColumn: DP Whats Needed To Close Close Plan
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Dc How Will Products Be Implemented'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 6dbfd99d-d091-4592-85e4-769f1b9cbdc1
+		summarizeBy: none
+		sourceColumn: Dc How Will Products Be Implemented
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'E Who Is Part Of The Buying Team'
+		dataType: string
+		displayFolder: Others
+		lineageTag: cf63c8b8-5656-4397-8718-b6fc2c0456b1
+		summarizeBy: none
+		sourceColumn: E Who Is Part Of The Buying Team
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'I How Urgently Do They Want To Change'
+		dataType: string
+		displayFolder: Others
+		lineageTag: d7f0b463-04fd-46cf-be47-cefc98232fb8
+		summarizeBy: none
+		sourceColumn: I How Urgently Do They Want To Change
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'I Whats Their Understanding Of Pain'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 33367fba-87af-4976-8fde-7c9f8991bced
+		summarizeBy: none
+		sourceColumn: I Whats Their Understanding Of Pain
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'M Know Desired Future State Outcomes'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 41610d0c-0c84-4892-9553-b56922262da7
+		summarizeBy: none
+		sourceColumn: M Know Desired Future State Outcomes
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'P Whats The Contractual Process'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 48605d7b-9d30-4cdc-9377-62e70322e4f1
+		summarizeBy: none
+		sourceColumn: P Whats The Contractual Process
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'MEDDPICC Score Formula'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 666872e7-c31c-4be3-806a-a453811cf4bc
+		summarizeBy: sum
+		sourceColumn: MEDDPICC Score Formula
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Primary RVP'
+		dataType: string
+		displayFolder: Others
+		lineageTag: ad6e5d66-0edc-4df9-84aa-28079e60f990
+		summarizeBy: none
+		sourceColumn: Primary RVP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Legal Comments'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 6c6178f7-81a2-4b0b-bed2-5287c4487e1b
+		summarizeBy: none
+		sourceColumn: Legal Comments
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Deployment Partner'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 57398854-6aa3-4f54-b4a2-cb301eb7a184
+		summarizeBy: none
+		sourceColumn: Deployment Partner
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Partner Led Deployment'
+		dataType: string
+		displayFolder: Others
+		lineageTag: c6227d11-43c6-4c26-8ef2-ec5e53f119c0
+		summarizeBy: none
+		sourceColumn: Partner Led Deployment
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'No Business Consultant'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 75c33b33-2673-4a39-89c9-726b340e2b43
+		summarizeBy: none
+		sourceColumn: No Business Consultant
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'No Industrial Principal'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 8b375504-c68c-4911-926f-b706c70b95f3
+		summarizeBy: none
+		sourceColumn: No Industrial Principal
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Lead Submitted By Partner'
+		dataType: string
+		displayFolder: Others
+		lineageTag: d9ceefc6-187a-43fb-b7ea-6951571f7725
+		summarizeBy: none
+		sourceColumn: Lead Submitted By Partner
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sales Ops Comment'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 22baf47c-b155-4be7-99ab-5fb31174da77
+		summarizeBy: none
+		sourceColumn: Sales Ops Comment
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Opt-Out Indication Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 96722907-6ed8-44e8-96a0-8693b7c5d9e7
+		summarizeBy: none
+		sourceColumn: Opt-Out Indication Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Opt-Out Termination Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 13b61f62-40cd-4131-8df1-0e0fe0886848
+		summarizeBy: none
+		sourceColumn: Opt-Out Termination Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Unqualified Lead Summary'
+		dataType: string
+		displayFolder: Others
+		lineageTag: b2ad27a1-f3ba-4c81-b251-10d1b660212a
+		summarizeBy: none
+		sourceColumn: Unqualified Lead Summary
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Assigned Cloud Partner'
+		dataType: string
+		displayFolder: Others
+		lineageTag: dfb2fd45-c9c3-420f-88ef-86d9f947a981
+		summarizeBy: none
+		sourceColumn: Assigned Cloud Partner
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fourth Business Consultant'
+		dataType: string
+		displayFolder: Others
+		lineageTag: a08aa019-d3d5-4e42-bf6a-063911e303b1
+		summarizeBy: none
+		sourceColumn: Fourth Business Consultant
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Fourth BC Splits'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 14f3bf6d-fa8f-4474-a7fd-ec9619cf5439
+		summarizeBy: sum
+		sourceColumn: Fourth BC Splits
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MPO_EMSA__c
+		dataType: double
+		displayFolder: Others
+		lineageTag: 445ab080-6fea-4c9f-aa0f-2f0ca03064e1
+		summarizeBy: sum
+		sourceColumn: MPO_EMSA__c
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Total_MPO_Subscription_Term__c
+		dataType: double
+		displayFolder: Others
+		lineageTag: d05268c7-185e-4da6-a994-d8fe6fc12878
+		summarizeBy: sum
+		sourceColumn: Total_MPO_Subscription_Term__c
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Additional Insights from BC/IP'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 7fff3eef-b20f-4eb0-8db5-7b6f0c9548b9
+		summarizeBy: none
+		sourceColumn: Additional Insights from BC/IP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Additional Insights from RVP'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 058799bd-a84e-427f-a261-d0067655db52
+		summarizeBy: none
+		sourceColumn: Additional Insights from RVP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Comment from EVP of Global Sales'
+		dataType: string
+		displayFolder: Others
+		lineageTag: c4c5fa8b-f4f6-45da-955e-780ca3870169
+		summarizeBy: none
+		sourceColumn: Comment from EVP of Global Sales
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nurture Reason'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 70b8729d-45e0-4aae-9039-f372c7c3fd62
+		summarizeBy: none
+		sourceColumn: Nurture Reason
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Nurture Timeframe'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 5d9648ed-8390-4110-bdb9-cc7999abcc43
+		summarizeBy: none
+		sourceColumn: Nurture Timeframe
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Meeting Outcome'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 37dafd50-86b3-4cb4-a79e-56f08b8bf8f4
+		summarizeBy: none
+		sourceColumn: Meeting Outcome
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary Cloud Partner Manager'
+		dataType: string
+		displayFolder: Others
+		lineageTag: a4448072-8f8a-40e3-8dd8-d498e93d6ff9
+		summarizeBy: none
+		sourceColumn: Secondary Cloud Partner Manager
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CLS Existing ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: bf2dc50b-0ee0-4411-b0e0-778f4207a405
+		summarizeBy: sum
+		sourceColumn: CLS Existing ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'CLS Lost ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 0bab7863-f3bc-423d-a4e3-552be9f3b292
+		summarizeBy: sum
+		sourceColumn: CLS Lost ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'CLS New ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: ab5c3f9b-1807-438c-b142-b98cf9f9216c
+		summarizeBy: sum
+		sourceColumn: CLS New ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Last Modified by AE'
+		dataType: string
+		lineageTag: 661316ec-7121-4cc5-a570-7b6dcee443ed
+		summarizeBy: none
+		sourceColumn: Last Modified by AE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Modified Date by AE'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6b9dc007-76a9-4524-90b3-0ce65a4346cc
+		summarizeBy: none
+		sourceColumn: Last Modified Date by AE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Last Modified to Close Date by AE'
+		dataType: double
+		lineageTag: e40fd56e-2718-447d-9a1b-3189b85f31ce
+		summarizeBy: none
+		sourceColumn: Last Modified to Close Date by AE
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Days Since Last Modified by AE'
+		dataType: double
+		lineageTag: 1a542437-14b2-458e-a041-68890c5369a5
+		summarizeBy: none
+		sourceColumn: Days Since Last Modified by AE
+
+		annotation SummarizationSetBy = User
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Vendor of Choice'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 4ff7e395-3b9b-44d5-9504-c7a32b93ac0f
+		summarizeBy: none
+		sourceColumn: Vendor of Choice
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Exec Sponsor Engaged'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: a829fac4-5b99-43e2-ac28-c4b27e4939f4
+		summarizeBy: none
+		sourceColumn: Exec Sponsor Engaged
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Implementation Implications Understood'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: ec057c77-2e80-488a-b8ee-91e55b2a10a3
+		summarizeBy: none
+		sourceColumn: Implementation Implications Understood
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Kinaxis C Level Engagement'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 4b7cd304-475b-494a-a867-8789d8774c03
+		summarizeBy: none
+		sourceColumn: Kinaxis C Level Engagement
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Kinaxis Executive'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 707d92e7-5165-49ff-a3b5-c9d2a05e12cc
+		summarizeBy: none
+		sourceColumn: Kinaxis Executive
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Overall budget verified by C Suite'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 73e8e843-7f74-46a9-8208-32ea993321e0
+		summarizeBy: none
+		sourceColumn: Overall budget verified by C Suite
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'RFP Influenced'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 889bd5de-0a7c-4a77-a888-9dc724e46f7e
+		summarizeBy: none
+		sourceColumn: RFP Influenced
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Signing Process Understood by AE'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 6a47fe80-9e47-4c7a-8033-44f4f2660d98
+		summarizeBy: none
+		sourceColumn: Signing Process Understood by AE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Type of Opportunity'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 6839ba1c-00c0-4346-be36-2915988d811a
+		summarizeBy: none
+		sourceColumn: Type of Opportunity
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Uplift Calculation'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 67489f2b-cd20-4cb7-a573-cf4da1b2a779
+		summarizeBy: none
+		sourceColumn: Uplift Calculation
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Uplift Rate %'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 7a3db1fe-26ef-4f2a-84c2-bdf8e7c94393
+		summarizeBy: sum
+		sourceColumn: Uplift Rate %
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Premier Support Existing ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: fe4312d8-b72f-4760-8b02-235301ed04eb
+		summarizeBy: sum
+		sourceColumn: Premier Support Existing ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Premier Support Lost ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: a5bcbefa-0de1-4fe2-aec5-c852d03bd11a
+		summarizeBy: sum
+		sourceColumn: Premier Support Lost ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Premier Support New ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: f3bb0f21-799e-4dfc-b680-d16852b5d731
+		summarizeBy: sum
+		sourceColumn: Premier Support New ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SCE Existing ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: e7e08e2b-114d-42ad-8744-15e0c2e10579
+		summarizeBy: sum
+		sourceColumn: SCE Existing ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SCE Lost ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 025f35b1-73e0-48c3-b8af-5c4aad26885f
+		summarizeBy: sum
+		sourceColumn: SCE Lost ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SCE New ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 547e191c-eb96-4178-bdfd-e7ac975a0b2b
+		summarizeBy: sum
+		sourceColumn: SCE New ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Software Existing ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: dfe119cc-bf1a-419d-a1c0-4adf4bb08b98
+		summarizeBy: sum
+		sourceColumn: Software Existing ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Software Lost ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 4a1f07e9-f88e-487c-ae13-6ff9552be36c
+		summarizeBy: sum
+		sourceColumn: Software Lost ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Software New ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: e1163337-f985-4713-b395-ea3c3766341e
+		summarizeBy: sum
+		sourceColumn: Software New ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SolEx Partner Existing ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: b10c14ec-65f4-4781-8f43-67ce0fba0860
+		summarizeBy: sum
+		sourceColumn: SolEx Partner Existing ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SolEx Partner New ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 841fb934-69cb-4053-8925-b841a0e74283
+		summarizeBy: sum
+		sourceColumn: SolEx Partner New ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total ACV'
+		dataType: double
+		displayFolder: Others
+		lineageTag: a0dbcc59-3dd6-4447-8a33-3d502064044e
+		summarizeBy: sum
+		sourceColumn: Total ACV
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Duplicate Opportunity'
+		dataType: string
+		displayFolder: Others
+		lineageTag: bc2bf3cb-bb90-467f-98dd-53bb1cf0e7f8
+		summarizeBy: none
+		sourceColumn: Duplicate Opportunity
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Conversion Rate'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 98439118-499d-46a5-8da0-63e011cd7a12
+		summarizeBy: sum
+		sourceColumn: Conversion Rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Created Date/Time'
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Others
+		lineageTag: e02dff74-6716-4e41-98cd-3af171f54523
+		summarizeBy: none
+		sourceColumn: Created Date/Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Modified Date/Time'
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Others
+		lineageTag: 13be5d5a-02de-4e44-998a-9c7abb24a003
+		summarizeBy: none
+		sourceColumn: Last Modified Date/Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Secondary AE Split %'
+		dataType: double
+		displayFolder: Others
+		lineageTag: f65d0b58-e16f-4a6f-bae0-fdfcf1889b32
+		summarizeBy: sum
+		sourceColumn: Secondary AE Split %
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Primary AE Split %'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 8340fb0b-01d4-49a7-9218-fe7cdfa2adf9
+		summarizeBy: sum
+		sourceColumn: Primary AE Split %
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Secondary BC Split %'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 0223b14e-4072-4ce4-89da-e2078dcf12b1
+		summarizeBy: sum
+		sourceColumn: Secondary BC Split %
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Renewal ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 9e50a0b3-84f5-475f-873a-dc4f37ea98b3
+		summarizeBy: sum
+		sourceColumn: Renewal ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total New ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 1598af45-4960-43d8-b184-0a768c0bab83
+		summarizeBy: sum
+		sourceColumn: Total New ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Net New ACV (Excl Renewal and SCE) $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: cb81a005-0825-4973-b9fd-c2c4f292f62a
+		summarizeBy: sum
+		sourceColumn: Total Net New ACV (Excl Renewal and SCE) $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Net New ACV (Excl Renewal) $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: a8067892-6ae0-4af1-9e15-05f5d2a0ec65
+		summarizeBy: sum
+		sourceColumn: Total Net New ACV (Excl Renewal) $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Lost ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 08986f47-ad93-4800-b1a9-76ce33874dbb
+		summarizeBy: sum
+		sourceColumn: Total Lost ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Existing ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 9d7e5597-b241-4303-a280-97c4049e9904
+		summarizeBy: sum
+		sourceColumn: Total Existing ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total ACV (Excl SCE) $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 2fdbc112-be9d-42f9-beba-ce99a5eb973d
+		summarizeBy: sum
+		sourceColumn: Total ACV (Excl SCE) $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 1aeaea29-8104-451d-b3c5-03ced8e98185
+		summarizeBy: sum
+		sourceColumn: Total ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SolEx Partner New ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 574a3bd4-275a-44e0-8783-3da8167021b4
+		summarizeBy: sum
+		sourceColumn: SolEx Partner New ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Software New ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 76084583-053f-4e5c-9f07-5b3c94e6ce63
+		summarizeBy: sum
+		sourceColumn: Software New ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Software Lost ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 0e318087-09bb-463f-a8e2-bb3ba1e7899a
+		summarizeBy: sum
+		sourceColumn: Software Lost ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Software Existing ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 4d8d3fea-8504-42ca-a68b-f168dc4aec7a
+		summarizeBy: sum
+		sourceColumn: Software Existing ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SCE New ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 7d448ed5-df02-4557-b844-aeea1d86b98d
+		summarizeBy: sum
+		sourceColumn: SCE New ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SCE Lost ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 35f7ac93-cde7-4331-8dde-93a154eb7881
+		summarizeBy: sum
+		sourceColumn: SCE Lost ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SCE Existing ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: cd9bb93f-d6f5-4dc4-8bd2-7eb1c8951671
+		summarizeBy: sum
+		sourceColumn: SCE Existing ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Premier Support New ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 0447ba91-41b0-400d-b370-e564681f3edf
+		summarizeBy: sum
+		sourceColumn: Premier Support New ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Premier Support Lost ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 1b907660-c1af-4c46-97b2-d453adc5d811
+		summarizeBy: sum
+		sourceColumn: Premier Support Lost ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Premier Support Existing ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 64b8e780-28f9-43fd-b5f0-565ffa6fd04f
+		summarizeBy: sum
+		sourceColumn: Premier Support Existing ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'CLS New ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: c6f0d937-b06a-44fa-904d-8e90b05a686c
+		summarizeBy: sum
+		sourceColumn: CLS New ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'CLS Lost ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: b1f23b39-b595-4cc2-82d4-fbd2841670f6
+		summarizeBy: sum
+		sourceColumn: CLS Lost ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'CLS Existing ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 79df0a29-bd40-46e9-b447-60e7c523c9de
+		summarizeBy: sum
+		sourceColumn: CLS Existing ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Annual IMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 5cc77e2e-0ed0-4ad9-a0b3-820fd53325a6
+		summarizeBy: sum
+		sourceColumn: Annual IMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Software IMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 516d6536-50be-471c-b3ac-e31edb278308
+		summarizeBy: sum
+		sourceColumn: Software IMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Premier Support IMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: c982ab0e-420e-42e2-a3e7-b1ab60c821e7
+		summarizeBy: sum
+		sourceColumn: Premier Support IMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'CLS IMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 93412f52-f64f-4f1c-a95d-6b06a20e58ac
+		summarizeBy: sum
+		sourceColumn: CLS IMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total IMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: b5b69684-5ab6-4851-8c66-6d7cf2b590b7
+		summarizeBy: sum
+		sourceColumn: Total IMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'CLS EMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: a7344567-854f-455e-a708-5ecbc4b5635f
+		summarizeBy: sum
+		sourceColumn: CLS EMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'CLS Lost IMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 1b384edf-8d48-44e9-8da5-d3c06944d873
+		summarizeBy: sum
+		sourceColumn: CLS Lost IMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'CLS $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 0bfe26a4-beba-4bb4-bca8-4f371e5ebb50
+		summarizeBy: sum
+		sourceColumn: CLS $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'IMSA Credit $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 5ee78f9b-ea70-4882-a617-a7192c330cef
+		summarizeBy: sum
+		sourceColumn: IMSA Credit $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Partner Services $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 627aad98-20bc-4d70-b6d8-d58b9683dfaf
+		summarizeBy: sum
+		sourceColumn: Partner Services $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Premier Support EMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 89b93f73-bbd6-4cbe-a291-1a4d33534781
+		summarizeBy: sum
+		sourceColumn: Premier Support EMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Services $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 0deddfe3-2ab3-4831-be15-7b45c2465c13
+		summarizeBy: sum
+		sourceColumn: Total Services $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Service Partner Kinaxis $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: bb50282a-6e7c-4cbd-b35e-cfac66faf26a
+		summarizeBy: sum
+		sourceColumn: Total Service Partner Kinaxis $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Professional Services Credit $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 967424cb-f358-4584-beaa-e034d595f00f
+		summarizeBy: sum
+		sourceColumn: Professional Services Credit $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Renewal IMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 938937de-8008-4b54-8562-10c4a96538b5
+		summarizeBy: sum
+		sourceColumn: Renewal IMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Software EMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: cf676308-e6ab-4dc6-a3b6-6fa86083abf8
+		summarizeBy: sum
+		sourceColumn: Software EMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Software Lost IMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: f34dc6cf-6b32-423c-8ce1-5386ac1add86
+		summarizeBy: sum
+		sourceColumn: Software Lost IMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Amount $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 132d0ad8-cdcf-4a73-b49c-80d316dcd49c
+		summarizeBy: sum
+		sourceColumn: Total Amount $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total CLS Subscription Term $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: b735ed55-b01a-4b50-9cfc-b27f898a3ce3
+		summarizeBy: sum
+		sourceColumn: Total CLS Subscription Term $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total EMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: c03f507b-c8f5-4e71-bb77-7c26b6f8369e
+		summarizeBy: sum
+		sourceColumn: Total EMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Lost IMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: dd181785-3dc4-411b-8fa7-6a53af7356d5
+		summarizeBy: sum
+		sourceColumn: Total Lost IMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Premier Support Subscription Term $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: f9c45a3b-2883-4410-ac2e-2a4f304e76a0
+		summarizeBy: sum
+		sourceColumn: Total Premier Support Subscription Term $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Renewal Software Subscription Term $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 5f2d1b4f-b856-4d39-926f-e7dcd6460e03
+		summarizeBy: sum
+		sourceColumn: Total Renewal Software Subscription Term $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Renewal Subscription Term $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 46bb46e9-311f-4c3a-8e81-03d715085bca
+		summarizeBy: sum
+		sourceColumn: Total Renewal Subscription Term $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Software $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: ff591da1-4e8f-4c2e-80e8-a8bc68002f0e
+		summarizeBy: sum
+		sourceColumn: Total Software $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Subscription Term $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 6781aa62-7568-4433-b34a-bbdc82f67858
+		summarizeBy: sum
+		sourceColumn: Total Subscription Term $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Support $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 9351b89f-5040-4018-bcad-983abd52a5b3
+		summarizeBy: sum
+		sourceColumn: Total Support $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total Renewal MSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 17b3aa4a-c761-46e7-92cc-8f38997d7752
+		summarizeBy: sum
+		sourceColumn: Total Renewal MSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'MPO IMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 615e295b-a3f1-4d78-a752-862320dd5bc6
+		summarizeBy: sum
+		sourceColumn: MPO IMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'MPO EMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: cdde45ed-3faf-4c88-bae4-f1b8c30d68e7
+		summarizeBy: sum
+		sourceColumn: MPO EMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'IMSA Weighting'
+		dataType: double
+		displayFolder: Others
+		lineageTag: eeb706b5-9883-4612-977c-acb7435ebad6
+		summarizeBy: sum
+		sourceColumn: IMSA Weighting
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total IMSA (Excluding Renewal) $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 484f8b05-1678-4510-ae9c-31e08e6d725e
+		summarizeBy: sum
+		sourceColumn: Total IMSA (Excluding Renewal) $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total IMSA (Excl. Renewal and MPO) $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 36fa61f6-9769-41dd-a4c9-b52de7a679a6
+		summarizeBy: sum
+		sourceColumn: Total IMSA (Excl. Renewal and MPO) $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Total IMSA (Excl. MPO) $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: d0c1587d-707a-445e-be49-d1eb08b7e3a9
+		summarizeBy: sum
+		sourceColumn: Total IMSA (Excl. MPO) $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SolEx Partner IMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 1db95c3c-e246-4363-bc6a-16994db07b37
+		summarizeBy: sum
+		sourceColumn: SolEx Partner IMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'SolEx Partner EMSA $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 282df4db-7c3a-40bc-a461-cdbaea93f3ed
+		summarizeBy: sum
+		sourceColumn: SolEx Partner EMSA $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Competition
+		dataType: string
+		displayFolder: Others
+		lineageTag: 27dfbdf9-fbaa-40c1-b11b-adce796cded2
+		summarizeBy: none
+		sourceColumn: Competition
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Remove Merged Opp'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 95582388-f438-4157-a43c-400115f4f84f
+		summarizeBy: none
+		sourceColumn: Remove Merged Opp
+
+		annotation SummarizationSetBy = Automatic
+
+	column Stage
+		dataType: string
+		displayFolder: Others
+		lineageTag: db73015a-ce12-4ba3-a5e1-8244c78fa425
+		summarizeBy: none
+		sourceColumn: Stage
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is Qualified'
+		dataType: string
+		displayFolder: Others
+		lineageTag: fe0d6d0e-a6eb-4497-88c7-69cbcb98e05b
+		summarizeBy: none
+		sourceColumn: Is Qualified
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sales Territory (Operations)'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 26b2a19b-0fb1-409b-b8e4-94db2d52685c
+		summarizeBy: none
+		sourceColumn: Sales Territory (Operations)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Stage Change Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: fdeb1a03-4ee3-480b-a6a5-e0c6aa7fed62
+		summarizeBy: none
+		sourceColumn: Last Stage Change Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Days in Cycle (Create to Last Stage Changed)'
+		dataType: int64
+		formatString: 0
+		displayFolder: Others
+		lineageTag: 64b5fa40-2626-4931-80ee-230205d6f930
+		summarizeBy: sum
+		sourceColumn: Days in Cycle (Create to Last Stage Changed)
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Days in Sales Cycle'
+		dataType: int64
+		formatString: 0
+		displayFolder: Others
+		lineageTag: cb028d6a-2862-4e7a-833c-392105d5b8a1
+		summarizeBy: sum
+		sourceColumn: Days in Sales Cycle
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Legal Status'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 04425789-b077-4e3d-9bc8-b14843e83581
+		summarizeBy: none
+		sourceColumn: Legal Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column '_T IMSA Primary (Excl Renewal & MPO) $'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 6fd918bb-2208-472d-9560-fd2936b8f354
+		summarizeBy: sum
+		sourceColumn: _T IMSA Primary (Excl Renewal & MPO) $
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '_T IMSA Secondary (Excl Renewal & MPO) $'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 6fadf702-fa41-415b-86fc-6612ca522804
+		summarizeBy: sum
+		sourceColumn: _T IMSA Secondary (Excl Renewal & MPO) $
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '_T IMSA Primary (Excl Renewal) $'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 7d56b58f-0101-4de2-bf16-d338e9081726
+		summarizeBy: sum
+		sourceColumn: _T IMSA Primary (Excl Renewal) $
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '_T IMSA Secondary (Excl Renewal) $'
+		dataType: double
+		displayFolder: Others
+		lineageTag: a1d4d3ad-458b-4f56-8b05-6efc85efcd72
+		summarizeBy: sum
+		sourceColumn: _T IMSA Secondary (Excl Renewal) $
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Partner Manager'
+		dataType: string
+		displayFolder: Others
+		lineageTag: c748228b-34dc-4729-9f79-b2766beeb2d2
+		summarizeBy: none
+		sourceColumn: Partner Manager
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Third Partner Manager ID'
+		dataType: string
+		lineageTag: 8dcd8fe1-38ae-42e9-8273-de6e143148de
+		summarizeBy: none
+		sourceColumn: Third Partner Manager ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Previous Stage'
+		dataType: string
+		lineageTag: ee4fb030-48b0-489c-863c-dd58d356d0ca
+		summarizeBy: none
+		sourceColumn: Previous Stage
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Close Date (Calculated)'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b2667d8f-300c-4223-86b2-49d441bfc66e
+		summarizeBy: none
+		sourceColumn: Close Date (Calculated)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Win/Lost
+		dataType: string
+		lineageTag: 4a2f14f4-18dc-4607-bb71-56c1806114d9
+		summarizeBy: none
+		sourceColumn: Win/Lost
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Opportunity = m
+		mode: import
+		source = ```
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"05b8b535-6823-453f-890a-08ddf6ae067d" = Workspaces{[workspaceId="05b8b535-6823-453f-890a-08ddf6ae067d"]}[Data],
+				    #"8e39386f-8f3f-455f-9256-ef71d52c595a" = #"05b8b535-6823-453f-890a-08ddf6ae067d"{[dataflowId="8e39386f-8f3f-455f-9256-ef71d52c595a"]}[Data],
+				    Opportunity_ = #"8e39386f-8f3f-455f-9256-ef71d52c595a"{[entity="Opportunity",version=""]}[Data],
+				    #"Merged Queries" = Table.NestedJoin(Opportunity_, {"Opportunity ID"}, #"Opportunity Stage Changes", {"Opportunity ID"}, "Opportunity Stage Changes", JoinKind.LeftOuter),
+				    #"Expanded Opportunity Stage Changes" = Table.ExpandTableColumn(#"Merged Queries", "Opportunity Stage Changes", {"Old Value (Renamed)"}, {"Previous Stage"}),
+				    #"Close Date (Calculated)" = Table.TransformColumnTypes(Table.AddColumn(#"Expanded Opportunity Stage Changes", "Close Date (Calculated)", 
+				    each if [Forecast Category] = "Won" then [Close Date] 
+				    else if ([Forecast Category] <> "Won" and [Forecast Category] <> "Omit") then [Close Date] 
+				    else [#"Last Stage Change Date"]), {{"Close Date (Calculated)", type date}}),
+				    #"Add Win Loss Column" = Table.AddColumn(#"Close Date (Calculated)", "Win/Lost", each 
+				        if [Opportunity Type] = "New Name Account" and [Forecast Category] = "Won" then "Won"
+				        else if [Opportunity Type] = "New Name Account" and 
+				                ([Stage] = "Business Lost" or [Stage] = "Lost") and 
+				                ([Previous Stage] = "SMO" or [Previous Stage] = "SQL") and 
+				                [Forecast Category] = "Omit" then "Lost"
+				        else null
+				    )
+				in
+				    #"Add Win Loss Column"
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

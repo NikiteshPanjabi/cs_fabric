@@ -1,0 +1,607 @@
+table SF_Conversation
+	lineageTag: accb8b87-9348-48ab-b53a-0e8bd300ac83
+
+	column Id
+		dataType: string
+		displayFolder: Others
+		lineageTag: 15b94297-ca52-479f-a9f0-55f7c489ab71
+		summarizeBy: none
+		sourceColumn: Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column OwnerId
+		dataType: string
+		displayFolder: Others
+		lineageTag: 647112d0-2863-4608-aed5-11ca8e9c87bb
+		summarizeBy: none
+		sourceColumn: OwnerId
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsDeleted
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: d146fd16-fa17-47d8-bb9f-f031adf75d11
+		summarizeBy: none
+		sourceColumn: IsDeleted
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: bef0b2bc-3c2c-42f8-aea8-276bc11e10e4
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column CurrencyIsoCode
+		dataType: string
+		displayFolder: Others
+		lineageTag: 57df80bb-a0ce-480a-9dc6-79c079de1efd
+		summarizeBy: none
+		sourceColumn: CurrencyIsoCode
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedDate
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Others
+		lineageTag: e8faea43-1192-477c-8451-5734771fbf82
+		summarizeBy: none
+		sourceColumn: CreatedDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedById
+		dataType: string
+		displayFolder: Others
+		lineageTag: 943cb1be-0ed9-43a9-a6fa-63dc99c34b0c
+		summarizeBy: none
+		sourceColumn: CreatedById
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastModifiedDate
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Others
+		lineageTag: 04322d9c-53e8-4f10-b856-1f8f6e7b5db8
+		summarizeBy: none
+		sourceColumn: LastModifiedDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastModifiedById
+		dataType: string
+		displayFolder: Others
+		lineageTag: 62355371-bbd3-4d44-9486-bbd0add91960
+		summarizeBy: none
+		sourceColumn: LastModifiedById
+
+		annotation SummarizationSetBy = Automatic
+
+	column SystemModstamp
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Others
+		lineageTag: 88ea8010-49ab-46d9-966f-b61cdc53d2eb
+		summarizeBy: none
+		sourceColumn: SystemModstamp
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastActivityDate
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: e03ec95b-20d6-4781-bac9-91f403a1e4f7
+		summarizeBy: none
+		sourceColumn: LastActivityDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column LastViewedDate
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Others
+		lineageTag: 37648fe6-d5af-432c-b412-2a98b776b349
+		summarizeBy: none
+		sourceColumn: LastViewedDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastReferencedDate
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Others
+		lineageTag: 5cc0d420-6617-475c-b044-e8a5e8e01c28
+		summarizeBy: none
+		sourceColumn: LastReferencedDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Call_Brief__c
+		dataType: string
+		displayFolder: Call
+		lineageTag: 7a60cc21-e210-4069-9b19-a05b4844ff41
+		summarizeBy: none
+		sourceColumn: Gong__Call_Brief__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Call_Duration_sec__c
+		dataType: double
+		displayFolder: Call
+		lineageTag: 5c3710ec-9503-4150-988b-7a7f032b2060
+		summarizeBy: sum
+		sourceColumn: Gong__Call_Duration_sec__c
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Gong__Call_End__c
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Call
+		lineageTag: 257ba991-ba73-47dc-92c0-9baf9c57cda6
+		summarizeBy: none
+		sourceColumn: Gong__Call_End__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Call_Highlights_Next_Steps__c
+		dataType: string
+		displayFolder: Call
+		lineageTag: f2bb4358-dc61-4285-9fa8-8e6cf0ada383
+		summarizeBy: none
+		sourceColumn: Gong__Call_Highlights_Next_Steps__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Call_ID__c
+		dataType: string
+		displayFolder: Link Keys
+		lineageTag: 48787686-859f-42ea-85d2-028e764a81ad
+		summarizeBy: none
+		sourceColumn: Gong__Call_ID__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Call_Key_Points__c
+		dataType: string
+		displayFolder: Call
+		lineageTag: 602a6337-23e5-4f84-832c-e27eb27a4ba9
+		summarizeBy: none
+		sourceColumn: Gong__Call_Key_Points__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Call_Outcome__c
+		dataType: string
+		displayFolder: Call
+		lineageTag: 9a65726e-8d9e-4f73-8c48-c400b8c3d31c
+		summarizeBy: none
+		sourceColumn: Gong__Call_Outcome__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Call_Result__c
+		dataType: string
+		displayFolder: Call
+		lineageTag: e54e2a54-a6f1-4cc9-b62f-bbb342f46fda
+		summarizeBy: none
+		sourceColumn: Gong__Call_Result__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Call_Score__c
+		dataType: double
+		displayFolder: Call
+		lineageTag: 12f8e102-1e9d-4703-9370-6d27c2df0af2
+		summarizeBy: sum
+		sourceColumn: Gong__Call_Score__c
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Gong__Call_Start__c
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Call
+		lineageTag: 274c0b2d-1f04-4189-af97-2830b3fb200a
+		summarizeBy: none
+		sourceColumn: Gong__Call_Start__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Direction__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: c3ce61be-6a85-48bd-8ec6-22c382a42bce
+		summarizeBy: none
+		sourceColumn: Gong__Direction__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Gong_Count__c
+		dataType: double
+		displayFolder: Others
+		lineageTag: 31e343c2-1edf-4065-8aea-96dba0e1dc25
+		summarizeBy: sum
+		sourceColumn: Gong__Gong_Count__c
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Gong__Is_Private__c
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 0a707c47-60d0-46ce-9d89-330b9acfe124
+		summarizeBy: none
+		sourceColumn: Gong__Is_Private__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Language__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 8f103dca-b615-43b7-86a7-f6884ab038eb
+		summarizeBy: none
+		sourceColumn: Gong__Language__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Media__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 0366a52e-3840-4647-aad8-2a947468cbe5
+		summarizeBy: none
+		sourceColumn: Gong__Media__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Opp_Amount_Time_of_Call__c
+		dataType: double
+		displayFolder: Others
+		lineageTag: d2796e33-af38-4d10-99a3-e90aa2bdf39b
+		summarizeBy: sum
+		sourceColumn: Gong__Opp_Amount_Time_of_Call__c
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Gong__Opp_Close_Date_Time_Of_Call__c
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 5c155968-f533-482a-9c20-2482ab483002
+		summarizeBy: none
+		sourceColumn: Gong__Opp_Close_Date_Time_Of_Call__c
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Gong__Opp_Forecast_Category_Time_Of_Call__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 61f4afc1-40f1-45f8-96b0-7d01c491b5b4
+		summarizeBy: none
+		sourceColumn: Gong__Opp_Forecast_Category_Time_Of_Call__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Opp_Probability_Time_Of_Call__c
+		dataType: double
+		displayFolder: Others
+		lineageTag: 42fd0f40-373e-492a-b5f3-3818083de233
+		summarizeBy: sum
+		sourceColumn: Gong__Opp_Probability_Time_Of_Call__c
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Gong__Opp_Stage_Time_Of_Call__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: c0b0e041-0e98-4ff7-b07c-87553f2ec967
+		summarizeBy: none
+		sourceColumn: Gong__Opp_Stage_Time_Of_Call__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Participants_Emails__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: ff797421-ded4-4882-8d6c-7bf50d457994
+		summarizeBy: none
+		sourceColumn: Gong__Participants_Emails__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Primary_Account__c
+		dataType: string
+		displayFolder: Link Keys
+		lineageTag: f5d8f260-2f9f-4a95-94ad-de91692bade2
+		summarizeBy: none
+		sourceColumn: Gong__Primary_Account__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Primary_Opportunity__c
+		dataType: string
+		displayFolder: Link Keys
+		lineageTag: 032ef96b-f26a-45f6-865a-51bca51b97d9
+		summarizeBy: none
+		sourceColumn: Gong__Primary_Opportunity__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Primary_User__c
+		dataType: string
+		displayFolder: Link Keys
+		lineageTag: 110030ce-4bb1-4dfc-b359-1a1590c066ab
+		summarizeBy: none
+		sourceColumn: Gong__Primary_User__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_Accounts_json__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 4366d34b-d594-4ce5-818d-d34992e99e40
+		summarizeBy: none
+		sourceColumn: Gong__Related_Accounts_json__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_Action_Items_json__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: d6f43275-80b8-48f8-b493-603c4013e82a
+		summarizeBy: none
+		sourceColumn: Gong__Related_Action_Items_json__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_Agenda_json__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: debbbc5c-de68-43a8-905b-431c318fec2f
+		summarizeBy: none
+		sourceColumn: Gong__Related_Agenda_json__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_Contacts_json__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 9c93caef-75cd-4145-becd-62f4feec8d20
+		summarizeBy: none
+		sourceColumn: Gong__Related_Contacts_json__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_Invitees_json__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 86026555-c10c-478f-aebc-9d80292fa822
+		summarizeBy: none
+		sourceColumn: Gong__Related_Invitees_json__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_Leads_json__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: ce863210-58ad-45c6-a37c-ff29e4553b5c
+		summarizeBy: none
+		sourceColumn: Gong__Related_Leads_json__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_Notes_json__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 54d42764-5731-4ae2-8a0e-567212a7348c
+		summarizeBy: none
+		sourceColumn: Gong__Related_Notes_json__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_Opportunities_json__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: cecc5b47-f8b9-48cc-b090-e25586fb3166
+		summarizeBy: none
+		sourceColumn: Gong__Related_Opportunities_json__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_Participants_json__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 5b1e20cc-dc03-45ca-9c2f-3c95e87c6cf1
+		summarizeBy: none
+		sourceColumn: Gong__Related_Participants_json__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_Scorecards_json__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: b1fd4f7d-981d-4055-b0f3-4b78ce8726ee
+		summarizeBy: none
+		sourceColumn: Gong__Related_Scorecards_json__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_Stats_json__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 28894f16-6e6f-4391-8ea8-c45e16170f54
+		summarizeBy: none
+		sourceColumn: Gong__Related_Stats_json__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_Topics_json__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 096fb48c-5fe4-45bc-9ed7-b2f40459b0e0
+		summarizeBy: none
+		sourceColumn: Gong__Related_Topics_json__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_Trackers_json__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 0e8f7ed1-1649-45b6-add3-2a831b25f602
+		summarizeBy: none
+		sourceColumn: Gong__Related_Trackers_json__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_to__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 525c82a1-b454-44af-b92c-f934632dc884
+		summarizeBy: none
+		sourceColumn: Gong__Related_to__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Scope__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 8bab0ad2-0f55-49a0-9448-d5125530d775
+		summarizeBy: none
+		sourceColumn: Gong__Scope__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__System__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 5cc55ea2-b636-453d-b466-e65ed77301e4
+		summarizeBy: none
+		sourceColumn: Gong__System__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Talk_Time_Them__c
+		dataType: double
+		displayFolder: Others
+		lineageTag: 74644ed4-4056-4a9d-96c4-77aaaa305e72
+		summarizeBy: sum
+		sourceColumn: Gong__Talk_Time_Them__c
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Gong__Talk_Time_Us__c
+		dataType: double
+		displayFolder: Others
+		lineageTag: f9a0aabb-8055-4466-9685-4190656c4766
+		summarizeBy: sum
+		sourceColumn: Gong__Talk_Time_Us__c
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Gong__Title__c
+		dataType: string
+		lineageTag: 0736e38b-b5c2-48ea-82b5-90aa364c5aa3
+		summarizeBy: none
+		sourceColumn: Gong__Title__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__scheduled__c
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Others
+		lineageTag: 8f0d5ba2-5bf1-4002-ac3d-2d0de2bfa3f9
+		summarizeBy: none
+		sourceColumn: Gong__scheduled__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Economic_Pulse_Occurence__c
+		dataType: double
+		displayFolder: Others
+		lineageTag: 994c88e7-394e-4e1d-8390-eafba6e129ac
+		summarizeBy: sum
+		sourceColumn: Gong__Economic_Pulse_Occurence__c
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Gong__Pricing_Duration__c
+		dataType: double
+		displayFolder: Others
+		lineageTag: d46fd7d2-930f-4734-b220-09553e8f8ac8
+		summarizeBy: sum
+		sourceColumn: Gong__Pricing_Duration__c
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Gong__Call_Duration__c
+		dataType: string
+		displayFolder: Call
+		lineageTag: a2e5542c-c259-4534-8d7a-354cbb41140e
+		summarizeBy: none
+		sourceColumn: Gong__Call_Duration__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Opportunity_Stage_Now__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 6f5eb64f-07b4-43f4-aae4-4a561ed33bef
+		summarizeBy: none
+		sourceColumn: Gong__Opportunity_Stage_Now__c
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__View_call__c
+		dataType: string
+		displayFolder: Others
+		lineageTag: 87695c9d-5773-4d59-9578-45cd1a88f1f0
+		summarizeBy: none
+		sourceColumn: Gong__View_call__c
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SF_Conversation = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"1b676173-4fb3-43dc-95a3-a62be19f628c" = Workspaces{[workspaceId="1b676173-4fb3-43dc-95a3-a62be19f628c"]}[Data],
+				    #"8b45cef1-5267-46a6-bb51-6e11a327b6d1" = #"1b676173-4fb3-43dc-95a3-a62be19f628c"{[dataflowId="8b45cef1-5267-46a6-bb51-6e11a327b6d1"]}[Data],
+				    Conversation_ = #"8b45cef1-5267-46a6-bb51-6e11a327b6d1"{[entity="Conversation",version=""]}[Data]
+				in
+				    Conversation_
+
+	changedProperty = Name
+

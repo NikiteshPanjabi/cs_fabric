@@ -1,0 +1,90 @@
+table Conversations
+	lineageTag: 049735ae-711b-459a-a90a-cbc4602829a2
+
+	column COMPANY_ID
+		dataType: string
+		lineageTag: 6352bfa2-6bb4-4010-b2f1-4760a597fb48
+		summarizeBy: none
+		sourceColumn: COMPANY_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONVERSATION_DATETIME
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e7f056a4-936e-4308-a85f-5893953e00db
+		summarizeBy: none
+		sourceColumn: CONVERSATION_DATETIME
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONVERSATION_ID
+		dataType: string
+		lineageTag: baa6369b-28fb-4f85-af2a-edf97e6bb1a4
+		summarizeBy: none
+		sourceColumn: CONVERSATION_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONVERSATION_KEY
+		dataType: string
+		lineageTag: ee3eab09-ccec-4a89-8f18-bd5985095109
+		summarizeBy: none
+		sourceColumn: CONVERSATION_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column CONVERSATION_TYPE
+		dataType: string
+		lineageTag: 8ba4ed20-5c38-479c-b688-80bdf8c9099a
+		summarizeBy: none
+		sourceColumn: CONVERSATION_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ETL_MODIFIED_DATETIME
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 85336502-1759-48ba-b9f5-97bba8b35a3f
+		summarizeBy: none
+		sourceColumn: ETL_MODIFIED_DATETIME
+
+		annotation SummarizationSetBy = Automatic
+
+	column IS_DELETED
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 56f5aabd-bb1f-40d5-b34b-68dff3ae3eed
+		summarizeBy: none
+		sourceColumn: IS_DELETED
+
+		annotation SummarizationSetBy = Automatic
+
+	column ROW_ID
+		dataType: string
+		lineageTag: bdefc862-0ac4-49b5-a33e-5443ca413b67
+		summarizeBy: none
+		sourceColumn: ROW_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column WORKSPACE_IDS
+		dataType: string
+		lineageTag: ba493a07-6dcb-45ff-89b2-7435a73e81a7
+		summarizeBy: none
+		sourceColumn: WORKSPACE_IDS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Conversations = m
+		mode: import
+		source =
+				let
+				    Source = Value.NativeQuery(GoogleBigQuery.Database([Implementation="2.0"]){[Name="bizops-raw-data-dev-719d"]}[Data], "SELECT * FROM `bizops-raw-data-dev-719d.src_gong_data_cloud.CONVERSATIONS`", null, [EnableFolding=true])
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

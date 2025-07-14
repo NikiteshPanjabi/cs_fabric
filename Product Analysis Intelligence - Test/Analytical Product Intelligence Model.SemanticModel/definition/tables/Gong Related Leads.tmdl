@@ -1,0 +1,237 @@
+table 'Gong Related Leads'
+	isHidden
+	lineageTag: 802d2e18-08ce-4207-a3da-80466d8b2617
+
+	column Id
+		dataType: string
+		isHidden
+		lineageTag: ebf7c600-983e-46e6-9bd1-a6b183b467bd
+		summarizeBy: none
+		sourceColumn: Id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsDeleted
+		dataType: boolean
+		isHidden
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 88cf9bff-24b7-4bf2-82c9-bec7ca4ab7f5
+		summarizeBy: none
+		sourceColumn: IsDeleted
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		isHidden
+		lineageTag: 8154bafb-7337-49be-beca-9fc83aa51d83
+		summarizeBy: none
+		sourceColumn: Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CurrencyIsoCode
+		dataType: string
+		isHidden
+		lineageTag: abd9f8c2-26e5-4f3b-b82c-b48e883215b5
+		summarizeBy: none
+		sourceColumn: CurrencyIsoCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedDate
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 8985c5b6-82fa-4cee-b726-05e4549c45a4
+		summarizeBy: none
+		sourceColumn: CreatedDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CreatedById
+		dataType: string
+		isHidden
+		lineageTag: f8081c70-50d0-4f2d-8feb-a8a0702b0baf
+		summarizeBy: none
+		sourceColumn: CreatedById
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastModifiedDate
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 819a286e-84a8-4190-988b-f66b3dd9ed98
+		summarizeBy: none
+		sourceColumn: LastModifiedDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastModifiedById
+		dataType: string
+		isHidden
+		lineageTag: 7c7aabe2-77e5-41e6-b2d5-7c590e2da327
+		summarizeBy: none
+		sourceColumn: LastModifiedById
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SystemModstamp
+		dataType: dateTime
+		isHidden
+		formatString: General Date
+		lineageTag: 9958bba3-db8c-401c-9dcc-2d3a563129f4
+		summarizeBy: none
+		sourceColumn: SystemModstamp
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastActivityDate
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 3660656a-a1d9-4177-92b6-338b89c23afd
+		summarizeBy: none
+		sourceColumn: LastActivityDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Gong__Gong_Interaction__c
+		dataType: string
+		isHidden
+		lineageTag: fb7105e8-6909-4bad-bf80-60b32162feed
+		summarizeBy: none
+		sourceColumn: Gong__Gong_Interaction__c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Related_Entity_ID__c
+		dataType: string
+		isHidden
+		lineageTag: e4e36242-7ae9-4cc3-b817-eb8b361650e6
+		summarizeBy: none
+		sourceColumn: Gong__Related_Entity_ID__c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Call_Duration_Min__c
+		dataType: string
+		isHidden
+		lineageTag: b4e56237-90de-452f-9927-de1a96ff6562
+		summarizeBy: none
+		sourceColumn: Gong__Call_Duration_Min__c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Lead_Full_Name__c
+		dataType: string
+		isHidden
+		lineageTag: 8372a22f-be53-46eb-a9c4-ab7ef4a81df9
+		summarizeBy: none
+		sourceColumn: Gong__Lead_Full_Name__c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Participants_Emails__c
+		dataType: string
+		isHidden
+		lineageTag: 9ee6763e-1c8d-457a-82ab-2c875e252199
+		summarizeBy: none
+		sourceColumn: Gong__Participants_Emails__c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Primary_Account__c
+		dataType: string
+		isHidden
+		lineageTag: c5e433b5-5432-40cb-8626-0f923e6e0922
+		summarizeBy: none
+		sourceColumn: Gong__Primary_Account__c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Primary_Opportunity__c
+		dataType: string
+		isHidden
+		lineageTag: 6bfbad31-bc9c-45ba-9152-2a7db415ffa8
+		summarizeBy: none
+		sourceColumn: Gong__Primary_Opportunity__c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gong__Started__c
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 6d1e6319-ca61-4e3c-aca4-5f4c34884cc5
+		summarizeBy: none
+		sourceColumn: Gong__Started__c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Gong__Title__c
+		dataType: string
+		isHidden
+		lineageTag: 5b1064f7-6b08-4d8c-9c7d-5563cd139e6d
+		summarizeBy: none
+		sourceColumn: Gong__Title__c
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Gong Related Leads' = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"1b676173-4fb3-43dc-95a3-a62be19f628c" = Workspaces{[workspaceId="1b676173-4fb3-43dc-95a3-a62be19f628c"]}[Data],
+				    #"f601042f-f190-4ccf-9f56-41e997b4b88d" = #"1b676173-4fb3-43dc-95a3-a62be19f628c"{[dataflowId="f601042f-f190-4ccf-9f56-41e997b4b88d"]}[Data],
+				    #"Gong Related Leads_" = #"f601042f-f190-4ccf-9f56-41e997b4b88d"{[entity="Gong Related Leads",version=""]}[Data]
+				in
+				    #"Gong Related Leads_"
+
+	changedProperty = IsHidden
+

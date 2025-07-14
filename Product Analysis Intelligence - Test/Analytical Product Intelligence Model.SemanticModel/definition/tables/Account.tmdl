@@ -1,0 +1,1787 @@
+table Account
+	lineageTag: 0f670adc-58bb-488a-8adf-065a6ca6e6bd
+
+	column 'Account ID'
+		dataType: string
+		lineageTag: 91087b51-bc63-4d97-9a32-f68012586bcb
+		summarizeBy: none
+		sourceColumn: Account ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Account Name'
+		dataType: string
+		lineageTag: 6bd59539-302f-453b-9553-4b0a8ac492fc
+		summarizeBy: none
+		sourceColumn: Account Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Account Type'
+		dataType: string
+		lineageTag: 6ffe2e79-5212-4202-935e-9a97ea69ec62
+		summarizeBy: none
+		sourceColumn: Account Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 20504519-f7ed-412e-baa1-b56a35adf805
+		summarizeBy: none
+		sourceColumn: Parent ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Billing Address'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 5922b545-5043-4c6c-a3fd-ae6333c8f3c4
+		summarizeBy: none
+		sourceColumn: Billing Address
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Billing City'
+		dataType: string
+		displayFolder: Others
+		lineageTag: a4ebb7df-7b36-423a-97bf-feb69c9a80eb
+		summarizeBy: none
+		sourceColumn: Billing City
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Billing State'
+		dataType: string
+		displayFolder: Others
+		lineageTag: bd028724-e2b1-4f15-a237-54c10e4ef33d
+		summarizeBy: none
+		sourceColumn: Billing State
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Billing Country'
+		dataType: string
+		displayFolder: Others
+		lineageTag: eefacf8f-baf5-4496-915a-97afcb47a88a
+		summarizeBy: none
+		sourceColumn: Billing Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Shipping Country'
+		dataType: string
+		displayFolder: Others
+		lineageTag: ed867791-75f1-453d-94ad-9a48213ff949
+		summarizeBy: none
+		sourceColumn: Shipping Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column Website
+		dataType: string
+		displayFolder: Others
+		lineageTag: e9b1bde5-4e88-483d-bcc3-8e2dde519947
+		summarizeBy: none
+		sourceColumn: Website
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SIC Code'
+		dataType: int64
+		formatString: 0
+		displayFolder: Others
+		lineageTag: 1dc03811-b29d-4cb5-b353-d8cf348fdc51
+		summarizeBy: none
+		sourceColumn: SIC Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column Industry
+		dataType: string
+		lineageTag: d356ed28-f4cd-4667-9daf-4f29a65dca8f
+		summarizeBy: none
+		sourceColumn: Industry
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Annual Revenue'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 88db81f4-96aa-41a3-98a7-0c43e025fe82
+		summarizeBy: none
+		sourceColumn: Annual Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Rating
+		dataType: string
+		displayFolder: Others
+		lineageTag: 41809a5f-febe-4ef8-bd9f-becba372e457
+		summarizeBy: none
+		sourceColumn: Rating
+
+		annotation SummarizationSetBy = Automatic
+
+	column Site
+		dataType: string
+		displayFolder: Others
+		lineageTag: e7c9b7d4-336a-4248-a4ec-b131fbd6b703
+		summarizeBy: none
+		sourceColumn: Site
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Currency ISO Code'
+		dataType: string
+		displayFolder: Others
+		lineageTag: cc56bfbd-f8e1-4ae7-a8b6-d1e9e6335b56
+		summarizeBy: none
+		sourceColumn: Currency ISO Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Owner ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 52c9c36b-4b70-4df1-b886-0f64b1ef6760
+		summarizeBy: none
+		sourceColumn: Owner ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Created Date'
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Others
+		lineageTag: 40d01475-f305-48c9-8791-fd9662df4cac
+		summarizeBy: none
+		sourceColumn: Created Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Modified Date'
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Others
+		lineageTag: c76bdf7a-71de-40d4-8cb3-8342fd8d7b0c
+		summarizeBy: none
+		sourceColumn: Last Modified Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Last Activity Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: f1a75131-c84f-4632-a002-03bda64a18ec
+		summarizeBy: none
+		sourceColumn: Last Activity Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'SIC Description'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 4e1ca0c4-4df8-46bb-adfc-899c74594ad2
+		summarizeBy: none
+		sourceColumn: SIC Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		displayFolder: Others
+		lineageTag: 49ec24ed-f0a2-4849-b6f1-667bc5b942b5
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Business Consultant'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 460560f7-058e-4292-8ca0-8955a7b145cc
+		summarizeBy: none
+		sourceColumn: Business Consultant
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Assigned to ISR'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 720973d7-6237-491d-beda-f4e2f1b432aa
+		summarizeBy: none
+		sourceColumn: Assigned to ISR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Exec Sponsor'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 33395645-05db-49fd-b4f3-1099c7f5b126
+		summarizeBy: none
+		sourceColumn: Exec Sponsor
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Partnership Level'
+		dataType: string
+		displayFolder: Others
+		lineageTag: afc809b5-0cc0-49a1-a60f-fb8d3ae98c0b
+		summarizeBy: none
+		sourceColumn: Partnership Level
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Client Partner'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 98a73e5e-bc36-4317-a03b-6c467e0af021
+		summarizeBy: none
+		sourceColumn: Client Partner
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Email Domains'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 19044010-b291-4f59-81c5-c493700b5fd5
+		summarizeBy: none
+		sourceColumn: Email Domains
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tiered Engagement Type'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 28a60708-fe4f-40e4-9605-9f23a1afab4c
+		summarizeBy: none
+		sourceColumn: Tiered Engagement Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Global Top Account'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: fb74321e-df57-450d-8528-3a9c8f2b7072
+		summarizeBy: none
+		sourceColumn: Global Top Account
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Supporting Partner'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 67435f41-1b0d-41da-9ca0-fd112b34b480
+		summarizeBy: none
+		sourceColumn: Supporting Partner
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Official Customer'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 0e1e3e01-d8dc-4fdf-b08d-dcd2faf011d0
+		summarizeBy: none
+		sourceColumn: Official Customer
+
+		annotation SummarizationSetBy = Automatic
+
+	column Support
+		dataType: string
+		displayFolder: Others
+		lineageTag: 254c3864-e4af-4b28-8a1e-29620bd99018
+		summarizeBy: none
+		sourceColumn: Support
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Assigned PSM ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: debea6ba-b97c-4c70-9207-7b965d4fad8a
+		summarizeBy: none
+		sourceColumn: Assigned PSM ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'On Demand'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 93cb6879-dc34-4c98-9030-93759c9121a9
+		summarizeBy: none
+		sourceColumn: On Demand
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NDA Signed'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 951d031e-bbb0-4dce-9fa9-b605923e5670
+		summarizeBy: none
+		sourceColumn: NDA Signed
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Onboarding Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 54e3074d-ec57-4d82-a817-f02dfb94588d
+		summarizeBy: none
+		sourceColumn: Onboarding Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Region
+		dataType: string
+		displayFolder: Others
+		lineageTag: f00ed002-199f-4d61-8855-4790e798ed06
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Regional Top Account'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 6e84e397-7c76-47d4-b3c8-5eabe4f9018d
+		summarizeBy: none
+		sourceColumn: Regional Top Account
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Approved to user Customer Logo'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: f74ee7a7-f7df-4e71-a31c-504aca0e11cf
+		summarizeBy: none
+		sourceColumn: Approved to user Customer Logo
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'D&B Parent ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 3db762ab-d979-466f-ac0c-b667d0312fe3
+		summarizeBy: none
+		sourceColumn: D&B Parent ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'D&B Parent Business Name'
+		dataType: string
+		displayFolder: Others
+		lineageTag: fc35d0bf-3152-4279-aec2-1e334ad4214f
+		summarizeBy: none
+		sourceColumn: D&B Parent Business Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'D&B Parent DUNS'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 444a282e-1ae8-400d-8d2e-031a4663326f
+		summarizeBy: none
+		sourceColumn: D&B Parent DUNS
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'D&B Parent Annual Revenue'
+		dataType: double
+		displayFolder: Others
+		lineageTag: fa9903b9-2d57-464b-9961-70f460b3b53f
+		summarizeBy: none
+		sourceColumn: D&B Parent Annual Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'D&B Parent Owner'
+		dataType: string
+		displayFolder: Others
+		lineageTag: cdd830ce-0049-4f1c-86f7-3f0bcef0093a
+		summarizeBy: none
+		sourceColumn: D&B Parent Owner
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'D&B Parent Territory'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 494b6bcd-0f4e-4320-8c86-e280cc7b8f6a
+		summarizeBy: none
+		sourceColumn: D&B Parent Territory
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Domestic Owner'
+		dataType: string
+		displayFolder: Others
+		lineageTag: fdf8adc4-4ccc-4d0f-b59d-94d4c10228b7
+		summarizeBy: none
+		sourceColumn: Domestic Owner
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Domestic Territory'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 1b09be77-d923-49db-86b3-454d6d534aaa
+		summarizeBy: none
+		sourceColumn: Domestic Territory
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Domestic Annual Revenue'
+		dataType: double
+		displayFolder: Others
+		lineageTag: a55a1fa4-0aaa-47f1-90c7-419931bab89d
+		summarizeBy: none
+		sourceColumn: Domestic Annual Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Category
+		dataType: string
+		displayFolder: Others
+		lineageTag: e12fa5e0-0224-4493-9056-3ae309f8bb47
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Opt-Out Indication Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: cbf2bf76-9322-4812-b6c5-5a39d18850c4
+		summarizeBy: none
+		sourceColumn: Opt-Out Indication Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Data Center'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 2f675cb6-2cac-4c41-b8d0-be10e88c6ed6
+		summarizeBy: none
+		sourceColumn: Data Center
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'COE Prime'
+		dataType: string
+		displayFolder: Others
+		lineageTag: d528a30d-767e-452c-a705-865f830dbbb2
+		summarizeBy: none
+		sourceColumn: COE Prime
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Life Cycle Stage'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 545df92f-d61d-4bfe-a1f8-9c7801813b53
+		summarizeBy: none
+		sourceColumn: Life Cycle Stage
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Starting Scenario Count'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 72548912-582a-4453-988a-066bc50078aa
+		summarizeBy: none
+		sourceColumn: Starting Scenario Count
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Current Scenario Count'
+		dataType: double
+		displayFolder: Others
+		lineageTag: f71ef450-7e16-4359-b909-d54b3bd5ed72
+		summarizeBy: none
+		sourceColumn: Current Scenario Count
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column DUNS
+		dataType: string
+		displayFolder: Others
+		lineageTag: 41a07057-1deb-4eff-af91-1bd89cf9bfeb
+		summarizeBy: none
+		sourceColumn: DUNS
+
+		annotation SummarizationSetBy = Automatic
+
+	column Vertical
+		dataType: string
+		lineageTag: b2d7efee-3f35-4ceb-89a8-88334413c163
+		summarizeBy: none
+		sourceColumn: Vertical
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Industry Sector'
+		dataType: string
+		lineageTag: d2bc9239-2ff7-42ef-b9eb-fdd975809d05
+		summarizeBy: none
+		sourceColumn: Industry Sector
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Risk Last Modified by ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 2e9a05c5-728d-436a-9e63-0496962f9dd6
+		summarizeBy: none
+		sourceColumn: Risk Last Modified by ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Risk Last Modified Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: e6f016e4-6e65-40df-a333-019e7fc91d82
+		summarizeBy: none
+		sourceColumn: Risk Last Modified Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Risk Reason'
+		dataType: string
+		displayFolder: Others
+		lineageTag: a678f3c2-a0bb-445d-a9f0-4f7ad5e8cf9e
+		summarizeBy: none
+		sourceColumn: Risk Reason
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'D&B Parent Type'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 1e96c0d5-a953-4339-8c61-1f455e5ec2b4
+		summarizeBy: none
+		sourceColumn: D&B Parent Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Mission Critical Support'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: a409a030-77d8-4311-a71a-751b78c4561e
+		summarizeBy: none
+		sourceColumn: Mission Critical Support
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date Effective'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 975ffd28-4404-41e9-990d-fab3226f4eea
+		summarizeBy: none
+		sourceColumn: Date Effective
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Value at Risk'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 1e03e6e7-501e-4922-bc80-5f39cb296aa9
+		summarizeBy: none
+		sourceColumn: Value at Risk
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Accenture ESP Partnership'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 0be1e79c-310c-44ca-8604-d56c88172f67
+		summarizeBy: none
+		sourceColumn: Accenture ESP Partnership
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Subscription Start Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 0becd331-68f4-4e96-8adf-cb6e9b93dd2e
+		summarizeBy: none
+		sourceColumn: Subscription Start Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Subscription Expiry Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: dff8b7d6-03c7-47c9-8d48-360502ecd433
+		summarizeBy: none
+		sourceColumn: Subscription Expiry Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Subscription Term (Months)'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 828fa58f-f1af-4f1f-9a7d-5f2e8eff4370
+		summarizeBy: none
+		sourceColumn: Subscription Term (Months)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Territory
+		dataType: string
+		displayFolder: Others
+		lineageTag: 4fbd3871-460c-4c5c-b443-64cfd89741fb
+		summarizeBy: none
+		sourceColumn: Territory
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Agreement on Marketing Clause'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 9ac5aed0-9390-4edd-ac51-7ec198a7f4f9
+		summarizeBy: none
+		sourceColumn: Agreement on Marketing Clause
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Marketing Clause From Contract'
+		dataType: string
+		displayFolder: Others
+		lineageTag: bed0b642-ea88-4adf-a316-5b92ef52303f
+		summarizeBy: none
+		sourceColumn: Marketing Clause From Contract
+
+		annotation SummarizationSetBy = Automatic
+
+	column Engagement
+		dataType: double
+		displayFolder: Others
+		lineageTag: b03268a2-5656-4975-bec5-b2ba71ed5165
+		summarizeBy: none
+		sourceColumn: Engagement
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Sum of Contact Engagement Score'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 5bef95ed-0e4e-4659-8625-5f62f292b7df
+		summarizeBy: none
+		sourceColumn: Sum of Contact Engagement Score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Tier
+		dataType: string
+		displayFolder: Others
+		lineageTag: cb4fa0b6-9797-4603-b21e-6f6871b68970
+		summarizeBy: none
+		sourceColumn: Tier
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NAICS Code'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 4c85b4cb-4006-4937-828d-d56d2b7c2429
+		summarizeBy: none
+		sourceColumn: NAICS Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NAICS Description'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 714959c7-2a54-47f7-8317-361f039dd6fe
+		summarizeBy: none
+		sourceColumn: NAICS Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Solution Sustainment Service'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 225d8c51-d354-4185-a660-eae8011f4db6
+		summarizeBy: none
+		sourceColumn: Solution Sustainment Service
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Zisf Company ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 8dc38b07-6e6d-43a6-8224-5fb5e122adc3
+		summarizeBy: none
+		sourceColumn: Zisf Company ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Annual Revenue Range'
+		dataType: string
+		displayFolder: Others
+		lineageTag: fcb0ec14-bace-4065-afab-81e4eefd3b60
+		summarizeBy: none
+		sourceColumn: Annual Revenue Range
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'CLS Subscription End Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 34338607-2f71-4de9-9f9d-16fd1c26f14f
+		summarizeBy: none
+		sourceColumn: CLS Subscription End Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'CLS Subscription Start Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 22397810-def4-4c4c-9c70-2c417260de8d
+		summarizeBy: none
+		sourceColumn: CLS Subscription Start Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'CLS Subscription Term (Months)'
+		dataType: double
+		displayFolder: Others
+		lineageTag: e5adea10-dd41-47ef-9f01-92fc52563b23
+		summarizeBy: none
+		sourceColumn: CLS Subscription Term (Months)
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'CLS Subscription Type'
+		dataType: string
+		displayFolder: Others
+		lineageTag: a099ab36-0762-4c32-aafd-360fff9e2906
+		summarizeBy: none
+		sourceColumn: CLS Subscription Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Health Score'
+		dataType: string
+		displayFolder: Others
+		lineageTag: b3ef11fc-8474-4675-8636-95043f9382f0
+		summarizeBy: none
+		sourceColumn: Customer Health Score
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Owner Name'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 9893059b-cfbb-4f9e-bbb1-f6e36e87a775
+		summarizeBy: none
+		sourceColumn: Owner Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Buying Stage New'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 7b0e8a93-bbe5-45af-b4e6-471fda2037cd
+		summarizeBy: none
+		sourceColumn: Buying Stage New
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Intent Score New'
+		dataType: double
+		displayFolder: Others
+		lineageTag: af67e256-b6c1-4f6e-8f2b-6b60ba12e0ad
+		summarizeBy: none
+		sourceColumn: Intent Score New
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Profile Fit'
+		dataType: string
+		displayFolder: Others
+		lineageTag: fe74a0f7-4937-44f3-ab5d-a4db86df2c20
+		summarizeBy: none
+		sourceColumn: Profile Fit
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Profile Score'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 91cfd061-0b15-40ee-b7d0-11ff163d10fa
+		summarizeBy: none
+		sourceColumn: Profile Score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 6QA
+		dataType: string
+		displayFolder: Others
+		lineageTag: 8b53a2e7-b0d9-4ba6-986d-63c87760da21
+		summarizeBy: none
+		sourceColumn: 6QA
+
+		annotation SummarizationSetBy = Automatic
+
+	column '6QA Start Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: fb77c26b-586c-48f9-abc3-b86325512e53
+		summarizeBy: none
+		sourceColumn: 6QA Start Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '6QA End Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 1f4b42d7-cb84-4cb0-9553-df26ea1cd16f
+		summarizeBy: none
+		sourceColumn: 6QA End Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column '6QA Age in Days'
+		dataType: int64
+		formatString: 0
+		displayFolder: Others
+		lineageTag: d1fde6fc-24aa-4d9b-aa22-df05cb1dd07e
+		summarizeBy: none
+		sourceColumn: 6QA Age in Days
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Renewal Manager'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 057c781b-7cd0-4ea4-9d9d-155318000241
+		summarizeBy: none
+		sourceColumn: Renewal Manager
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Partner Region APAC'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 473b2924-11a5-4617-bc4d-1f634eaa0fe1
+		summarizeBy: none
+		sourceColumn: Partner Region APAC
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Partner Region Africa'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 17ab8825-f046-4162-95a2-c0eda1e0315d
+		summarizeBy: none
+		sourceColumn: Partner Region Africa
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Partner Region Europe'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: f3b04c49-f414-49a4-aa67-bf2039bdcbef
+		summarizeBy: none
+		sourceColumn: Partner Region Europe
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Partner Region Middle East'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 7a2cc04a-339e-4662-a890-6cd78c8f0bb2
+		summarizeBy: none
+		sourceColumn: Partner Region Middle East
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'D&B Industry'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 99d9e7ca-f554-4396-8beb-b8c06173a7d9
+		summarizeBy: none
+		sourceColumn: D&B Industry
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Assigned CSM'
+		dataType: string
+		displayFolder: Others
+		lineageTag: ccd4077c-7a40-4cf1-a791-1377ce351f2e
+		summarizeBy: none
+		sourceColumn: Assigned CSM
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Country Priority'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 99d7595c-fffa-432b-977f-07df8881605b
+		summarizeBy: none
+		sourceColumn: Country Priority
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SIC Priority'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 436bf442-8e2f-4782-94a7-74420ed9ee86
+		summarizeBy: none
+		sourceColumn: SIC Priority
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent Owner'
+		dataType: string
+		displayFolder: Others
+		lineageTag: ad2f3c02-153e-4e87-9e5b-3e6c14e77f7e
+		summarizeBy: none
+		sourceColumn: Parent Owner
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent Territory'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 66a90441-0684-4c58-bb0a-f20108eee3ba
+		summarizeBy: none
+		sourceColumn: Parent Territory
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Assigned BDR'
+		dataType: string
+		displayFolder: Others
+		lineageTag: f4e2f72a-b02f-4499-9e99-cf36cbf879eb
+		summarizeBy: none
+		sourceColumn: Assigned BDR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SIC8 Code'
+		dataType: string
+		displayFolder: Others
+		lineageTag: f322226b-873a-49a5-83a8-626c64c3be64
+		summarizeBy: none
+		sourceColumn: SIC8 Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'SIC8 Code Description'
+		dataType: string
+		displayFolder: Others
+		lineageTag: bda5e153-26d3-4d74-a488-f36a3afa8cdb
+		summarizeBy: none
+		sourceColumn: SIC8 Code Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Requested by Sales'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 9a08b9df-eff1-4036-80aa-95cd292983be
+		summarizeBy: none
+		sourceColumn: Requested by Sales
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Revenue Tier'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 065a855e-2eb7-4835-9ed4-3f0a1b95a992
+		summarizeBy: none
+		sourceColumn: Revenue Tier
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Domestic Ultimate'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 9ab9ba0e-db2c-4228-bdba-b3f5066f592d
+		summarizeBy: none
+		sourceColumn: Domestic Ultimate
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Domestic Ultimate DUNS Number'
+		dataType: string
+		displayFolder: Others
+		lineageTag: a70d8e77-f499-4d3a-a39f-fa5676456edf
+		summarizeBy: none
+		sourceColumn: Domestic Ultimate DUNS Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Domestic Ultimate Parent'
+		dataType: string
+		displayFolder: Others
+		lineageTag: afe5a0e5-3088-4b59-ba5d-8658ae0618a7
+		summarizeBy: none
+		sourceColumn: Domestic Ultimate Parent
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Global Annual Revenue'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 38039475-3226-4e4f-a720-382feaba0d82
+		summarizeBy: none
+		sourceColumn: Global Annual Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Buying Stage'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 395ba1ba-7fbe-4c9b-8126-97a1d6ccb301
+		summarizeBy: none
+		sourceColumn: Buying Stage
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Buying Stage Date Enterned'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: bc4f2bfe-bded-40e0-956c-8530ed27820b
+		summarizeBy: none
+		sourceColumn: Buying Stage Date Enterned
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Domain
+		dataType: string
+		displayFolder: Others
+		lineageTag: 84545079-7b05-46bf-bbed-2b2f85445bbb
+		summarizeBy: none
+		sourceColumn: Domain
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Intent Score 2'
+		dataType: double
+		displayFolder: Others
+		lineageTag: c312913e-8a03-4c22-92f1-839081f9927a
+		summarizeBy: none
+		sourceColumn: Intent Score 2
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Last Intent Update'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: e63e27c9-96db-46dd-9d92-4cc206cac1cb
+		summarizeBy: none
+		sourceColumn: Last Intent Update
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Global Owner'
+		dataType: string
+		displayFolder: Others
+		lineageTag: b69ef500-bbd0-466e-81d5-fdd49df681d1
+		summarizeBy: none
+		sourceColumn: Global Owner
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Global Territory'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 47186858-96ee-42b6-bf74-814fbb87c53a
+		summarizeBy: none
+		sourceColumn: Global Territory
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Global Ultimate'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 8ff27063-1cd2-477b-8cd6-c50e7fd8b22e
+		summarizeBy: none
+		sourceColumn: Global Ultimate
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Global Ultimate DUNS Number'
+		dataType: string
+		displayFolder: Others
+		lineageTag: b87b4588-087b-4df6-99a7-e215a4fdc85e
+		summarizeBy: none
+		sourceColumn: Global Ultimate DUNS Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Global Ultimate Parent'
+		dataType: string
+		displayFolder: Others
+		lineageTag: e6a50e19-353b-4a77-b6e1-1cfaf3127a61
+		summarizeBy: none
+		sourceColumn: Global Ultimate Parent
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent Annual Revenue'
+		dataType: double
+		displayFolder: Others
+		lineageTag: d4d06348-928d-44b2-8018-7c77df5bc8e3
+		summarizeBy: none
+		sourceColumn: Parent Annual Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Secondary AE'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 764df935-48c9-415f-ac7e-4b347d4ffe54
+		summarizeBy: none
+		sourceColumn: Secondary AE
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parent DUNS'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 03625b09-4f9e-46f4-a868-1569ec0ab706
+		summarizeBy: none
+		sourceColumn: Parent DUNS
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Subtype'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 90277db6-810d-4bcb-bc55-a079e010e5f5
+		summarizeBy: none
+		sourceColumn: Customer Subtype
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ZoomInfo DO Technologies'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 5c7d70aa-6101-4a70-aca6-138b7a619382
+		summarizeBy: none
+		sourceColumn: ZoomInfo DO Technologies
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Primary Site'
+		dataType: string
+		displayFolder: Others
+		lineageTag: df8ce51a-3554-4d1e-abe9-72aeba4de228
+		summarizeBy: none
+		sourceColumn: Primary Site
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Domestic Type'
+		dataType: string
+		displayFolder: Others
+		lineageTag: b924f387-698c-4d34-bae2-c9f86a8e1a90
+		summarizeBy: none
+		sourceColumn: Domestic Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Global Type'
+		dataType: string
+		displayFolder: Others
+		lineageTag: fb342623-a8a6-4ec5-9421-74321021e584
+		summarizeBy: none
+		sourceColumn: Global Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Heat Index'
+		dataType: double
+		displayFolder: Others
+		lineageTag: ac108098-bc37-400a-9254-266798d71871
+		summarizeBy: none
+		sourceColumn: Heat Index
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Official Customer/Partner for Report'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 501d12b7-d799-4a5a-a809-33c42819dc0c
+		summarizeBy: none
+		sourceColumn: Official Customer/Partner for Report
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Offboarding Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 63890537-9827-4eac-8c6a-6ea15b88029e
+		summarizeBy: none
+		sourceColumn: Offboarding Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'ZI Company Defunt?'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 527e4076-d063-4fe2-8c3d-343ffc986b3a
+		summarizeBy: none
+		sourceColumn: ZI Company Defunt?
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Assigned VAR'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 1be054f6-6d00-4e57-a558-f4484a38ecfa
+		summarizeBy: none
+		sourceColumn: Assigned VAR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Domestic Flag'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 4a3d9bc7-eef3-4d67-9527-18721c24c8fc
+		summarizeBy: none
+		sourceColumn: Domestic Flag
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sourced By Intent Program'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 0a0438d0-1990-4f11-a39d-24959ce49f1b
+		summarizeBy: none
+		sourceColumn: Sourced By Intent Program
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Requested by BDR'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 2961fcbb-3b5a-4447-9ea1-e710285dd72a
+		summarizeBy: none
+		sourceColumn: Requested by BDR
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ZI Competitor Technology'
+		dataType: string
+		displayFolder: Others
+		lineageTag: c5a5065b-02d6-46cd-a72d-d89ca1ec4533
+		summarizeBy: none
+		sourceColumn: ZI Competitor Technology
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Intent Score'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 28541bd4-2b30-42d5-94d0-f448e83ad89a
+		summarizeBy: none
+		sourceColumn: Intent Score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Engagement Score'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 7ea73a1a-d71a-4e63-9c6c-31909f58d854
+		summarizeBy: none
+		sourceColumn: Engagement Score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'People Movement Score'
+		dataType: double
+		displayFolder: Others
+		lineageTag: a6c628f5-de09-4d52-bb29-a555787f4186
+		summarizeBy: none
+		sourceColumn: People Movement Score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'ZI Intent Score Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 267d802c-80d2-4a19-b93f-68ec4a377c54
+		summarizeBy: none
+		sourceColumn: ZI Intent Score Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'ZI Intent Score'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 05d74820-c0f0-46f2-9b30-2a07c598f0ff
+		summarizeBy: none
+		sourceColumn: ZI Intent Score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'ZI Scoops Score'
+		dataType: double
+		displayFolder: Others
+		lineageTag: d9bff403-c594-4bf9-8553-83c2fb3169fa
+		summarizeBy: none
+		sourceColumn: ZI Scoops Score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'NetSuite Account ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 853f49f6-bd3d-4d0f-a428-36969a879470
+		summarizeBy: none
+		sourceColumn: NetSuite Account ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'NetSuite Subsidiary'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 4b892cab-c8ad-4632-becd-1c72e7dd26b0
+		summarizeBy: none
+		sourceColumn: NetSuite Subsidiary
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Verified Revenue Range'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 438d8712-9671-47dc-a230-9bdc9e0d886e
+		summarizeBy: none
+		sourceColumn: Verified Revenue Range
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Verified Revenue Tier'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 19baa4d9-3d9c-43b5-a582-acd444961240
+		summarizeBy: none
+		sourceColumn: Verified Revenue Tier
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Partner Region North America'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 138ca0ee-233f-4402-8e19-5c90978e054d
+		summarizeBy: none
+		sourceColumn: Partner Region North America
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Partner Region South America'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 3b321cd1-9908-442e-8d4e-06a2f449a4d3
+		summarizeBy: none
+		sourceColumn: Partner Region South America
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Partner Vertical Aerospace Defense'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 1be947e4-0f13-4287-b3d7-497055d4c38d
+		summarizeBy: none
+		sourceColumn: Partner Vertical Aerospace Defense
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Partner Vertical Automotive'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: d759c3c3-01db-4fb7-b242-7de180dddd81
+		summarizeBy: none
+		sourceColumn: Partner Vertical Automotive
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Partner Vertical CPG'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 8b9d0c55-0656-4a25-983c-ee89ab2e4ac5
+		summarizeBy: none
+		sourceColumn: Partner Vertical CPG
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Vertical High Tech Elect'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 8add88b8-186e-4508-bb23-00e53f6c803b
+		summarizeBy: none
+		sourceColumn: Vertical High Tech Elect
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Vertical Industrial'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 562f3c9c-33c7-471c-8561-dda6db5f6e09
+		summarizeBy: none
+		sourceColumn: Vertical Industrial
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Vertical Life Sci Pharma'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: f7547032-0d7d-4688-99a3-36dd1d924aef
+		summarizeBy: none
+		sourceColumn: Vertical Life Sci Pharma
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Vertical Retail'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: cafec486-7d73-4417-80ab-52f31a7d71db
+		summarizeBy: none
+		sourceColumn: Vertical Retail
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Unable to Validate Revenue'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: 0a5b7f29-f915-45eb-8dcb-dd1e13b78bd5
+		summarizeBy: none
+		sourceColumn: Unable to Validate Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Buying Stage Score New'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 958bb0a9-30c5-4d6a-845b-4fde6f2b64df
+		summarizeBy: none
+		sourceColumn: Buying Stage Score New
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Profile Fit Score New'
+		dataType: double
+		displayFolder: Others
+		lineageTag: de4fb481-fb03-4adf-b0b1-9ddc7d0ac69a
+		summarizeBy: none
+		sourceColumn: Profile Fit Score New
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Contacts Sourced On'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 1740f9b9-708b-4ad9-84ea-96ab16a32120
+		summarizeBy: none
+		sourceColumn: Contacts Sourced On
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Partner Subtype'
+		dataType: string
+		displayFolder: Others
+		lineageTag: eecaf13a-ec22-4f03-987c-ea569b2db972
+		summarizeBy: none
+		sourceColumn: Partner Subtype
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Revenue Verified Date/Time'
+		dataType: dateTime
+		formatString: General Date
+		displayFolder: Others
+		lineageTag: 18629d79-6790-4e70-a882-79145db81e2b
+		summarizeBy: none
+		sourceColumn: Revenue Verified Date/Time
+
+		annotation SummarizationSetBy = Automatic
+
+	column MPO
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		displayFolder: Others
+		lineageTag: b506de81-a69f-4b8e-a59a-4bf8ce6bf5f7
+		summarizeBy: none
+		sourceColumn: MPO
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Zoominfo Record Purchased Date'
+		dataType: string
+		displayFolder: Others
+		lineageTag: aefa2760-21b3-4c29-80ff-1445ff0d5a43
+		summarizeBy: none
+		sourceColumn: Zoominfo Record Purchased Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'MPO HubSpot Company ID'
+		dataType: string
+		displayFolder: Others
+		lineageTag: a834b514-0be5-4d1b-9f21-3a2f88544d14
+		summarizeBy: none
+		sourceColumn: MPO HubSpot Company ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Company Revenue Range'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 064b808a-09cb-40d1-adf9-84f07e1a0298
+		summarizeBy: none
+		sourceColumn: Company Revenue Range
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Current Date'
+		dataType: dateTime
+		formatString: Long Date
+		displayFolder: Others
+		lineageTag: 4022808f-ee60-4950-9f5a-c39d2a2cfb92
+		summarizeBy: none
+		sourceColumn: Current Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Conversion Rate'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 7c8e4154-ca79-4203-a9e9-97990ac41204
+		summarizeBy: none
+		sourceColumn: Conversion Rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Annual Revenue $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 087106be-e23d-436d-88c3-96525f5ef69f
+		summarizeBy: none
+		sourceColumn: Annual Revenue $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Annual Contract Value ACV $ USD'
+		dataType: double
+		displayFolder: Others
+		lineageTag: 592fead1-8042-4ddb-94ee-35b807ee5c66
+		summarizeBy: none
+		sourceColumn: Annual Contract Value ACV $ USD
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Retail SIC Code'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 19bbd083-4018-480a-905d-bc0fd31f6662
+		summarizeBy: none
+		sourceColumn: Retail SIC Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Annual Revenue Range Final'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 53e13dec-6a4e-4856-aa50-ba547f4bb34c
+		summarizeBy: none
+		sourceColumn: Annual Revenue Range Final
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Company Revenue Tier'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 392b36cd-f4ad-44f1-92a2-04773bd2ca19
+		summarizeBy: none
+		sourceColumn: Company Revenue Tier
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Region MKT'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 30c0a35c-edb3-4a5a-b937-a57a46b7cd6a
+		summarizeBy: none
+		sourceColumn: Region MKT
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Risk Last Modified by'
+		dataType: string
+		displayFolder: Others
+		lineageTag: 6748789f-b91e-4642-90cb-963030caef88
+		summarizeBy: none
+		sourceColumn: Risk Last Modified by
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer Health Score Value'
+		dataType: int64
+		formatString: 0
+		displayFolder: Others
+		lineageTag: 6d4cdde7-1d61-4b6b-9ed7-ac27d44b915e
+		summarizeBy: none
+		sourceColumn: Customer Health Score Value
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'GTM Tier'
+		dataType: string
+		lineageTag: 58a12f19-a254-46de-b0e3-d77cafb0e308
+		summarizeBy: none
+		sourceColumn: GTM Tier
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Account = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"05b8b535-6823-453f-890a-08ddf6ae067d" = Workspaces{[workspaceId="05b8b535-6823-453f-890a-08ddf6ae067d"]}[Data],
+				    #"82665b59-deae-4e72-b23b-5a88e0ce3c5e" = #"05b8b535-6823-453f-890a-08ddf6ae067d"{[dataflowId="82665b59-deae-4e72-b23b-5a88e0ce3c5e"]}[Data],
+				    Account_ = #"82665b59-deae-4e72-b23b-5a88e0ce3c5e"{[entity="Account",version=""]}[Data],
+				    #"Added Custom" = Table.AddColumn(Account_, "Customer Health Score Value", each Text.Select([Customer Health Score], {"0".."9"})),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Customer Health Score Value", Int64.Type}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Changed Type",null,0,Replacer.ReplaceValue,{"Customer Health Score Value"})
+				in
+				    #"Replaced Value"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
